@@ -1,0 +1,71 @@
+{extend name="adminPublic:public"/} {block name="title"}修改节点{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-ok"></i> 修改节点</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <form id="mws-validate" class="mws-form" action="/node/update" method="post" novalidate="novalidate">
+            <input type="hidden" name="id" value="{$node['id']}">
+            <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+            <div class="mws-form-inline">
+                <div class="mws-form-row">
+                    <label class="mws-form-label">节点名称</label>
+                    <div class="mws-form-item">
+                        <input type="text" name="name" class="required url large" value="{$node['name']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">节点模块名称</label>
+                    <div class="mws-form-item">
+                        <input type="text" name="mname" class="required url large" value="{$node['mname']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">节点方法名称</label>
+                    <div class="mws-form-item clearfix">
+                        <ul class="mws-form-list inline">
+                            <li>
+                                <input value="index" name="aname[]" type="checkbox" {if condition="$node['aname'] == 'getindex'" }checked {/if}>
+                                <label>浏览</label>
+                            </li>
+                            <li>
+                                <input value="add" name="aname[]" type="checkbox" {if condition="$node['aname'] == 'getadd'" }checked {/if}>
+                                <label>添加</label>
+                            </li>
+                            <li>
+                                <input value="del" name="aname[]" type="checkbox" {if condition="$node['aname'] == 'getdel'" }checked {/if}>
+                                <label>删除</label>
+                            </li>
+                            <li>
+                                <input value="edit" name="aname[]" type="checkbox" {if condition="$node['aname'] == 'getedit'" }checked {/if}>
+                                <label>修改</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">节点状态</label>
+                    <div class="mws-form-item clearfix">
+                        <ul class="mws-form-list inline">
+                            <li>
+                                <input value="1" name="status" type="radio" {if condition="$node['status'] == '1'" }checked {/if}>
+                                <label>可用</label>
+                            </li>
+                            <li>
+                                <input value="0" name="status" type="radio" {if condition="$node['status'] == '0'" }checked {/if}>
+                                <label>禁用</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mws-button-row">
+                <input type="submit" class="btn btn-info" value="确认提交">
+                <input type="reset" class="btn btn-danger">
+            </div>
+
+        </form>
+    </div>
+</div>
+{/block}

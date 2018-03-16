@@ -1,0 +1,179 @@
+{:widget("Cate/indexHeader")}
+
+<body>
+    <div class="cart" id="cart">
+
+
+        <div class="mzcontainer">
+            <table class="cart-header">
+                <tbody>
+                    <tr>
+                        <td class="cart-col-select">
+                            <div class="cart-select-all JSelectAll" data-mdesc="全选按钮" data-mtype="store_cart_all">
+                                <div class="mz-checkbox"></div>
+                                <span class="cart-select-title">全选</span>
+                            </div>
+                        </td>
+                        <td class="cart-col-name">商品</td>
+                        <td class="cart-col-price">单价(元)</td>
+                        <td class="cart-col-number">数量</td>
+                        <td class="cart-col-total">小计(元)</td>
+                        <td class="cart-col-ctrl">操作</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <ul class="cart-merchant-list" id="merchantList">
+                <li class="cart-merchant">
+                    <table class="cart-merchant-body">
+                        <tbody>
+                            {foreach name="data" item="vo"}
+                            <tr class="cart-product">
+                                <td class="cart-col-select">
+                                    <div class="mz-checkbox"></div>
+                                    <a href="https://detail.meizu.com/item/pro7.html?skuId=4507" class="cart-product-link" target="_blank" data-mdesc="购物车商品位"
+                                        data-mtype="store_cart_prod">
+                                        <img src="{$vo['pic']}" class="cart-product-img" alt="{$vo['name']}" width="100" height="100">
+                                    </a>
+                                </td>
+                                <td class="cart-col-name">
+                                    <a href="/index/item/id/{$vo['id']}" class="cart-product-link" target="_blank" data-mdesc="购物车商品位" data-mtype="store_cart_prod">
+                                        <p>{$vo['name']}</p>
+
+                                        <span class="cart-product-desc">
+                                            颜色: {if condition="$vo['color'] == 'white'"} 白色 {elseif condition="$vo['color'] == 'black'"} 黑色 {else} 金色 {/if} 尺寸: {if condition="$vo['size']
+                                            == 'big'"} 大 {elseif condition="$vo['size'] == 'medium'"} 中 {else} 小 {/if}</span>
+                                    </a>
+                                </td>
+                                <td class="cart-col-price">
+                                    <p>
+                                        <span class="cart-product-price">{$vo['price']}</span>
+
+                                    </p>
+
+                                </td>
+                                <td class="cart-col-number">
+                                    <div class="cart-product-number-adder">
+                                        <p class="cart-product-number-max show">
+
+                                        </p>
+                                        <div class="mz-adder">
+                                            <button class="mz-adder-subtract" name="{$vo['car_id']}"></button>
+                                            <div class="mz-adder-num">
+                                                <input class="mz-adder-input" value="{$vo['num']}" type="text">
+                                            </div>
+                                            <button class="mz-adder-add" name="{$vo['car_id']}"></button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="cart-col-total">
+                                    <span class="cart-product-price total">{$vo['total']}</span>
+                                </td>
+                                <td class="cart-col-ctrl">
+                                    <a href="/order/delcar/id/{$vo['car_id']}" class="">
+                                        <span class="glyphicon glyphicon-align-left" aria-hidden="true">删除</span>
+                                    </a>
+                                </td>
+                            </tr>
+                            {/foreach}
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="cart-footer" id="cartFooter">
+            <div class="mzcontainer">
+                <div class="cart-footer-left">
+                    <div class="cart-select-all JSelectAll" data-mdesc="全选按钮" data-mtype="store_cart_all">
+                        <div class="mz-checkbox "></div>
+                        <span class="cart-select-title">全选</span>
+                    </div>
+                    <span class="cart-remove-selected" data-mdesc="删除选中商品" data-mtype="store_cart_batch" id="removeSelected">删除选中的商品</span>
+                    <span class="cart-footer-count">
+                        共
+                        <span class="cart-footer-num" id="totalCount">{$all_num}</span>件商品， 已选择
+                        <span class="cart-footer-num blue" id="totalSelectedCount">{$buy_num}</span>件
+                    </span>
+                </div>
+                <div class="cart-footer-right">
+                    <span class="cart-footer-sum">
+                         合计(不含运费)：
+                        <span class="cart-footer-total" id="totalPrice">{$all_total}</span>
+                    </span>
+                    <a href="/order/index" class="mz-btn success" id="cartSubmit" data-mdesc="去结算按钮" data-mtype="store_cart_checkout" >去结算</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        
+        // 全选效果 
+        $('.cart-select-all').toggle(
+            function () {
+                $('.mz-checkbox').addClass('checked');
+                $.get('/order/status',{mark:'1'},function (data) {
+                    
+                });
+            },
+            function () {
+                $('.mz-checkbox').removeClass('checked');
+                $.get('/order/status',{mark:'0'},function (data) {
+
+                });
+            }
+        );
+
+        $('.cart-col-select .mz-checkbox').click(function () {
+            if ($(this).hasClass('checked')) {
+                $(this).removeClass('checked');
+            } else {
+                $(this).addClass('checked');
+            }
+        })
+        // 商品数量修改
+
+        $('.mz-adder .mz-adder-subtract').each(function () {
+            var btn = $(this);
+            $(this).click(function () {
+                // alert(1);
+                var me = $(this);
+                var car_id = btn.attr('name');
+                var num = me.siblings('.mz-adder-num').children('.mz-adder-input').val();
+                console.log(num);
+                $.ajax({
+                    url: '/order/subtract',
+                    data: { 'num': num, 'car_id': car_id },
+                    success: function (data) {
+                        console.log(data);
+                        me.siblings('.mz-adder-num').children('.mz-adder-input').val(data);
+                        var price=btn.parents('.cart-col-number').siblings('.cart-col-price').find('.cart-product-price').html();
+                        btn.parents('.cart-col-number').siblings('.cart-col-total').find('.total').html(price*data);
+                }
+                })
+            })
+        })
+
+        $('.mz-adder .mz-adder-add').each(function () {
+            var btn = $(this);
+            $(this).click(function () {
+                var me = $(this);
+                var car_id = btn.attr('name');
+                var num = me.siblings('.mz-adder-num').children('.mz-adder-input').val();
+                console.log(num);
+                $.ajax({
+                    url: '/order/add',
+                    data: { 'num': num, 'car_id': car_id },
+                    success: function (data) {
+                        console.log(data);
+                        me.siblings('.mz-adder-num').children('.mz-adder-input').val(data);
+                        var price = btn.parents('.cart-col-number').siblings('.cart-col-price').find('.cart-product-price').html();
+                            btn.parents('.cart-col-number').siblings('.cart-col-total').find('.total').html(price * data);
+                    }
+                })
+            })
+        })
+    </script> {:widget("Cate/footer")}

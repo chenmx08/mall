@@ -1,0 +1,348 @@
+
+ {:widget("Cate/indexHeader")}
+
+  <div class="order">
+    <div class="mzcontainer">
+      <div class="order-address" id="addressModule">
+        <div class="order-address-title">
+          收货人信息
+          <div class="order-address-title-tips" id="orderAddressHasOldTips">
+            <i class="order-address-tips-icon"></i>因配送地址库升级，部分地址需升级后方可使用！
+          </div>
+        </div>
+        <ul class="order-address-list clearfix" id="addressList" style="height: 174px;">
+          {foreach name="address" item="vo"}
+         
+          <li class="order-address-checkbox" data-mdesc="收货人信息" data-mtype="store_se_adr" title="{$vo['id']}">
+            <div class="order-address-checkbox-top">
+              
+              <div class="order-address-checkbox-name" title="{$vo['name']}">{$vo['name']}</div>
+              <div class="order-address-checkbox-phone">{$vo['phone']}</div>
+            </div>
+            <div class="order-address-checkbox-content">{$vo['address']}</div>
+            <div class="order-address-checkbox-checked">
+              <div class="order-address-checkbox-tick"></div>
+            </div>
+
+            <div class="order-address-checkbox-ctrl">
+              <div class="order-address-checkbox-delete" name="{$vo['id']}"></div>
+              <div class="order-address-checkbox-edit"></div>
+            </div>
+          </li>
+          {/foreach}
+          <li class="order-address-checkbox add">
+            <div class="order-address-add-icon"></div>
+            <div class="order-address-add-text">添加新地址</div>
+          </li>
+        </ul>
+        <div class="order-address-bottom">
+          <div class="order-address-more" id="orderAddressMore">
+            <p class="order-address-more-text">点击显示更多地址</p>
+            <i class="order-address-triangle"></i>
+          </div>
+        </div>
+        <div class="mz-loading-mask" style="width: 1240px; height: 279px; display: none;">
+          <div class="mz-loading spinner">
+            <div class="mz-bounce mz-bounce1"></div>
+            <div class="mz-bounce mz-bounce2"></div>
+            <div class="mz-bounce mz-bounce3"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mzcontainer order-product">
+        <div class="order-product-title">确认订单信息</div>
+        <div class="order-product-list" id="orderProductList">
+          <table class="order-product-table" cellspacing="0" cellpadding="0">
+            <thead>
+              <tr>
+                <th class="order-product-table-name">
+                  <div class="order-product-supplier">
+                    供应商：
+                    <span class="order-product-supplier-name">哈哈哈</span>
+                    <!--<div class="order-product-supplier-tips">由“魅族”负责发货，并提供售后服务</div>-->
+                  </div>
+                </th>
+                <th class="order-product-table-price">单价</th>
+                <th class="order-product-table-num">数量</th>
+                <th class="order-product-table-total">小计</th>
+                <th class="order-product-table-express"></th>
+              </tr>
+            </thead>
+            <tbody>
+              {foreach name="data" item="vo"}
+              <tr>
+                <td class="order-product-table-name">
+                  <a target="_blank" class="order-product-link" href="" data-mdesc="确认订单信息" data-mtype="store_se_ord">
+                    <img class="order-product-image" data-original="//openfile.meizu.com/group1/M00/02/F3/Cgbj0Fpe-_yAFtuLAAw27mVWra0383.png@120x120.jpg"
+                      src="{$vo['pic']}" style="display: inline;">
+                  </a>
+                  <div class="order-product-name">
+                    <a target="_blank" class="order-product-link" href="https://detail.meizu.com/item/meilans6.html" data-mdesc="确认订单信息" data-mtype="store_se_ord">
+                      <p class="order-product-name-item">{$vo['name']}</p>
+                      <p class="order-product-name-item"> {if condition="$vo['size'] == 'big'"} 大 {elseif condition="$vo['size'] == 'medium'"} 中 {else} 小 {/if}  {if condition="$vo['color'] == 'white'"} 白色 {elseif condition="$vo['color'] == 'black'"} 黑色 {else} 金色 {/if}</p>
+
+                    </a>
+                  </div>
+                </td>
+                <td class="order-product-table-price">
+                  <p>
+                    <span class="order-product-price">{$vo['price']}</span>
+                  </p>
+                </td>
+                <td class="order-product-table-num">{$vo['num']}</td>
+                <td class="order-product-table-total">
+                  <p class="order-product-price red">{$vo['total']}</p>
+                </td>
+                 {/foreach}
+              </tr>
+              
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  <div class="order-product-info">
+                    <div class="order-product-invoice clearfix">
+
+                      <div class="order-product-invoice-type">
+                        发票类型：电子发票
+                        <div class="order-product-invoice-icon"></div>
+                      </div>
+
+                      <div class="order-product-invoice-info">
+                        <p>发票抬头：
+                          <span class="order-product-invoice-title">默认为收货人姓名</span>
+                          <span class="order-product-invoice-edit">修改</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="order-product-remark">
+                      <span class="order-product-remark-title">备注</span>
+                      <textarea class="order-product-remark-input" placeholder="备注..." maxlength="45"></textarea>
+                    </div>
+                  </div>
+                  <div class="order-product-total">
+                    合计：
+                    <span class="order-product-price red">{$all}</span>
+                  </div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+
+     
+
+      <div class="order-total clearfix" id="orderTotal">
+        <div class="order-total-pay">
+          <div class="order-total-pay-header">选择支付方式</div>
+         
+        </div>
+
+<form action="/order/pay" method="post" id="pay">
+  <input type="hidden" name="address_id" id="address_id" value="">
+  <input type="hidden" name="orders_id" id="order_id" value="{$oid}">
+        <div class="order-total-content">
+          <div class="order-total-row">
+            总金额
+            <div class="order-total-price" id="totalOrderPrice">{$all}</div>
+          </div>
+          <div class="order-total-row">
+            运费
+            <div class="order-total-price" id="totalExpressPrice">0.00</div>
+          </div>
+          <div class="order-total-line"></div>
+          <div class="order-total-row">
+            应付：
+            <div class="order-total-price total" id="totalPayPrice">{$all}</div>
+          </div>
+          <div class="order-total-row order-total-valid-row clearfix">
+            <div class="order-total-valid" id="validCode"></div>
+            
+            
+              <input type="submit" value="确认支付" class="mz-btn success" id="submitForm">
+</form>
+            <div class="order-stock-tips-wrap">
+            </div>
+          </div>
+          <div class="order-total-row order-total-row-tips" id="totalTips"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- end content -->
+  <form action="/order/address" method="post">
+<div class="mz-mask hide">
+  <div class="mz-dialog dialog address-adder" style="margin-left: -380px; margin-top: -182px;">
+    <div class="mz-dialog-header">
+      <div class="mz-dialog-title">添加新地址</div>
+      <div class="mz-dialog-close"></div>
+    </div>
+    <div class="mz-dialog-main">
+      <div class="mz-dialog-warp">
+
+        <div class="mz-dialog-content">
+          <div class="address-adder-content">
+            <div class="address-adder-row clearfix">
+              <div class="address-adder-title">收货人姓名
+                <span class="address-adder-must">*</span>
+              </div>
+              <div class="mz-input-warp" data-tips=" ">
+                <input class="mz-input address-adder-name" placeholder="姓名长度不超过15个汉字" value="" maxlength="15" type="text" name="name">
+              </div>
+              <div class="address-adder-title">收货人手机号
+                <span class="address-adder-must">*</span>
+              </div>
+              <div class="mz-input-warp" data-tips=" ">
+                <input class="mz-input address-adder-phone" placeholder="请输入11位手机号" value="" maxlength="11" type="text" name="phone">
+              </div>
+            </div>
+            <div class="address-adder-row clearfix">
+              <div class="address-adder-title">收货人地址
+                <span class="address-adder-must">*</span>
+              </div>
+              <div class="mz-input-warp address-adder-select mz-address" data-tips=" ">
+                
+                <div class="mz-selectmenu" style="width:500px;">
+                  <!-- <input readonly="readonly" tabindex="-1" class="mz-downmenu-input" placeholder="省份/直辖市" value="" type="text"> -->
+                  <!-- <input tabindex="-1" value="2911" name="" type="hidden"> -->
+                  <!-- 省份 -->
+                  <select  id="pro" style="float:left">
+                    <option value="" class="mz-downmenu-input mm">--请选择--</option>
+                  </select>
+                  
+                </div>
+                <div class="mz-address-other mz-input-warp" style="display: none;" name="">
+                  <input class="mz-input mz-address-input" placeholder="请输入其他街道名称" maxlength="10" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="address-adder-row clearfix address-adder-other" style="display: none;">
+              <div class="address-adder-title">其他</div>
+            </div>
+            <div class="address-adder-row clearfix">
+              <div class="address-adder-title">详细地址
+                <span class="address-adder-must">*</span>
+              </div>
+              <div class="mz-input-warp" data-tips=" ">
+                <input class="mz-input address-adder-detail" placeholder="请输入详细地址，例如路名、门牌号" value="" maxlength="50" minlength="0" name="details"
+                  type="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mz-dialog-bottom">
+      <input type="hidden" name="location">
+      <input type="submit" value="确认" class="mz-btn success" >
+      <div class="mz-btn cancel">取消</div>
+    </div>
+
+  </div>
+</div>
+</form>
+
+  <!-- <script src="/static/index/order/js/layout-b525aba649.js" type="text/javascript"></script> -->
+ <script>
+  //  地址栏的js效果
+  $('#addressModule .add').click(function () {
+    $('div.mz-mask').removeClass('hide');
+  });
+  $('.mz-dialog-close , .cancel').click(function () {
+    $(this).parents('.mz-mask').addClass('hide');
+  })
+  // 城市级联效果 一级数据
+    $.ajax({
+      url: '/order/address',
+      dataType: 'JSON',
+      data: { 'upid': 0 },
+      success: function (data) {
+        console.log(data);
+        for (i = 0; i < data.length; i++) {
+          item = "<option style='width:80px;' value='" + data[i]['id'] + "'>" + data[i]['name'] + "</option>";
+          // console.log(item);
+          // console.log(data[i]['name']);
+          $('#pro').append(item);
+        }
+      },
+      error:function(){
+        alert('ajax响应失败');
+      }
+    });
+  
+  // 城市级联效果 其他级别
+  $('select').live('change',function () {
+    // alert(1);
+    var me=$(this);
+    me.nextAll("select").remove();
+    upid=me.val();
+    $.ajax({
+      'url':'/order/address',
+      'data':{'upid':upid},
+      dataType:'JSON',
+      success:function(data){
+        for(var i=0;i<data.length;i++){
+          select = $("<select style='float:left'></select>");
+          select.append("<option value='' class='mm'>--请选择--</option>");
+          // alert(data);
+          if (data.length > 0) {
+            for (var i = 0; i < data.length; i++) {
+              o = '<option value="' + data[i].id + '">' + data[i].name + '</option>';
+              select.append(o);
+            }
+            me.after(select);
+            $('.mm').attr('disabled',true);
+          }
+        }
+      }
+    })
+  })
+// 获取select框的数据
+  $("input[type='submit']").click(function () {
+    // alert(1);
+      arr = [];
+      //遍历select
+      $("select").each(function () {
+        //获取选中数据
+        adds = $(this).find("option:selected").html();
+        // alert(adds);
+        arr.push(adds);
+      });
+      // alert(arr);
+      //赋值给隐藏域
+      $("input[name='location']").val(arr);
+    })
+
+    // 选中地址框 将选中的地址id赋值给 支付按钮数据
+    $('.order-address-checkbox').each(function () {
+      var me=$(this);
+      var id = me.attr('title');
+      $(this).click(function () {
+        $('.order-address-checkbox').removeClass('checked');
+        me.addClass('checked');
+        $('#address_id').val(id);
+      })
+    })
+// ===
+// 删除地址信息 
+    $('.order-address-checkbox-delete').click(function () {
+      var id=$(this).attr('name');
+      var me=$(this);
+      $.get('/order/deladds',{'id':id},function (data) {
+        if(data){
+          me.parents('.order-address-checkbox').remove();
+        }else{
+          alert('删除失败');
+        }
+      })
+    })
+      
+</script>
+
+  <!-- <script src="/static/index/order/js/add-7dc829022c.js" type="text/javascript"></script> -->
+ 
+  {:widget("Cate/footer")}

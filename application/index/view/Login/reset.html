@@ -1,0 +1,5271 @@
+<!DOCTYPE html>
+<!-- saved from url=(0272)https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&sid=mi_eshop&_bannerBiz=mistore&_qrsize=180 -->
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="小米帐号能使用小米手机，MIUI，小米云，多看阅读，米聊，小米社区等小米服务。" /> 
+  <meta name="keywords" content="小米帐号，小米账号，小米注册，注册，Mi Account，Sign in，小米，帐号，账号，小米帐户，登录，登陆，安全令牌，动态口令，小米注册，找回密码" /> 
+  <script>
+var LANG=(function(){
+    var locale=("zh_CN").toLowerCase();
+    if(locale){
+      if(locale.indexOf("en")>-1){
+        return {data:"en",cls:"en"};
+      }else if(locale.indexOf("zh")>-1){
+        if(locale.indexOf("cn")===-1){
+          return {data:"tw",cls:"zh_TW"};
+        }else{
+          return {data:"cn",cls:"zh_CN"};
+        }
+      }
+    }
+    return {data:"en",cls:"en"};
+})();
+</script> 
+  <script>
+var _d_={};
+/*fix ie下部分用户保护模式白屏：icacls %userprofile%\Appdata\LocalLow /t /setintegritylevel (OI)(CI)H*/
+try{
+  var supportLocalstorage=!!window.localStorage
+}catch(e){
+  var supportLocalstorage=false;
+}
+var _t_={
+  statURL:'https://data.mistat.xiaomi.com/mistats',
+  appId:"2882303761517246742",
+  appKey:"5621724658742",
+  jspcomplete:(new Date()).getTime(),
+  supportLocalstorage:supportLocalstorage,
+  samplingBase:100,
+  samplingRate:5
+};
+if(window.performance){
+  var timing=performance.timing;
+  if(!timing.responseEnd){
+    timing.responseEnd=timing.responseStart;
+  }
+  _d_.startTS=timing.fetchStart
+  _d_.endTS=timing.responseEnd;
+}else{
+  _d_.startTS=_d_.endTS=(new Date()).getTime();
+}
+var JSP_VAR={
+  deviceType:'PC',
+  dataCenter:'c4',
+  locale:"zh_CN",
+  region:"CN",
+  callback:"https://order.mi.com/login/callback?followup=https%3A%2F%2Fwww.mi.com%2Findex.html&sign=MjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ,,",
+  sid:"mi_eshop",
+  qs:"%3Fcallback%3Dhttps%253A%252F%252Forder.mi.com%252Flogin%252Fcallback%253Ffollowup%253Dhttps%25253A%25252F%25252Fwww.mi.com%25252Findex.html%2526sign%253DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%252C%252C%26sid%3Dmi_eshop%26_bannerBiz%3Dmistore%26_qrsize%3D180",
+  hidden:"",
+  "_sign":"RGfMpi9Bf4f63t6MqC02xCDiBmc=",
+  serviceParam :'{"checkSafePhone":false}',
+  privacyLink:'http://www.miui.com/res/doc/privacy/cn.html',
+  agreeLink:'http://www.miui.com/res/doc/eula/cn.html',
+  showActiveXControl:false
+};
+var PAGE_VAR={
+  form_cache:false,
+  cache_key:(JSP_VAR.deviceType!=="mobile" ? "/static/res/6ff108a/account-static/html/login/dist/v2/login-cn.html" : "/static/res/6ff108a/account-static/html/login/dist/v2/login-wap-cn.html")
+};
+
+var localStorageKey='id.mi.com.login.'+( PAGE_VAR.cache_key.substring( PAGE_VAR.cache_key.indexOf("/account-static") ) || "main" );
+
+if(location.search.indexOf("_debugMode")>-1&&supportLocalstorage){
+  window.localStorage && window.localStorage.removeItem(localStorageKey);
+}
+
+(function(){
+
+  function getLocal(url){
+    if(supportLocalstorage){
+      var data=""+localStorage.getItem(localStorageKey);
+      var index=data.indexOf("@")
+
+      if(data.substring(0,index) == url){
+        return data.substring(index+1)
+      }
+    }
+    return null;
+  }
+  function setLocal(url,data){
+    if(supportLocalstorage && data){
+      try{
+        localStorage.setItem(localStorageKey,url+"@"+data);
+      }catch(e){}
+    }
+  }
+  function getContent(url){
+    var xhr= new (window.XMLHttpRequest || window.ActiveXObject)("Microsoft.XMLHTTP");
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+          setLocal(url,xhr.responseText);
+          _t_.htmlGetEnd=(new Date()).getTime();
+          document.write(xhr.responseText);
+          document.close();
+      }
+    };
+    xhr.open("GET",url,false);
+    xhr.send();
+  }
+  var cache_key=PAGE_VAR.cache_key;
+      _t_.version=cache_key;
+  var html=getLocal(cache_key);
+  if(html){
+    _t_.htmlCache=true;
+    PAGE_VAR.form_cache=true;
+    document.write(html);
+    document.close();
+  }else{
+    _t_.htmlCache=false;
+    _t_.htmlGetStart=(new Date()).getTime();
+    getContent(cache_key);
+  }
+})();
+</script> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" /> 
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" /> 
+  <title>重置密码</title> 
+ </head> 
+ <body class="win_banner_mistore zh_CN"> 
+  <div class="wrapper"> 
+   <!-- loading --> 
+   <div class="popup_mask acquirePhoneMask" style="display:none;" id="loadingMask"> 
+    <div class="bkc"></div> 
+    <div class="mod_wrap loadingmask"> 
+    </div> 
+    <div class="loadingTips">
+     正在检测你的帐号信息...
+    </div> 
+   </div> 
+   <!--bg_banner_start--> 
+   <div class="bgiframe"> 
+    <iframe name="ifr" style="height:100%" width="100%" height="686" src="../static/index/login/html/loginbanner.html" id="bgiframe" frameborder="0" scrolling="no"></iframe> 
+   </div> 
+   <!--bg_banner_end--> 
+   <div class="wrap"> 
+    <div class="layout_panel"> 
+     <div class="layout" id="layout"> 
+
+
+      <!--表单输入登录--> 
+      <div class="mainbox" id="login-main"> 
+       <div id="custom_display_2">
+        <a class="ercode" id="qrcode-trigger" href="javascript:void(0)"></a>
+       </div> 
+       <!-- header s --> 
+       <div class="lgnheader"> 
+        <div class="header_tit t_c"> 
+         <em id="custom_display_1" class="milogo"> 
+          <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+           <rect width="50" height="50" style="fill:#ef5b00"></rect>
+           <rect x="11.25" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+           <rect x="11.25" y="15" width="12.5" height="5" style="fill:#FFFFFF"></rect>
+           <rect x="26.25" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+           <rect x="33.75" y="15" width="5" height="20" style="fill:#FFFFFF"></rect>
+           <circle cx="23.75" cy="22.5" r="7.5" fill="#FFFFFF"></circle>
+           <rect x="16.25" y="20" width="7.5" height="15" style="fill:#ef5b00"></rect>
+           <rect x="16.25" y="22.5" width="10" height="12.5" style="fill:#ef5b00"></rect>
+           <circle cx="23.75" cy="22.5" r="2.5" fill="#ef5b00"></circle>
+           <rect x="18.75" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect>
+          </svg> </em> 
+         <h4 class="header_tit_txt" id="login-title">重置密码</h4> 
+         <div class="site_info"></div>
+        </div> 
+       </div> 
+       <!-- header e --> 
+       <!-- tab s --> 
+       <div class="nav_tabs_panel"> 
+        <div id="nav-tabs" class="nav_tabs"> 
+         <a class="navtab-link now" href="javascript:void(0);" data-tab="pwd">重置密码</a> 
+        </div> 
+       </div> 
+       <!-- tab e --> 
+       <!-- tab con s --> 
+       <div class="tabs-con tabs_con now" data-con="pwd"> 
+        <div> 
+
+
+         <div class="login_area"> 
+          <form action="/indexlogin/doreset" method="POST" id="login-main-form"> 
+           <div class="loginbox c_b"> 
+           
+            <!-- 输入框 --> 
+            <div class="lgn_inputbg c_b login-panel pwdLogin"> 
+             <!--验证用户名--> 
+             <div class="single_imgarea" id="account-info"> 
+              <div class="na-img-area" id="account-avator" style="display:none"> 
+               <div class="na-img-bg-area" id="account-avator-con"></div> 
+              </div> 
+              <p class="us_name" id="account-displayname"></p> 
+              <p class="us_id"></p> 
+             </div> 
+
+
+            
+
+
+             <div class="country-container" id="countrycode_container" style="display: none;"> 
+              <div class="country_container_con" id="countrycode_container_con"></div> 
+             </div> 
+             <label class="labelbox pwd_panel c_b"> <input class="item_account" type="password" placeholder="请输入新的密码" autocomplete="off" id="pwd" name="password" /> <input class="item_account" type="text" placeholder="" autocomplete="off" id="visiablePwd" name="visiablepwd" style="display:none" /> 
+              <div class="eye_panel pwd-visiable"> 
+               <i class="eye pwd-eye"> 
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"> 
+                 <path class="eye_outer" d="M0 8 C6 0,14 0,20 8, 14 16,6 16, 0 8 z"></path> 
+                 <circle class="eye_inner" cx="10" cy="8" r="3"></circle> 
+                </svg> </i> 
+              </div> 
+              <div id="sms-code-panel" class="code_panel"> 
+               <a href="javascript:;" id="getSMSCode">获取验证码</a> 
+              </div> </label> 
+              <!-- 隐藏传值 -->
+              <input  type="hidden"  name="id"  value="{$id}"/>
+
+
+              <label class="labelbox pwd_panel c_b"> <input class="item_account" type="password" placeholder="请再次确认密码" autocomplete="off" id="pwd" name="repwd" /> <input class="item_account" type="text" placeholder="" autocomplete="off" id="visiablePwd" name="visiablepwd" style="display:none" /> 
+              <div class="eye_panel pwd-visiable"> 
+               <i class="eye pwd-eye"> 
+                <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"> 
+                 <path class="eye_outer" d="M0 8 C6 0,14 0,20 8, 14 16,6 16, 0 8 z"></path> 
+                 <circle class="eye_inner" cx="10" cy="8" r="3"></circle> 
+                </svg> </i> 
+              </div> 
+              <div id="sms-code-panel" class="code_panel"> 
+               <a href="javascript:;" id="getSMSCode">获取验证码</a> 
+              </div> </label>
+
+
+            </div> 
+            <div class="security_Controller" style="display: none;"> 
+             <label class="checkbox_area"><input type="checkbox" id="trustSecurityController" class="checkbox" />使用安全控件</label> 
+            </div> 
+            <div id="captcha"></div> 
+            <!-- 错误信息 --> 
+            <div class="err_tip"> 
+             <div>
+              <em class="icon_error"></em>
+              <span class="error-con"></span>
+             </div> 
+            </div> 
+             
+
+            <div class="btns_bg"> 
+             <input class="btnadpt btn_orange" id="login-button" type="submit" value="重置密码" /> 
+             <span id="custom_display_8" class="sns-default-container sns_default_container" style="display: none;"> </span> 
+            </div> 
+
+            <div class="other_panel clearfix"> 
+             <span id="custom_display_256" class="sms_link"> <a href="/indexregister/register" class="btnadpt btn_gray" id="ChangeLoginType">注册</a> </span> 
+             <p class="light-gray acq_tips" style="display: none;"></p> 
+             <div class="reverse"> 
+              <div class="n_links_area" id="custom_display_64"> 
+               <a class="outer-link" href="">登录</a>
+               
+              </div> 
+              <!-- 其他登录方式 s --> 
+              <div style="display: block;" class="other_login_type sns-login-container" id="custom_display_16"> 
+               <fieldset class="oth_type_tit"> 
+                <legend align="center" class="oth_type_txt">其他方式登录</legend> 
+               </fieldset> 
+               <div class="oth_type_links"> 
+                <a class="icon_type btn_qq sns-login-link" data-type="qq" href="https://account.xiaomi.com/pass/sns/login/auth?appid=100284651&amp;&amp;callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop" title="QQ登录" target="_blank"><i class="btn_sns_icontype icon_default_qq"></i></a> 
+                <a class="icon_type btn_weibo sns-login-link" data-type="weibo" href="https://account.xiaomi.com/pass/sns/login/auth?appid=2996826273&amp;&amp;callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop" title="微博登录" target="_blank"><i class="btn_sns_icontype icon_default_weibo"></i></a> 
+                <a class="icon_type btn_alipay sns-login-link" data-type="alipay" href="https://account.xiaomi.com/pass/sns/login/auth?appid=2088011127562160&amp;&amp;callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop" title="支付宝登录" target="_blank"><i class="btn_sns_icontype icon_default_alipay"></i></a> 
+                <a class="icon_type btn_weixin sns-login-link" data-type="weixin" href="https://account.xiaomi.com/pass/sns/login/auth?appid=wxxmzh&amp;scope=snsapi_login&amp;callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop" title="微信登录" target="_blank"><i class="btn_sns_icontype icon_default_weixin"></i></a> 
+               </div> 
+              </div> 
+              <!-- 其他登录方式 e --> 
+             </div> 
+            </div> 
+           </div> 
+          </form> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="tabs-con tabs_con" data-con="qr"> 
+        <div class="tab_qrcon"> 
+         <div class="tab_code_iframe"> 
+          <iframe style="background:#fff;" src="./static/index/login/html/saved_resource.html" id="tab-qriframe" frameborder="0" scrolling="no"></iframe> 
+         </div> 
+         <div class="custom_sub_txt"> 
+          <p>使用<span>小米商城APP</span>扫一扫</p> 
+          <p>小米手机可打开「设置」&gt;「小米帐号」扫码登录</p> 
+         </div> 
+        </div> 
+       </div> 
+       <!-- tab con e --> 
+      </div> 
+      <div class="ercode_area" id="login-qrcode"> 
+       <div class="ercode_pannel"> 
+        <a class="code_close" href="javascript:void(0)" title="关闭" id="qrcode-close"><span class="icon_code_close"></span></a> 
+        <div class="ercode_box"> 
+         <div class="code_hd"> 
+          <h3 class="code_tit">小米帐号扫码登录</h3> 
+          <p>请打开「设置 &gt; 小米帐号 &gt; 右上角扫一扫」扫码登录</p> 
+         </div> 
+         <div class="code_iframe"> 
+          <iframe style="background:#fff;" src="./static/index/login/html/saved_resource(1).html" id="qriframe" frameborder="0" scrolling="no"></iframe> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div class="ac-box" style="display: none"> 
+       <!-- 取号注册 --> 
+       <div id="ac-register" style="display: none;" class="tac"> 
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG8AAABvCAYAAADixZ5gAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1Nzk2N2QyZS04ODljLTU2NGQtYjBlZC1hNjI0YzVhMDFkN2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RTlGRjNCNUUwOTcwMTFFNzkwQkNFMzAyQ0ZFOEI5N0MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RTlGRjNCNUQwOTcwMTFFNzkwQkNFMzAyQ0ZFOEI5N0MiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTQ2ZWU3ZDEtYmUyNS04ZDQ5LTgxOWEtOTI4ODVjMTAyYmM5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3OTY3ZDJlLTg4OWMtNTY0ZC1iMGVkLWE2MjRjNWEwMWQ3ZiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv0l6jMAAAVvSURBVHja7J17iFVFHMdnddVC80VgkqaomEQvaImgXVjBf3TdDF/lCywi0jBcCjJLd1fNVoWkMPwnzHw/ci2vG6E9ljSQMOxPHyj9k7kQ9hJq1+r2/XXmdn979C7nmvfcmXO+X/hy5sw9l5lzPnfmzJw7M6cim80ayk/14iUgPIrwKMIjPIrwKMKjrlVl3AlWtZk6bOrhang83MeB6/AXfBG+AB+Hj8BfRvniybryZboirk46oE3FZgM8wZMfdgfcAm+GO12E1ysmcCuxyXgETjQM3gifgSen8p4HcCuwaVZRP8KvwPfCfaX0O2C5fdwF18Jr4XMqv6Pgj+GlrsErabVpq8qMimqFn0JV86s6xkUJ0Om25I1U8fIjbEpLtblBhQ/CMzU4hyW/6APwg/CnKr4xDC+R1SZK1CR1j5OqciHA+fYXxmVYytYHIYCNSb/n1avwJk9K3PXUBc8NAWxyAWAp4VWrcMbz/vBVC/BACODKpMIbo8IXEvBAQwDOCQFstt2gxMEbrFpkP5tkKFcCW0MAVyS2k54wddkSqAGuAsDXCM8vgAdV3Oq4ARLe/wP4JPxhCOCrhOcPwCdCANcA4HLC80BojOUAfqSiXwfAFwjPH4Cz4UMq+i0AnEZ4/gCcBX+uorcA4AjC8wfgTPi8jRoKLyI8fwD+hM3TKmo5Sl8l4fkDUMa/tKuo+YTnl3aocDXh+aWvVPhRwvNL36nwaMLz6773h9q9hfAowiM8ivAowiM8ivAowqMIj/DKIvkbZYkJhplfMsHkj7h9yaa/2AQzhwgvghbAMlD3bXiGCSY6lkPDbPrvwDLXYj7h9aw34W1wf8fyNQDebrpPWyM8pWfgBrV/ygQjs+4whWe11thjfzHRZsHusse3RDhW0pXh7d+qPL1kawbCU7rVBJP3c9oCPwzvM8Hk/nJI0t1t8/G+ipd89iW8vBaZ/NIiJ+Bn4T8dydtVm59Tdr+/KeHAIh/hTVTh9SZYG8UlyciwtWq/hvDy0uM8vnC0FXysQH5TD2+wCrs6n68j1I0gPIrwCI8iPIrwqJ5UmaBz6Qe/HOG4e+z2kYjHE14MkoGtLUUcX2tNeGXUFfibGNN7iPBunuSJf1WM6Tmz+B0bLGxtUoRHER7hUYRHER5FeIRHER5FeIRHER5FeFQ0ufqX0FGi8RfeJKLxF96yIo4dDT8Hy1pfTRGOl+X05dVq7fAnN5C3FsLrWeuKOLbawuuM+L37LbwTRabjHDw2WNjapAiPIjzCi1+XVXioo9dLz8nrILy8jqtwraPwagrkN/Xw2lVY3oLV2zFwsvqDfj/eMcLLS5bH+N2GZUj5u3Afh8C9Bz9g938z3ZcdST08eUKil8dYCH9tgkVshpchr5LenfA8E8yFmKs+k3x2lfuCufaERRaquQ9+0e7Lk5CdEb87yBQ3j2CZKe4xXE5vFJGn1HUVcstDXXEsX7JCxRx7P2ZXoQfJe3huM8FSifvhH+C/Y86DpPc9vNdWk0PgPS5dJNeneG12oWHATjrlFbz/VjGqauu2ulEqhHPWqwJ2+QbvvAqPTWHBuFuFz/gGTz8+qk8hvLoC18ILeBkVfh7VyKAUVZnSUtbvSW/zCt7JOvMZNqft7u3wVpxURQrAyTluNcFToX9vH7gWbb6VvFyHO6fH4Vac3MCElzjpl05X0Q2lSq8im82W+oTkSfxqFSXvKpAl9w/DZ00wcMhnycpLE+DHbGd+uPqsEaVulbfwCgBMg5oArrmUCcQCzwKcis1GeFzCoUkXqQHgMqVOKDZ4CuIUbASkjLccb6sdn9VpG2bSHTgEaEfiSjh2eJQ/rU2K8CjCIzyK8CjCIzyK8Kh49Y8AAwDaQDOHA3smJwAAAABJRU5ErkJggg==" alt="sim card" /> 
+        <div class="ft16 ptb30">
+         手机号：
+         <span class="maskedPhone"></span>
+        </div> 
+        <p class="agreeTip"><i class="icon_select icon_true"></i>同意小米的 <a href="http://www.miui.com/res/doc/eula/cn.html" class="agreement_link">用户协议</a>和<a href="http://www.miui.com/res/doc/privacy/cn.html" class="privacy_link"> 隐私政策 </a></p> 
+        <div class="err_tip"> 
+         <div class="dis_box">
+          <em class="icon_error"></em>
+          <span class="error-con"></span>
+         </div> 
+        </div> 
+        <div class="fixed_bot"> 
+         <a href="javascript:;" class="btnadpt btn_orange ok_btn">一键注册</a> 
+        </div> 
+        <p class="light-gray acq_tips" style="display: none;"></p> 
+        <p class="tac ptb30"> <a href="javascript:;" class="no_btn ft16 blue">登录其他帐号</a> </p> 
+       </div> 
+       <!-- 回收号确认 --> 
+       <div id="ac-confirm" style="display: none;" class="tac"> 
+        <div class="confirm_box"> 
+         <div class="single_imgarea"> 
+          <div class="na-img-area"> 
+           <div class="na-img-bg-area us-portraitUrl"></div> 
+          </div> 
+          <p class="us_name us-userName">用户名：<span class="usernameShow"></span></p> 
+          <p class="user_id">小米ID：<span class="useridShow"></span></p> 
+         </div> 
+         <div class="box_tips">
+          这个帐号是你的吗？
+         </div> 
+        </div> 
+        <p class="agreeTip"><i class="icon_select icon_true"></i>同意小米的 <a href="http://www.miui.com/res/doc/eula/cn.html" class="agreement_link">用户协议</a>和<a href="http://www.miui.com/res/doc/privacy/cn.html" class="privacy_link"> 隐私政策 </a></p> 
+        <div class="err_tip"> 
+         <div class="dis_box">
+          <em class="icon_error"></em>
+          <span class="error-con"></span>
+         </div> 
+        </div> 
+        <div class="fixed_bot"> 
+         <a href="javascript:;" class="btnadpt btn_orange ok_btn">是我的，立即登录</a> 
+         <a href="javascript:;" class="btnadpt btn_gray no_btn">不是，注册新帐号</a> 
+        </div> 
+        <p class="light-gray acq_tips" style="display: none;"></p> 
+        <p class="ptb30"> <a href="javascript:;" class="back_btn ft16 blue">登录其他帐号</a> </p> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="custom_display_4" class="n-footer"> 
+   <div class="nf-link-area clearfix"> 
+    <ul class="lang-select-list"> 
+     <li><a href="javascript:void(0)" data-lang="zh_CN" class="lang-select-li current">简体</a>|</li> 
+     <li><a href="https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop&amp;_bannerBiz=mistore&amp;_qrsize=180&amp;_locale=zh_TW" data-lang="zh_TW" class="lang-select-li">繁体</a>|</li> 
+     <li><a href="https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Forder.mi.com%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Findex.html%26sign%3DMjM0MWU0NjBlOTU1YzY4NGQzOTc3MDk4N2M2MjQ5Y2ZiZTMxNTFlZQ%2C%2C&amp;sid=mi_eshop&amp;_bannerBiz=mistore&amp;_qrsize=180&amp;_locale=en" data-lang="en" class="lang-select-li">English</a>|</li> 
+     <li><a href="https://static.account.xiaomi.com/html/faq/faqList.html" target="_blank">常见问题</a></li> 
+    </ul> 
+   </div> 
+   <p class="nf-intro">小米公司版权所有-京ICP备10046444-<a class="beian-record-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img src="../static/index/login/images/ghs.png" /></span>京公网安备11010802020134号</a>-京ICP证110507号</p> 
+  </div> 
+  <style>
+﻿html,body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,ol,ul,li,a,span,caption,th,td,form,fieldset,legend,input,button,textarea,address{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%}ol,ul{list-style:none}li{list-style:none}fieldset,img{border:0}address,cite,dfn,em,var{font-style:normal}code,kbd,pre,samp{font-family:courier new,courier,monospace}input,button,textarea,select{font-size:100%}input,button,select,textarea{outline:none}textarea{resize:none}table{border-collapse:collapse;border-spacing:0;empty-cells:show;font-size:inherit}abbr[title]{border-bottom:1px dotted;cursor:help}a,a:hover{text-decoration:none}a,label,:focus{outline:0 none}a,img,input{border:0 none}s{font-style:normal;text-decoration:none}body{font-size:14px;font-family:arial,"Hiragino Sans GB", "Microsoft YaHei","微軟正黑體","儷黑 Pro", sans-serif}button,input,select,textarea{font-family:arial, "Hiragino Sans GB", "Microsoft YaHei",sans-serif}input::-moz-placeholder,textarea::-moz-placeholder{color:#3b3b3b;font-weight:normal}::-webkit-input-placeholder{color:#3b3b3b;font-weight:normal}input:-ms-input-placeholder{color:#3b3b3b;font-weight:normal}::-ms-clear{display:none}::-ms-reveal{display:none}.clearfix:after{display:block;content:"\20";height:0;clear:both;overflow:hidden;visibility:hidden}.clearfix{*zoom:1}input::-ms-clear{display:none}input::-ms-reveal{display:none}input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px white inset}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){a{background-color:transparent}}input{background:none;border:0 none}input[type="button"],input[type="submit"],input[type="reset"],a{-webkit-appearance:none;appearance:none}.fl{float:left}.fr{float:right}.nbg{background:none !important}.t_l{text-align:left}.t_c{text-align:center}.t_r{text-align:right}.c_b:before,.c_b:after{content:"";display:block}.c_b:after{clear:both}.c_b{zoom:1}.hidden,.hide{display:none}.hideimportant{display:none !important}.underline{text-decoration:underline}input[type=text]::-ms-clear,input[type=password]::-ms-reveal{display:none}input{color:#333}input:required,input:invalid{-moz-box-shadow:none;box-shadow:none}input::-moz-focus-inner{border:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;-moz-appearance:none;appearance:none;margin:0}input[type="number"]{-moz-appearance:textfield}html,body{height:100%}body{background:#f5f5f5;color:#757575}a{color:#757575}input{color:#333}::-webkit-input-placeholder{color:#9d9d9d}input:-ms-input-placeholder{color:#9d9d9d}.ercode,.icon_type5,.icon_arrow_down,.icon_error{background:url(https://account.xiaomi.com/static/res/f234829/account-static/respassport/acc-2014/img/sprite_login.gif) no-repeat}.btn_turn,.btn_mod_close,.icon_code_close{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAABGdBTUEAALGPC/xhBQAAAJxJREFUGBl1kLEOgkAQRA9pVUKihTR2FBREPwD/v6ehsDYhoTBWVsAb5AguMMm7I7sz3O0FzrkYOnjDlg409ruxm7MrtKaI4g30w0EyPsAGZCzgBH+ygYUxnNm/fH8gAx2ZQgUNDJqbVVBAxjs84QWT/IC+oKOvUEICdgZKP9k72hm8z1mjbywCRzqrzzMmFFD/HLBcoIUatqR3jnolNxObIsWRIwAAAABJRU5ErkJggg==) no-repeat center center}.icon_select.icon_true{background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAk5JREFUOBGVlctrU1EQxn/3tqZVKxQRCirdWRRX4sKuK7j1GYoLN4JYULT6FwiuFSOiEf+A+iq6FwV3uhIXWqmugigVKT5iTUKa6zfn5CQ3MUnTgXPPa+Y7c+bMNzeihyRHGGWAcSJGnFpCkVUK0VN+dDOLOm0kx9lNhhmBTartFODWOuCyAD+rvaJCPprnQ7t9C2ACMdPMCuys2oRmCKxVpERNrcKi2l2Nb0WPNKpLQz3JCiLmHkOcYJhNQaFnX1YIysxzn9MCsmOcD94m5ryAjvUNZlZDim2GrLuVR/GAyVH2uGuawnrFbqMQubjL1qJkJ81occKN1/rEg5Bpi4jZ2iNKYpcagxxIXb475OgOuPIern6UpYCDmFvKCMOKXZ751Ajbvo8GWudbxuDyCxjbBd8+6QmqzX17WsNQzsbybHMjz4LK/izc/AVTF/zKyDaBPReYolJ4A7cPB81mb7kqAqT8bu6xIiJs2AjTOeWhPJ08Bdv3wpd3kDsEf7sSRf7V+EPCcgoOFp7B3Dm/lL0G4/tgaRGuH4Ti9xbVxsQwRM3YuOnoZAxIy8s78PCSVrTx86vApuD3UlqjOTZbT8mCY0pykhvKposK6v+SUWpWS62P0K61qoUVctEcsz4PS+KkcbOTVIq9wczG8zpvQwcYPWHBEb2kc9YrxmcViVB5vIcG8kDXLvNYTS71KeaAFQdVnGDRSBurFkmNM5R4K4X+y5ccCZXGQN2jBPTQu2IxLNBuBbbKa3mWd6EKRvW+I2DQafwCjE0mlrNr/AL+AbcOsj+c24+/AAAAAElFTkSuQmCC)}.icon_select{width:20px;height:20px;margin-top:-4px;margin-right:5px;display:inline-block;vertical-align:middle;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAcxJREFUOBGdVb1qAkEQ9vYwiBcwXiyuiOGKEJLaIoHUh/U9RSxS5Ql8BIsUpsgLHAlCGhEby1xhnZ9CvBDQQs5IvEMQNPMdrviz/twt6O7OzPfN7O7MnBTbMiqVylEikThljB3CbDKZDEej0bdpmr+bYJJIUavVLjKZTCGZTF6nUqmTeDyuwm48HruDweDH9/23Xq9XzufzHyL8XFYsFplt2/etVuuTQFOKaLo6IIMONrC1LOtgTkALmW+gyOVyT5qm3em6rlFUMUlaPwBk0KXT6WNZlm/I4Vk2m31tNBpTzhXM8NbpdP5WI9q1b7fbHrBLZPV6/RJH2AXepAcW9w5Shj8Kv0BHPcc6ygAWjwgsQ2ooinJF6RGFK8AAi4wAF0OeITVED7CvB2DBEeQsgRSeZ/sSiOzAgQII7lBkEFUGQg8VEJWA48CB0mSoTZQTpQTXhZ6BBQe4AnCz2SyhnKIOYMEBsuAOXdd97Ha7X6FDmwGARbNYwqN8UEZho0S5Lpbe/JWr1WqJPD3Tb7jkacvGcRyfgnih+UFoho4Db2HaF1reItl6fyItmoWqqrebGqzneXa/3y8bhvG+SIa1kJAb8U8A7ZWZzNv1CfgHv1r3E9DWv4gAAAAASUVORK5CYII=)}.wrapper{width:100%;min-height:100%;height:auto;display:-webkit-box;display:box;display:-moz-box;display:-o-box;display:-ms-box;-webkit-box-align:center;-moz-box-align:center;-o-box-align:center;box-align:center;-webkit-box-pack:center;-moz-box-pack:center;-o-box-pack:center;box-pack:center}.wrap{padding-bottom:80px;padding-top:100px \9}@media screen and (min-width: 0\0){.wrap{padding-top:100px}}.layout{background-color:#fff;width:854px;margin:0 auto 20px;position:relative;min-height:620px}.mainbox{padding-bottom:30px}.captcha_layout{min-height:700px}.ercode{width:68px;height:68px;position:absolute;right:0;top:0;opacity:0.3;filter:alpha(opacity=30)}.ercode:hover,.ercode:focus{opacity:1;filter:alpha(opacity=100)}.header_tit{padding:50px 0 22px}.milogo{width:49px;height:48px;margin:0 auto;display:block}.header_tit_txt{font-size:30px;color:#424242;font-weight:normal;padding-top:22px}.lgn_inputbg{position:relative}.login_area{width:358px;margin:0 auto;padding-bottom:20px}.labelbox{display:block;margin-bottom:14px;border:1px solid #e0e0e0}.labelbox input{height:22px;line-height:22px;padding:13px 16px 13px 14px;display:block}.placehld{width:326px;padding:13px 16px 13px 14px}.country_list{cursor:pointer;display:none;float:left}.country_regin{max-width:80px;overflow:hidden;white-space:nowrap;-webkit-text-overflow:ellipsis;-moz-text-overflow:ellipsis;-o-text-overflow:ellipsis;text-overflow:ellipsis}.item_account{float:left;width:326px}.pwd_panel{position:relative}.country_regin{margin-right:8px}.country_code{padding-right:12px;position:relative}.icon_arrow_down{width:8px;height:5px;position:absolute;top:8px;right:0;background-position:-19px -69px}.eye_panel{display:none}.divflex .item_account{width:270px}.turn_area{display:none;height:11px;padding:18px 0 18px 10px;float:left}.btn_turn{width:11px;height:11px;display:block}.turn_off{display:none}.add_regioncode .item_account{width:236px}.add_regioncode .country_list{height:22px;line-height:22px;padding:13px 10px 13px 0;margin-left:10px;color:#333;border-right:1px solid #e0e0e0;display:block;overflow:hidden;position:relative}.add_regioncode .country_list span{display:inline-block;vertical-align:middle}.add_regioncode .turn_area{display:block}.add_regioncode .animation{position:relative;-webkit-animation:fade-in ease-in-out .5s;animation-name:fade-in;animation-timing-function:ease-in-out;animation-duration:.5s}.input_normal{width:100%}.lgncode{padding-bottom:14px}.lgncode .chkcode_img{*vertical-align:top}.code_label{float:left;*float:none;*display:inline-block;width:220px;margin-bottom:0}.code_label .code{width:190px}.code_label .placehld{width:190px}.chkcode_img{margin-left:10px;cursor:pointer}.btns_bg{padding-top:10px}.btnadpt{width:100%;height:50px;line-height:50px;display:block;margin-bottom:14px;text-align:center;font-size:14px;color:#fff;cursor:pointer}.btn_orange{background-color:#ef5b00}.btn_sns_icontype{background:url(https://account.xiaomi.com/static/res/166d6dc/account-static/respassport/acc-2014/img/icons_type.png);width:18px;height:18px;margin-right:10px;display:inline-block;vertical-align:middle}.btn_facebook{background-color:#3a5897}.btn_qq{background-color:#0288d1}.btn_weibo{background-color:#d32f2f}.btn_alipay{background-color:#0ae}.btn_weixin{background-color:#00d20d}.icon_default_qq{background-position:-19px 0}.icon_default_weibo{background-position:-38px 0}.icon_default_alipay{background-position:-57px 0;width:25px}.icon_default_weixin{background-position:-84px 0;width:23px}.other_login_type{padding-top:50px}.oth_type_tit{border-top:1px solid #e0e0e0;padding-top:10px;padding-bottom:10px\9}.oth_type_txt{font-size:14px;color:#b0b0b0;margin:0 auto;text-align:center;width:100% \9}@media screen and (min-width: 0\0){.oth_type_tit{padding-bottom:0}.oth_type_txt{width:auto}}.oth_type_links{padding-top:10px;text-align:center}.icon_type{width:30px;height:30px;margin:0 12px;display:inline-block;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%;-webkit-filter:grayscale(100%);-moz-filter:grayscale(100%);-ms-filter:grayscale(100%);-o-filter:grayscale(100%);filter:grayscale(100%);filter:url(https://account.xiaomi.com/static/res/e5c6b4e/account-static/respassport/acc-2014/sass/gray.svg#grayscale)}.icon_type:hover{-webkit-filter:grayscale(0%);-moz-filter:grayscale(0%);-ms-filter:grayscale(0%);-o-filter:grayscale(0%);filter:grayscale(0%);filter:none}.icon_type .btn_sns_icontype{display:block;margin:4px auto 0}.icon_type .icon_default_alipay{margin-top:6px;margin-left:4px}.icon_type .icon_default_weixin{margin-top:6px}.other_panel{margin-top:-5px}.n_links_area{text-align:center;color:#e0e0e0}.n_links_area a{font-size:14px}.n_links_area a:hover{color:#ff6700}.n_links_area span{padding-left:5px}.sms_link{float:left;display:none}.sms_link .btn_gray{color:#ef5b00;border:0 none;height:auto;line-height:normal;margin:0}.zh_CN .sms_link,.zh_TW .sms_link,.en .sms_link{display:block}.zh_CN .n_links_area,.zh_TW .n_links_area,.en .n_links_area{float:right}.site_info{padding-top:10px}.site_info_txt{color:#ff6700}.site_info_link{padding:0 5px}.country-container{width:100%;background:#fff;border:1px solid #e8e8e8;position:absolute;left:0;top:61px;z-index:98;display:none}.btn_commom_cancel{display:none}.country-code{height:280px;overflow-x:hidden;overflow-y:auto}.country-code .header{background:#fcdecc;padding:0 10px;margin-bottom:6px;line-height:30px;color:#ef5b00}.country-code .record{padding:0 10px;line-height:39px;overflow:hidden;border-bottom:1px solid #e0e0e0;cursor:pointer}.country-code .record:hover{background:#eaeaea}.country-code .record span{height:39px;overflow:hidden}.country-code .record-country{float:left;max-width:74%;color:#000;cursor:pointer}.country-code .record-code{float:right;max-width:20%;color:#9d9d9d}.country-code .code_style1{background:#f2f6e9;border:1px solid #b7ce8b}.country-code .code_style2{background:#f8f2ec;border:1px solid #fac084}.country-code .code_style3{background:#f9eaeb;border:1px solid #fca1a7}.country-code .code_style4{background:#f2f2f2;border:1px solid #c9c9c9}.country-code .code_style5{background:#e1f6f6;border:1px solid #73bade}.navbar_panel{display:none}.countrycode-container-usual .header{display:none}.countrycode-container-usual .list{zoom:1;*padding-bottom:10px}.countrycode-container-usual .list:before,.countrycode-container-usual .list:after{content:"";display:block}.countrycode-container-usual .list:after{clear:both}.countrycode-container-usual .record{float:left;margin:0 0 10px 10px;padding:6px 10px;line-height:20px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}.countrycode-container-usual .record span{height:20px}.countrycode-container-usual .record:hover{background:none}.countrycode-container-usual .record-country{max-width:100%}.countrycode-container-usual .record-code{max-width:100%;display:none}.n-footer{height:80px;margin-top:-80px;text-align:center}.nf-intro{padding:10px}.nf-link-area{text-align:center}.nf-link-area li{display:inline-block;*display:inline;*zoom:1}.nf-link-area a{display:inline-block;*display:inline;*zoom:1;padding:0 10px;color:#757575}.nf-link-area a:hover,.nf-link-area a.current{color:#333}.faq_link a{padding:0 10px}.ercode_area{background-color:#fff;width:854px;margin:0 auto;display:none;position:relative;z-index:98}.ercode_box{width:600px;height:400px;position:absolute;left:50%;top:50%;margin-top:-200px;margin-left:-300px}.code_close{background-color:#bdbdbd;-webkit-border-radius:50%;-moz-border-radius:50%;-o-border-radius:50%;border-radius:50%;width:30px;height:30px;position:absolute;right:20px;top:20px}.icon_code_close{width:14px;height:14px;display:block;margin:8px auto 0;cursor:pointer}.code_hd{padding-bottom:50px;text-align:center}.code_tit{font-size:30px;color:#ff6700;font-weight:normal;padding-bottom:10px}.code_iframe{text-align:center}.ercode_container{background:#fff}.na-img-area{width:80px;height:80px;border:2px solid #e3e3e3;border-radius:50%;padding:4px;background:#fff;position:relative;z-index:4;margin:0 auto}.na-img-bg-area{width:100%;height:100%;border-radius:50%;overflow:hidden}.na-img-bg-area:empty{background:url(https://account.xiaomi.com/static/res/7c3e9b0/passport/acc-2014/img/n-avator-bg.png) 0 0 no-repeat}.na-img-area img{display:block;width:100%;height:100%;border-radius:50%}.single_imgarea{text-align:center;line-height:20px;font-size:14px;color:#333}.single_imgarea .us_name{padding-top:10px}.single_imgarea .user_id{padding-top:10px;color:#666}.single_imgarea,.confirm_con{line-height:20px;font-size:14px;color:#333}.confirm_con{padding-top:15px}.confirm_con .txt{padding-bottom:5px}@-moz-document url-prefix(){.add_regioncode{width:100%;-moz-box-sizing:border-box;box-sizing:border-box}}.msk{width:100%;height:100%;background:#000;position:absolute;left:0;top:0;display:none;opacity:0.4;filter:alpha(opacity=40)}.err_tip{margin-bottom:5px;line-height:20px;color:#f56700;display:none}.icon_error{background-position:0 -69px}.icon_error{width:14px;height:14px;margin:-1px 5px 0 0;overflow:hidden;display:inline-block;vertical-align:middle}.err_tip span{vertical-align:middle}.err_forbidden{padding:10px;border:1px solid #e0e0e0;line-height:1.5;background:#f5f5f5;color:#ff6700;display:none}.error_bg{border:1px solid #f56700 !important}@media only screen and (max-width: 850px){.layout{width:100%;min-width:400px;min-height:480px}.mainbox{padding-bottom:15px}.header_tit{padding:25px 0 0}.header_tit_txt{font-size:22px;padding-top:15px}.btns_bg{padding-top:10px}.oth_type_links{padding-top:5px}}@-webkit-keyframes fade-in{from{left:-100%}to{left:0}}@-moz-keyframes fade-in{from{left:-100%}to{left:0}}@-o-keyframes fade-in{from{left:-100%}to{left:0}}@keyframes fade-in{from{left:-100%}to{left:0}}#getSMSCode.disabled,#getSMSCode.sending{color:#999;cursor:default}#getSMSCode{cursor:pointer;color:#003AB5}.btn_gray{background:#fff;margin-top:10px;border:1px solid #ddd;color:#333}.code_panel{padding:15px 20px;color:#333;display:block;overflow:hidden;border-left:1px solid #e0e0e0;position:absolute;right:0;top:0;display:none}.ac-box{padding:80px 0 20px 0;margin:0 auto;width:400px}.chooseTips{padding:40px 0;font-size:16px;text-align:center}.box_tips{padding:40px 0;font-size:16px;text-align:center}.sms_login .country_list{cursor:default}.sms_login .btn_turn,.sms_login .eye_panel,.sms_login #manual_code,.sms_login .icon_arrow_down{display:none}.sms_login .pwd_panel input{width:210px}.code_label{border-right:1px solid #e0e0e0}.btnadpt.btn_orange.disabled{background-color:#ff936a;cursor:not-allowed}.btnadpt.btn_gray.disabled{color:#999;cursor:not-allowed}.tac{text-align:center}.ft16{font-size:16px}.ptb30{padding:30px 0}.blue{color:#32b5ff}@media screen and (-webkit-min-device-pixel-ratio: 0){.login_user,.pwd_panel{display:-webkit-box;display:box}.login_user input,.pwd_panel input{-webkit-box-flex:1;box-flex:1}.turn_area,.country_list,.item_account{float:none}.code_panel{position:static}}.agreeTip{margin-bottom:30px}.agreeTip .agreement_link,.agreeTip .privacy_link{font-weight:bold;text-decoration:underline}.search-code{padding:10px}.search-code-input{width:314px;height:22px;line-height:22px;padding:5px 10px 5px 10px;display:block;border:1px solid #e0e0e0}.search-mode .header,.search-mode .record{display:none}.search-mode .countrycode-container-usual .record,.search-mode .selected{display:block}.only_pwdlogin .ercode{display:none}.only_qrlogin .code_close,.only_qrlogin .code_hd{display:none}.only_qrlogin .ercode_box{width:auto;height:auto;position:static;margin:0;padding-top:100px\9}.only_qrlogin .ercode_pannel{width:100%;height:100%;display:-webkit-box;display:box;display:-moz-box;display:-o-box;display:-ms-box;-webkit-box-align:center;-moz-box-align:center;-o-box-align:center;box-align:center;-webkit-box-pack:center;-moz-box-pack:center;-o-box-pack:center;box-pack:center}@media screen and (min-width: 0\0){.only_qrlogin .ercode_box{padding-top:100px}}.security_Controller{display:none}.checkbox_area{cursor:pointer}.checkbox{vertical-align:text-top;margin-right:3px}.security-controller-modal{width:400px;height:300px;left:50%;top:50%;margin-top:-150px;margin-left:-200px}.security_controller_panel{padding:30px 0 0 25px;line-height:22px}.security_controller_panel h4{color:#a1a1a1;padding-bottom:30px}.security_controller_panel p{color:#333}.security_controller_panel .tip_msg{color:#ff6700;padding:10px 0 0 30px}.tip_btns{padding-top:30px;text-align:center}.btn_tip{min-width:100px;_width:100px;height:33px;margin:0 2px;padding:0 10px;line-height:33px;text-align:center;display:inline-block;vertical-align:middle;cursor:pointer;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}.btn_commom{background:#ff6700;border:1px solid #ff6700;color:#fff}.labelbox .security_controller_chk{width:320px;margin:2px;padding:11px 16px 11px 14px;border:1px solid #e0e0e0}.pwd-object{margin-bottom:14px}.nav_tabs_panel{display:none}.tabs_con{display:none}.tabs_con.now{display:block}.bgiframe{width:100%;height:100%;position:absolute;display:none}.bgiframe iframe{height:100%}.win_banner_mistore{background:#fff}.win_banner_mistore .lgnheader,.win_banner_mistore .ercode{display:none}.win_banner_mistore .n-footer{background:#fff;margin-top:100px;position:relative;z-index:4}.win_banner_mistore .wrapper{display:block;min-height:auto}.win_banner_mistore .wrap{padding-bottom:0;position:relative;padding-top:0 \9}@media screen and (min-width: 0\0){.win_banner_mistore .wrap{padding-top:0}}.win_banner_mistore .layout_panel,.win_banner_mistore .h_panel,.win_banner_mistore .login_banner{width:1130px;margin:0 auto}.win_banner_mistore .layout_panel{padding-top:130px}.win_banner_mistore .layout{width:410px;min-height:524px;margin-bottom:0;margin-right:0;font-size:14px;z-index:4}.win_banner_mistore .mainbox{padding-bottom:0}.win_banner_mistore .err_tip{color:#f56600}.win_banner_mistore .error_bg{border:1px solid #f56600 !important}.win_banner_mistore .login_area{width:348px;padding-bottom:0}.win_banner_mistore .labelbox input{width:306px}.win_banner_mistore .code_label{width:200px}.win_banner_mistore .code_label .code{width:170px}.win_banner_mistore .btn_orange{background-color:#f56600}.win_banner_mistore .lgncode{padding-bottom:0;margin-bottom:14px}.win_banner_mistore .h_panel .h_logo{width:200px;height:98px;background:url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat}.win_banner_mistore .login_banner_panel{background:#1e2f40;width:100%;min-height:588px;position:absolute;left:0;top:0}.win_banner_mistore .lbnr,.win_banner_mistore .rbnr{width:50%;height:100%;position:absolute}.win_banner_mistore .lbnr{background-color:#fef6eb;left:0}.win_banner_mistore .rbnr{background-color:#ef625b;left:50%}.win_banner_mistore .login_banner{height:588px;background:url(./images/banner.jpg) no-repeat top center;position:relative}.win_banner_mistore .bgiframe{display:block;z-index:3}.win_banner_mistore .oth_type_links{padding-top:3px}.win_banner_mistore .icon_type{margin:0 17px}.win_banner_mistore .loginbox{position:relative}.win_banner_mistore .other_login_type{padding-top:0;position:absolute;top:350px;width:100%}.win_banner_mistore .n_links_area{padding-top:0;color:#999}.win_banner_mistore .n_links_area a{color:#999}.win_banner_mistore .n_links_area a:hover{color:#f56600}.win_banner_mistore .oth_type_txt{color:#bbb}.win_banner_mistore .err_forbidden{margin-bottom:10px}.win_banner_mistore .search-code-input{width:294px}.win_banner_mistore .add_regioncode .item_account{width:212px}.win_banner_mistore .nav_tabs_panel{display:block}.win_banner_mistore .nav_tabs{padding:27px 0 24px;text-align:center;font-size:24px;color:#e0e0e0}.win_banner_mistore .nav_tabs a{color:#666}.win_banner_mistore .nav_tabs a:hover,.win_banner_mistore .nav_tabs a.now{color:#f56600}.win_banner_mistore .line{width:1px;height:24px;margin:0 35px 0 42px;border:1px solid #e0e0e0}.win_banner_mistore .tab_qrcon{text-align:center;padding-top:78px}.win_banner_mistore .custom_sub_txt{padding-top:14px;font-size:14px}.win_banner_mistore .custom_sub_txt span{padding:0 5px;color:#ff6700}.win_banner_youpin{background:#fff}.win_banner_youpin .lgnheader,.win_banner_youpin .ercode{display:none}.win_banner_youpin .n-footer{background:#fff;margin-top:100px;position:relative}.win_banner_youpin .wrapper{display:block;min-height:auto}.win_banner_youpin .wrap{padding-bottom:0;position:relative;padding-top:0 \9}@media screen and (min-width: 0\0){.win_banner_youpin .wrap{padding-top:0}}.win_banner_youpin .layout_panel,.win_banner_youpin .h_panel,.win_banner_youpin .login_banner{width:1130px;margin:0 auto}.win_banner_youpin .layout_panel{padding-top:188px}.win_banner_youpin .layout{width:400px;min-height:524px;margin-bottom:0;margin-right:30px;font-size:14px}.win_banner_youpin .mainbox{padding-bottom:0}.win_banner_youpin .err_tip{color:#f56600}.win_banner_youpin .error_bg{border:1px solid #f56600 !important}.win_banner_youpin .login_area{width:338px;padding-bottom:0;color:#845f3f}.win_banner_youpin .labelbox{border:0 none;border-bottom:1px solid #845f3f;margin-bottom:10px}.win_banner_youpin .labelbox input{width:306px;color:#845f3f;font-size:16px}.win_banner_youpin .code_label{width:200px}.win_banner_youpin .code_label .code{width:170px}.win_banner_youpin .btnadpt{font-size:18px;-webkit-border-radius:4px;-moz-border-radius:4px;-o-border-radius:4px;border-radius:4px}.win_banner_youpin .btn_orange{background-color:#845f3f}.win_banner_youpin .lgncode{padding-bottom:0;margin-bottom:14px}.win_banner_youpin .h_panel .h_logo{width:200px;height:98px;background:url(https://account.xiaomi.com/static/res/7f6f2f5/account-static/respassport/acc-2014/img/mistore_logo.png) no-repeat}.win_banner_youpin .login_banner_panel{background:#1e2f40;width:100%;min-height:588px;position:absolute;left:0;top:0}.win_banner_youpin .lbnr,.win_banner_youpin .rbnr{width:50%;height:100%;position:absolute}.win_banner_youpin .lbnr{background-color:#fef6eb;left:0}.win_banner_youpin .rbnr{background-color:#ef625b;left:50%}.win_banner_youpin .login_banner{height:588px;background:url(https://account.xiaomi.com/static/res/ab2708c/account-static/respassport/images/banner.jpg) no-repeat top center;position:relative}.win_banner_youpin .bgiframe{display:block}.win_banner_youpin .btns_bg{padding-bottom:3px;padding-top:33px}.win_banner_youpin .oth_type_links{padding-top:3px}.win_banner_youpin .icon_type{margin:0 17px}.win_banner_youpin .loginbox{position:relative}.win_banner_youpin .oth_type_tit{border-top:1px solid #845f3f}.win_banner_youpin .other_login_type{position:absolute;top:350px;width:100%}.win_banner_youpin .n_links_area{padding-top:0;color:#845f3f}.win_banner_youpin .n_links_area a{padding:0 9px 0 6px;color:#845f3f}.win_banner_youpin .oth_type_txt{color:#845f3f}.win_banner_youpin .err_forbidden{margin-bottom:10px}.win_banner_youpin .search-code-input{width:294px}.win_banner_youpin .add_regioncode .item_account{width:212px}.win_banner_youpin .nav_tabs_panel{display:block}.win_banner_youpin .nav_tabs{padding:27px 0 24px;text-align:center;font-size:34px;color:#845f3f}#username[disabled=disabled]{color:#999}
+/*# sourceMappingURL=login.css.map */
+</style> 
+  <script>
+;(function(){
+/*** 数据文件*/
+  var List=["usual","A", "B", "C", "D", "E", "F", "G", "H",
+            "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R",
+            "S", "T", "U", "V", "W", "X", "Y", "Z"
+  ];
+  var Data={
+    "usual":[
+        {"C":"中国","N":"+86","B":"CN"},
+        {"C":"中国台湾","N":"+886","B":"TW"},
+        {"C":"中国香港","N":"+852","B":"HK"},
+        {"C":"Brazil","N":"+55","B":"BR"},
+        {"C":"India","N":"+91","B":"IN"},
+        {"C":"Indonesia","N":"+62","B":"ID"},
+        {"C":"Malaysia","N":"+60","B":"MY"}],
+  "A": [{
+    "B": "AD",
+    "C": "Andorra",
+    "N": "+376"
+  }, {
+    "B": "AF",
+    "C": "Afghanistan",
+    "N": "+93"
+  }, {
+    "B": "AG",
+    "C": "Antigua and Barbuda",
+    "N": "+1"
+  }, {
+    "B": "AI",
+    "C": "Anguilla",
+    "N": "+1"
+  }, {
+    "B": "AL",
+    "C": "Albania",
+    "N": "+355"
+  }, {
+    "B": "AM",
+    "C": "Armenia",
+    "N": "+374"
+  }, {
+    "B": "AO",
+    "C": "Angola",
+    "N": "+244"
+  }, {
+    "B": "AR",
+    "C": "Argentina",
+    "N": "+54"
+  }, {
+    "B": "AS",
+    "C": "American Samoa",
+    "N": "+1"
+  }, {
+    "B": "AT",
+    "C": "Austria",
+    "N": "+43"
+  }, {
+    "B": "AU",
+    "C": "Australia",
+    "N": "+61"
+  }, {
+    "B": "AW",
+    "C": "Aruba",
+    "N": "+297"
+  }, {
+    "B": "AZ",
+    "C": "Azerbaijan",
+    "N": "+994"
+  }, {
+    "B": "DZ",
+    "C": "Algeria",
+    "N": "+213"
+  }],
+  "B": [{
+    "B": "BA",
+    "C": "Bosnia and Herzegovina",
+    "N": "+387"
+  }, {
+    "B": "BB",
+    "C": "Barbados",
+    "N": "+1"
+  }, {
+    "B": "BD",
+    "C": "Bangladesh",
+    "N": "+880"
+  }, {
+    "B": "BE",
+    "C": "Belgium",
+    "N": "+32"
+  }, {
+    "B": "BF",
+    "C": "Burkina Faso",
+    "N": "+226"
+  }, {
+    "B": "BG",
+    "C": "Bulgaria",
+    "N": "+359"
+  }, {
+    "B": "BH",
+    "C": "Bahrain",
+    "N": "+973"
+  }, {
+    "B": "BI",
+    "C": "Burundi",
+    "N": "+257"
+  }, {
+    "B": "BJ",
+    "C": "Benin",
+    "N": "+229"
+  }, {
+    "B": "BM",
+    "C": "Bermuda",
+    "N": "+1"
+  }, {
+    "B": "BN",
+    "C": "Brunei",
+    "N": "+673"
+  }, {
+    "B": "BO",
+    "C": "Bolivia",
+    "N": "+591"
+  }, {
+    "B": "BQ",
+    "C": "Bonaire, Sint Eustatius and Saba",
+    "N": "+599"
+  }, {
+    "B": "BR",
+    "C": "Brazil",
+    "N": "+55"
+  }, {
+    "B": "BS",
+    "C": "Bahamas",
+    "N": "+1"
+  }, {
+    "B": "BT",
+    "C": "Bhutan",
+    "N": "+975"
+  }, {
+    "B": "BW",
+    "C": "Botswana",
+    "N": "+267"
+  }, {
+    "B": "BY",
+    "C": "Belarus",
+    "N": "+375"
+  }, {
+    "B": "BZ",
+    "C": "Belize",
+    "N": "+501"
+  }, {
+    "B": "IO",
+    "C": "British Indian Ocean Territory",
+    "N": "+246"
+  }, {
+    "B": "VG",
+    "C": "British Virgin Islands",
+    "N": "+1"
+  }],
+  "C": [{
+    "B": "CA",
+    "C": "Canada",
+    "N": "+1"
+  }, {
+    "B": "CC",
+    "C": "Cocos Islands",
+    "N": "+61"
+  }, {
+    "B": "CF",
+    "C": "Central African Republic",
+    "N": "+236"
+  }, {
+    "B": "CG",
+    "C": "Congo",
+    "N": "+242"
+  }, {
+    "B": "CI",
+    "C": "Côte d'Ivoire",
+    "N": "+225"
+  }, {
+    "B": "CK",
+    "C": "Cook Islands",
+    "N": "+682"
+  }, {
+    "B": "CL",
+    "C": "Chile",
+    "N": "+56"
+  }, {
+    "B": "CM",
+    "C": "Cameroon",
+    "N": "+237"
+  }, {
+    "B": "CN",
+    "C": "China",
+    "N": "+86"
+  }, {
+    "B": "CO",
+    "C": "Colombia",
+    "N": "+57"
+  }, {
+    "B": "CR",
+    "C": "Costa Rica",
+    "N": "+506"
+  }, {
+    "B": "CU",
+    "C": "Cuba",
+    "N": "+53"
+  }, {
+    "B": "CV",
+    "C": "Cape Verde",
+    "N": "+238"
+  }, {
+    "B": "CW",
+    "C": "Curaçao",
+    "N": "+599"
+  }, {
+    "B": "CX",
+    "C": "Christmas Island",
+    "N": "+61"
+  }, {
+    "B": "CY",
+    "C": "Cyprus",
+    "N": "+357"
+  }, {
+    "B": "CZ",
+    "C": "Czech Republic",
+    "N": "+420"
+  }, {
+    "B": "HR",
+    "C": "Croatia",
+    "N": "+385"
+  }, {
+    "B": "KH",
+    "C": "Cambodia",
+    "N": "+855"
+  }, {
+    "B": "KM",
+    "C": "Comoros",
+    "N": "+269"
+  }, {
+    "B": "KY",
+    "C": "Cayman Islands",
+    "N": "+1"
+  }, {
+    "B": "TD",
+    "C": "Chad",
+    "N": "+235"
+  }],
+  "D": [{
+    "B": "DJ",
+    "C": "Djibouti",
+    "N": "+253"
+  }, {
+    "B": "DK",
+    "C": "Denmark",
+    "N": "+45"
+  }, {
+    "B": "DM",
+    "C": "Dominica",
+    "N": "+1"
+  }, {
+    "B": "DO",
+    "C": "Dominican Republic",
+    "N": "+1"
+  }],
+  "E": [{
+    "B": "EC",
+    "C": "Ecuador",
+    "N": "+593"
+  }, {
+    "B": "EE",
+    "C": "Estonia",
+    "N": "+372"
+  }, {
+    "B": "EG",
+    "C": "Egypt",
+    "N": "+20"
+  }, {
+    "B": "ER",
+    "C": "Eritrea",
+    "N": "+291"
+  }, {
+    "B": "ET",
+    "C": "Ethiopia",
+    "N": "+251"
+  }, {
+    "B": "GQ",
+    "C": "Equatorial Guinea",
+    "N": "+240"
+  }, {
+    "B": "SV",
+    "C": "El Salvador",
+    "N": "+503"
+  }],
+  "F": [{
+    "B": "FI",
+    "C": "Finland",
+    "N": "+358"
+  }, {
+    "B": "FJ",
+    "C": "Fiji",
+    "N": "+679"
+  }, {
+    "B": "FK",
+    "C": "Falkland Islands",
+    "N": "+5+"
+  }, {
+    "B": "FO",
+    "C": "Faroe Islands",
+    "N": "+298"
+  }, {
+    "B": "FR",
+    "C": "France",
+    "N": "+33"
+  }, {
+    "B": "GF",
+    "C": "French Guiana",
+    "N": "+594"
+  }, {
+    "B": "PF",
+    "C": "French Polynesia",
+    "N": "+689"
+  }],
+  "G": [{
+    "B": "DE",
+    "C": "Germany",
+    "N": "+49"
+  }, {
+    "B": "GA",
+    "C": "Gabon",
+    "N": "+241"
+  }, {
+    "B": "GD",
+    "C": "Grenada",
+    "N": "+1"
+  }, {
+    "B": "GE",
+    "C": "Georgia",
+    "N": "+995"
+  }, {
+    "B": "GG",
+    "C": "Guernsey",
+    "N": "+44"
+  }, {
+    "B": "GH",
+    "C": "Ghana",
+    "N": "+233"
+  }, {
+    "B": "GI",
+    "C": "Gibraltar",
+    "N": "+350"
+  }, {
+    "B": "GL",
+    "C": "Greenland",
+    "N": "+299"
+  }, {
+    "B": "GM",
+    "C": "Gambia",
+    "N": "+220"
+  }, {
+    "B": "GN",
+    "C": "Guinea",
+    "N": "+224"
+  }, {
+    "B": "GP",
+    "C": "Guadeloupe",
+    "N": "+590"
+  }, {
+    "B": "GR",
+    "C": "Greece",
+    "N": "+30"
+  }, {
+    "B": "GT",
+    "C": "Guatemala",
+    "N": "+502"
+  }, {
+    "B": "GU",
+    "C": "Guam",
+    "N": "+1"
+  }, {
+    "B": "GW",
+    "C": "Guinea-Bissau",
+    "N": "+245"
+  }, {
+    "B": "GY",
+    "C": "Guyana",
+    "N": "+592"
+  }],
+  "H": [{
+    "B": "HK",
+    "C": "Hong Kong",
+    "N": "+852"
+  }, {
+    "B": "HN",
+    "C": "Honduras",
+    "N": "+504"
+  }, {
+    "B": "HT",
+    "C": "Haiti",
+    "N": "+509"
+  }, {
+    "B": "HU",
+    "C": "Hungary",
+    "N": "+36"
+  }],
+  "I": [{
+    "B": "ID",
+    "C": "Indonesia",
+    "N": "+62"
+  }, {
+    "B": "IE",
+    "C": "Ireland",
+    "N": "+353"
+  }, {
+    "B": "IL",
+    "C": "Israel",
+    "N": "+972"
+  }, {
+    "B": "IM",
+    "C": "Isle Of Man",
+    "N": "+44"
+  }, {
+    "B": "IN",
+    "C": "India",
+    "N": "+91"
+  }, {
+    "B": "IQ",
+    "C": "Iraq",
+    "N": "+964"
+  }, {
+    "B": "IR",
+    "C": "Iran",
+    "N": "+98"
+  }, {
+    "B": "IS",
+    "C": "Iceland",
+    "N": "+354"
+  }, {
+    "B": "IT",
+    "C": "Italy",
+    "N": "+39"
+  }],
+  "J": [{
+    "B": "JE",
+    "C": "Jersey",
+    "N": "+44"
+  }, {
+    "B": "JM",
+    "C": "Jamaica",
+    "N": "+1"
+  }, {
+    "B": "JO",
+    "C": "Jordan",
+    "N": "+962"
+  }, {
+    "B": "JP",
+    "C": "Japan",
+    "N": "+81"
+  }],
+  "K": [{
+    "B": "KE",
+    "C": "Kenya",
+    "N": "+254"
+  }, {
+    "B": "KG",
+    "C": "Kyrgyzstan",
+    "N": "+996"
+  }, {
+    "B": "KI",
+    "C": "Kiribati",
+    "N": "+686"
+  }, {
+    "B": "KW",
+    "C": "Kuwait",
+    "N": "+965"
+  }, {
+    "B": "KZ",
+    "C": "Kazakhstan",
+    "N": "+7"
+  }],
+  "L": [{
+    "B": "LA",
+    "C": "Laos",
+    "N": "+856"
+  }, {
+    "B": "LB",
+    "C": "Lebanon",
+    "N": "+961"
+  }, {
+    "B": "LI",
+    "C": "Liechtenstein",
+    "N": "+423"
+  }, {
+    "B": "LR",
+    "C": "Liberia",
+    "N": "+231"
+  }, {
+    "B": "LS",
+    "C": "Lesotho",
+    "N": "+266"
+  }, {
+    "B": "LT",
+    "C": "Lithuania",
+    "N": "+370"
+  }, {
+    "B": "LU",
+    "C": "Luxembourg",
+    "N": "+352"
+  }, {
+    "B": "LV",
+    "C": "Latvia",
+    "N": "+371"
+  }, {
+    "B": "LY",
+    "C": "Libya",
+    "N": "+218"
+  }],
+  "M": [{
+    "B": "FM",
+    "C": "Micronesia",
+    "N": "+691"
+  }, {
+    "B": "MA",
+    "C": "Morocco",
+    "N": "+212"
+  }, {
+    "B": "MC",
+    "C": "Monaco",
+    "N": "+377"
+  }, {
+    "B": "MD",
+    "C": "Moldova",
+    "N": "+373"
+  }, {
+    "B": "ME",
+    "C": "Montenegro",
+    "N": "+382"
+  }, {
+    "B": "MG",
+    "C": "Madagascar",
+    "N": "+261"
+  }, {
+    "B": "MH",
+    "C": "Marshall Islands",
+    "N": "+692"
+  }, {
+    "B": "MK",
+    "C": "Macedonia",
+    "N": "+389"
+  }, {
+    "B": "ML",
+    "C": "Mali",
+    "N": "+223"
+  }, {
+    "B": "MM",
+    "C": "Myanmar",
+    "N": "+95"
+  }, {
+    "B": "MN",
+    "C": "Mongolia",
+    "N": "+976"
+  }, {
+    "B": "MO",
+    "C": "Macao",
+    "N": "+853"
+  }, {
+    "B": "MQ",
+    "C": "Martinique",
+    "N": "+596"
+  }, {
+    "B": "MR",
+    "C": "Mauritania",
+    "N": "+222"
+  }, {
+    "B": "MS",
+    "C": "Montserrat",
+    "N": "+1"
+  }, {
+    "B": "MT",
+    "C": "Malta",
+    "N": "+356"
+  }, {
+    "B": "MU",
+    "C": "Mauritius",
+    "N": "+230"
+  }, {
+    "B": "MV",
+    "C": "Maldives",
+    "N": "+960"
+  }, {
+    "B": "MW",
+    "C": "Malawi",
+    "N": "+265"
+  }, {
+    "B": "MX",
+    "C": "Mexico",
+    "N": "+52"
+  }, {
+    "B": "MY",
+    "C": "Malaysia",
+    "N": "+60"
+  }, {
+    "B": "MZ",
+    "C": "Mozambique",
+    "N": "+258"
+  }, {
+    "B": "YT",
+    "C": "Mayotte",
+    "N": "+262"
+  }],
+  "N": [{
+    "B": "KP",
+    "C": "North Korea",
+    "N": "+850"
+  }, {
+    "B": "MP",
+    "C": "Northern Mariana Islands",
+    "N": "+1"
+  }, {
+    "B": "NA",
+    "C": "Namibia",
+    "N": "+264"
+  }, {
+    "B": "NC",
+    "C": "New Caledonia",
+    "N": "+687"
+  }, {
+    "B": "NE",
+    "C": "Niger",
+    "N": "+227"
+  }, {
+    "B": "NF",
+    "C": "Norfolk Island",
+    "N": "+672"
+  }, {
+    "B": "NG",
+    "C": "Nigeria",
+    "N": "+234"
+  }, {
+    "B": "NI",
+    "C": "Nicaragua",
+    "N": "+505"
+  }, {
+    "B": "NL",
+    "C": "Netherlands",
+    "N": "+31"
+  }, {
+    "B": "NO",
+    "C": "Norway",
+    "N": "+47"
+  }, {
+    "B": "NP",
+    "C": "Nepal",
+    "N": "+977"
+  }, {
+    "B": "NR",
+    "C": "Nauru",
+    "N": "+674"
+  }, {
+    "B": "NU",
+    "C": "Niue",
+    "N": "+683"
+  }, {
+    "B": "NZ",
+    "C": "New Zealand",
+    "N": "+64"
+  }],
+  "O": [{
+    "B": "OM",
+    "C": "Oman",
+    "N": "+968"
+  }],
+  "P": [{
+    "B": "PA",
+    "C": "Panama",
+    "N": "+507"
+  }, {
+    "B": "PE",
+    "C": "Peru",
+    "N": "+51"
+  }, {
+    "B": "PG",
+    "C": "Papua New Guinea",
+    "N": "+675"
+  }, {
+    "B": "PH",
+    "C": "Philippines",
+    "N": "+63"
+  }, {
+    "B": "PK",
+    "C": "Pakistan",
+    "N": "+92"
+  }, {
+    "B": "PL",
+    "C": "Poland",
+    "N": "+48"
+  }, {
+    "B": "PR",
+    "C": "Puerto Rico",
+    "N": "+1"
+  }, {
+    "B": "PS",
+    "C": "Palestine",
+    "N": "+970"
+  }, {
+    "B": "PT",
+    "C": "Portugal",
+    "N": "+351"
+  }, {
+    "B": "PW",
+    "C": "Palau",
+    "N": "+680"
+  }, {
+    "B": "PY",
+    "C": "Paraguay",
+    "N": "+595"
+  }],
+  "Q": [{
+    "B": "QA",
+    "C": "Qatar",
+    "N": "+974"
+  }],
+  "R": [{
+    "B": "RE",
+    "C": "Reunion",
+    "N": "+262"
+  }, {
+    "B": "RO",
+    "C": "Romania",
+    "N": "+40"
+  }, {
+    "B": "RU",
+    "C": "Russia",
+    "N": "+7"
+  }, {
+    "B": "RW",
+    "C": "Rwanda",
+    "N": "+250"
+  }],
+  "S": [{
+    "B": "BL",
+    "C": "Saint Barthélemy",
+    "N": "+590"
+  }, {
+    "B": "CH",
+    "C": "Switzerland",
+    "N": "+41"
+  }, {
+    "B": "ES",
+    "C": "Spain",
+    "N": "+34"
+  }, {
+    "B": "KN",
+    "C": "Saint Kitts And Nevis",
+    "N": "+1"
+  }, {
+    "B": "KR",
+    "C": "South Korea",
+    "N": "+82"
+  }, {
+    "B": "LC",
+    "C": "Saint Lucia",
+    "N": "+1"
+  }, {
+    "B": "LK",
+    "C": "Sri Lanka",
+    "N": "+94"
+  }, {
+    "B": "MF",
+    "C": "Saint Martin",
+    "N": "+590"
+  }, {
+    "B": "PM",
+    "C": "Saint Pierre And Miquelon",
+    "N": "+508"
+  }, {
+    "B": "RS",
+    "C": "Serbia",
+    "N": "+381"
+  }, {
+    "B": "SA",
+    "C": "Saudi Arabia",
+    "N": "+966"
+  }, {
+    "B": "SB",
+    "C": "Solomon Islands",
+    "N": "+677"
+  }, {
+    "B": "SC",
+    "C": "Seychelles",
+    "N": "+248"
+  }, {
+    "B": "SD",
+    "C": "Sudan",
+    "N": "+249"
+  }, {
+    "B": "SE",
+    "C": "Sweden",
+    "N": "+46"
+  }, {
+    "B": "SG",
+    "C": "Singapore",
+    "N": "+65"
+  }, {
+    "B": "SH",
+    "C": "Saint Helena",
+    "N": "+290"
+  }, {
+    "B": "SI",
+    "C": "Slovenia",
+    "N": "+386"
+  }, {
+    "B": "SJ",
+    "C": "Svalbard And Jan Mayen",
+    "N": "+47"
+  }, {
+    "B": "SK",
+    "C": "Slovakia",
+    "N": "+421"
+  }, {
+    "B": "SL",
+    "C": "Sierra Leone",
+    "N": "+232"
+  }, {
+    "B": "SM",
+    "C": "San Marino",
+    "N": "+378"
+  }, {
+    "B": "SN",
+    "C": "Senegal",
+    "N": "+221"
+  }, {
+    "B": "SO",
+    "C": "Somalia",
+    "N": "+252"
+  }, {
+    "B": "SR",
+    "C": "Suriname",
+    "N": "+597"
+  }, {
+    "B": "ST",
+    "C": "Sao Tome And Principe",
+    "N": "+239"
+  }, {
+    "B": "SX",
+    "C": "Sint Maarten (Dutch part)",
+    "N": "+1"
+  }, {
+    "B": "SY",
+    "C": "Syria",
+    "N": "+963"
+  }, {
+    "B": "SZ",
+    "C": "Swaziland",
+    "N": "+268"
+  }, {
+    "B": "VC",
+    "C": "Saint Vincent And The Grenadines",
+    "N": "+1"
+  }, {
+    "B": "WS",
+    "C": "Samoa",
+    "N": "+685"
+  }, {
+    "B": "ZA",
+    "C": "South Africa",
+    "N": "+27"
+  }],
+  "T": [{
+    "B": "CD",
+    "C": "The Democratic Republic Of Congo",
+    "N": "+243"
+  }, {
+    "B": "TC",
+    "C": "Turks And Caicos Islands",
+    "N": "+1"
+  }, {
+    "B": "TG",
+    "C": "Togo",
+    "N": "+228"
+  }, {
+    "B": "TH",
+    "C": "Thailand",
+    "N": "+66"
+  }, {
+    "B": "TJ",
+    "C": "Tajikistan",
+    "N": "+992"
+  }, {
+    "B": "TK",
+    "C": "Tokelau",
+    "N": "+690"
+  }, {
+    "B": "TL",
+    "C": "Timor-Leste",
+    "N": "+670"
+  }, {
+    "B": "TM",
+    "C": "Turkmenistan",
+    "N": "+993"
+  }, {
+    "B": "TN",
+    "C": "Tunisia",
+    "N": "+216"
+  }, {
+    "B": "TO",
+    "C": "Tonga",
+    "N": "+676"
+  }, {
+    "B": "TR",
+    "C": "Turkey",
+    "N": "+90"
+  }, {
+    "B": "TT",
+    "C": "Trinidad and Tobago",
+    "N": "+1"
+  }, {
+    "B": "TV",
+    "C": "Tuvalu",
+    "N": "+688"
+  }, {
+    "B": "TW",
+    "C": "Taiwan",
+    "N": "+886"
+  }, {
+    "B": "TZ",
+    "C": "Tanzania",
+    "N": "+255"
+  }],
+  "U": [{
+    "B": "AE",
+    "C": "United Arab Emirates",
+    "N": "+971"
+  }, {
+    "B": "GB",
+    "C": "United Kingdom",
+    "N": "+44"
+  }, {
+    "B": "UA",
+    "C": "Ukraine",
+    "N": "+380"
+  }, {
+    "B": "UG",
+    "C": "Uganda",
+    "N": "+256"
+  }, {
+    "B": "US",
+    "C": "United States",
+    "N": "+1"
+  }, {
+    "B": "UY",
+    "C": "Uruguay",
+    "N": "+598"
+  }, {
+    "B": "UZ",
+    "C": "Uzbekistan",
+    "N": "+998"
+  }, {
+    "B": "VI",
+    "C": "U.S. Virgin Islands",
+    "N": "+1"
+  }],
+  "V": [{
+    "B": "VA",
+    "C": "Vatican",
+    "N": "+379"
+  }, {
+    "B": "VE",
+    "C": "Venezuela",
+    "N": "+58"
+  }, {
+    "B": "VN",
+    "C": "Vietnam",
+    "N": "+84"
+  }, {
+    "B": "VU",
+    "C": "Vanuatu",
+    "N": "+678"
+  }],
+  "W": [{
+    "B": "EH",
+    "C": "Western Sahara",
+    "N": "+212"
+  }, {
+    "B": "WF",
+    "C": "Wallis And Futuna",
+    "N": "+681"
+  }],
+  "Y": [{
+    "B": "YE",
+    "C": "Yemen",
+    "N": "+967"
+  }],
+  "Z": [{
+    "B": "ZM",
+    "C": "Zambia",
+    "N": "+260"
+  }, {
+    "B": "ZW",
+    "C": "Zimbabwe",
+    "N": "+263"
+  }]
+  };
+  /*海外版的中国台湾改为台湾，中国香港改为香港*/
+  if(!!JSP_VAR){
+    if(!!JSP_VAR.dataCenter&&(JSP_VAR.dataCenter==='sgp')){
+      Data.usual['1'].C="台灣";
+      Data.usual['2'].C="香港";
+    }
+    var regionArr=['zh_CN','zh_TW','en'];
+    var uLocal=JSP_VAR.locale;
+    if(uLocal.indexOf('zh')===0){
+      uLocal=(uLocal==='zh_CN') ? 'zh_CN' : 'zh_TW';
+    }
+    if(!inArray(regionArr,uLocal)){
+      Data.usual=[
+        {"C":"Brazil","N":"+55","B":"BR"},
+        {"C":"India","N":"+91","B":"IN"},
+        {"C":"Indonesia","N":"+62","B":"ID"},
+        {"C":"Malaysia","N":"+60","B":"MY"}
+      ];
+    }
+  }
+/*** 数据文件结束***/
+/*** 导出方法 ***/
+  function getAll(conf,showCode,hideCancelBtn){
+    var html=["<div class='country-code'>"];
+    var tmp,code;
+    for(var n,tn,i=0;n=List[i++];){
+      tmp=Data[n];
+      tn="";
+      if(conf && (n in conf) ){
+        tn=conf[n];
+      }
+      if(tmp){
+        html.push("<div class='container countrycode-container-"+n+"'>"+
+                    "<div class='header'>"+(tn || n)+"</div>"
+                 );
+        html.push("<ul class='list'>")
+        for(var p,k=0;p=tmp[k++];){
+          code=showCode?(p.N+"").replace(/^0+/,function(){return "+"}):"";
+          html.push("<li class='record clearfix'>"+
+                      "<span class='record-country' data-code='"+code+"' data-brief='"+p.B+"'>"+p.C+"</span>"+
+                      "<span class='record-code'>"+code+"</span>"+
+                    "</li>");
+        }
+        html.push("</ul></div>");
+      }
+    }
+    var cancelHtml=cancelStr='';
+    cancelStr=(!!JSP_VAR&&!!JSP_VAR.cancel) ? JSP_VAR.cancel : 'Cancel';
+    !!hideCancelBtn?cancelHtml='':cancelHtml='<div class="cancel_panel">'+
+                          '<div class="cancel_box">'+
+                            '<a class="btnadpt bg_white btn-cancel" href="javascript:void(0);">'+cancelStr+'</a>'+
+                          '</div>'+
+                        '</div>';
+    html.push('</div>');
+    html.push(cancelHtml);
+    html.push('<div class="navbar_panel"><div class="navbar"><a to="usual">#</a>');
+    for(var j=0;j<26;j++){
+      var charCode=String.fromCharCode(65+j);
+      html.push('<a to="'+charCode+'">'+charCode+'</a>');
+    }
+    html.push('</div></div>');
+    return html.join("");
+  }
+  function inArray(arr,item){
+    for(var i=0,len=arr.length;i<len;i++){
+      if(arr[i]===item){
+        return true;
+      }
+    }
+    return false;
+  }
+  function each(cb,once){
+    var tmp;
+    if(cb){
+      var n;
+      var i= (once?1:0);
+      //A-Z是全量
+      for(;n=List[i++];){
+        tmp=Data[n];
+        if(tmp){
+          for(var p,k=0;p=tmp[k];k++){
+            if( cb(n,p)===true ){
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+  function getRecordByBrief(brief){
+    var result;
+    each(function(index,data){
+      if( (brief+"").toUpperCase() === data.B ){
+        result=result || data;
+        return true;
+      }
+    });
+    return result;
+  }
+  function getRecordByCode(code){
+    var result;
+    each(function(index,data){
+        code=(code+"").replace(/^0+/,"").replace(/^\+/,"");
+      var _code=(data.N+"").replace(/^0+/,"").replace(/^\+/,"");
+      if( code===_code ){
+        result=data;
+      }
+    });
+    return result;
+  }
+  function getRecordByCountry(country){
+    var result;
+    each(function(index,data){
+      if( (country+"").toLowerCase() === data.C.toLowerCase() ){
+        result=data;
+        return true;
+      }
+    });
+    return result;
+  }
+  function search(key){
+    var result=getRecordByBrief(key) || getRecordByCode(key) || getRecordByCountry(key);
+    return result;
+  }
+  function searchLike(name){
+    var result=[];
+    name=(name+"").replace(/^\+/,"");
+    if(name){
+      var tmp=search(name);
+      tmp && result.push(tmp);
+        //去掉+号
+      each(function(index,data){
+        if( data.C.toLowerCase().indexOf( name )!==-1 ){
+          result.push( data );
+        }else if( (data.N+"").indexOf( name )!==-1 ){
+          result.push( data );
+        }
+      });
+    }
+    return result;
+  }
+  function searchLikeData(name){
+    var result=[];
+    //去掉+号
+    name=(name+"").replace(/^\+/,"");
+    if(name){
+      var tmp=search(name);
+      tmp && result.push(tmp);
+        
+      each(function(index,data){
+        if( new RegExp("^"+name,"i").test( data.C.toLowerCase() ) ){
+          result.push( data );
+        }else if( new RegExp("^"+name).test( data.N.replace(/^\+/,"") ) ){
+          result.push( data );
+        }
+      });
+    }
+    return result;
+  }
+  
+  
+  function addUsual(data){
+    if(data.B && data.C && data.N && !inUsual(data)){
+      Data['usual'] && Data['usual'].unshift(data);
+    }
+  }
+  function inUsual(data){
+    for(var i=0,tmp;tmp=Data['usual'][i++];){
+      if(tmp.N === data.N || data.B===tmp.B){
+        return true;
+      }
+    }
+    return false;
+  }
+  window.RegionsCode={
+    getAll:getAll,
+    getData:function(){
+      return {
+        list:List,
+        data:Data
+      }
+    },
+    getByBrief:getRecordByBrief,
+    getByCode:getRecordByCode,
+    getByCountry:getRecordByCountry,
+    search:search,
+    searchLike:searchLike,
+    searchLikeData:searchLikeData,
+    addUsual:addUsual
+  }
+})();
+var Base64 = (function() {
+
+    // private property  
+    _keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+
+    // public method for encoding  
+    var encode = function(input) {
+        var output = "";
+        var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+        var i = 0;
+        input = _utf8_encode(input);
+        while (i < input.length) {
+            chr1 = input.charCodeAt(i++);
+            chr2 = input.charCodeAt(i++);
+            chr3 = input.charCodeAt(i++);
+            enc1 = chr1 >> 2;
+            enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+            enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+            enc4 = chr3 & 63;
+            if (isNaN(chr2)) {
+                enc3 = enc4 = 64;
+            } else if (isNaN(chr3)) {
+                enc4 = 64;
+            }
+            output = output +
+                _keyStr.charAt(enc1) + _keyStr.charAt(enc2) +
+                _keyStr.charAt(enc3) + _keyStr.charAt(enc4);
+        }
+        return output;
+    }
+
+    // public method for decoding  
+    var decode = function(input) {
+        var output = "";
+        var chr1, chr2, chr3;
+        var enc1, enc2, enc3, enc4;
+        var i = 0;
+        input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+        while (i < input.length) {
+            enc1 = _keyStr.indexOf(input.charAt(i++));
+            enc2 = _keyStr.indexOf(input.charAt(i++));
+            enc3 = _keyStr.indexOf(input.charAt(i++));
+            enc4 = _keyStr.indexOf(input.charAt(i++));
+            chr1 = (enc1 << 2) | (enc2 >> 4);
+            chr2 = ((enc2 & 15) << 4) | (enc3 >> 2);
+            chr3 = ((enc3 & 3) << 6) | enc4;
+            output = output + String.fromCharCode(chr1);
+            if (enc3 != 64) {
+                output = output + String.fromCharCode(chr2);
+            }
+            if (enc4 != 64) {
+                output = output + String.fromCharCode(chr3);
+            }
+        }
+        output = _utf8_decode(output);
+        return output;
+    }
+
+    // private method for UTF-8 encoding  
+    _utf8_encode = function(string) {
+        string = string.replace(/\r\n/g, "\n");
+        var utftext = "";
+        for (var n = 0; n < string.length; n++) {
+            var c = string.charCodeAt(n);
+            if (c < 128) {
+                utftext += String.fromCharCode(c);
+            } else if ((c > 127) && (c < 2048)) {
+                utftext += String.fromCharCode((c >> 6) | 192);
+                utftext += String.fromCharCode((c & 63) | 128);
+            } else {
+                utftext += String.fromCharCode((c >> 12) | 224);
+                utftext += String.fromCharCode(((c >> 6) & 63) | 128);
+                utftext += String.fromCharCode((c & 63) | 128);
+            }
+
+        }
+        return utftext;
+    }
+
+    // private method for UTF-8 decoding  
+    _utf8_decode = function(utftext) {
+        var string = "";
+        var i = 0;
+        var c = c1 = c2 = 0;
+        while (i < utftext.length) {
+            c = utftext.charCodeAt(i);
+            if (c < 128) {
+                string += String.fromCharCode(c);
+                i++;
+            } else if ((c > 191) && (c < 224)) {
+                c2 = utftext.charCodeAt(i + 1);
+                string += String.fromCharCode(((c & 31) << 6) | (c2 & 63));
+                i += 2;
+            } else {
+                c2 = utftext.charCodeAt(i + 1);
+                c3 = utftext.charCodeAt(i + 2);
+                string += String.fromCharCode(((c & 15) << 12) | ((c2 & 63) << 6) | (c3 & 63));
+                i += 3;
+            }
+        }
+        return string;
+    }
+    return {
+        encode:encode,
+        decode:decode
+    }
+})();/*
+CryptoJS v3.1.2
+code.google.com/p/crypto-js
+(c) 2009-2013 by Jeff Mott. All rights reserved.
+code.google.com/p/crypto-js/wiki/License
+*/
+var CryptoJS=CryptoJS||function(s,p){var m={},l=m.lib={},n=function(){},r=l.Base={extend:function(b){n.prototype=this;var h=new n;b&&h.mixIn(b);h.hasOwnProperty("init")||(h.init=function(){h.$super.init.apply(this,arguments)});h.init.prototype=h;h.$super=this;return h},create:function(){var b=this.extend();b.init.apply(b,arguments);return b},init:function(){},mixIn:function(b){for(var h in b)b.hasOwnProperty(h)&&(this[h]=b[h]);b.hasOwnProperty("toString")&&(this.toString=b.toString)},clone:function(){return this.init.prototype.extend(this)}},
+q=l.WordArray=r.extend({init:function(b,h){b=this.words=b||[];this.sigBytes=h!=p?h:4*b.length},toString:function(b){return(b||t).stringify(this)},concat:function(b){var h=this.words,a=b.words,j=this.sigBytes;b=b.sigBytes;this.clamp();if(j%4)for(var g=0;g<b;g++)h[j+g>>>2]|=(a[g>>>2]>>>24-8*(g%4)&255)<<24-8*((j+g)%4);else if(65535<a.length)for(g=0;g<b;g+=4)h[j+g>>>2]=a[g>>>2];else h.push.apply(h,a);this.sigBytes+=b;return this},clamp:function(){var b=this.words,h=this.sigBytes;b[h>>>2]&=4294967295<<
+32-8*(h%4);b.length=s.ceil(h/4)},clone:function(){var b=r.clone.call(this);b.words=this.words.slice(0);return b},random:function(b){for(var h=[],a=0;a<b;a+=4)h.push(4294967296*s.random()|0);return new q.init(h,b)}}),v=m.enc={},t=v.Hex={stringify:function(b){var a=b.words;b=b.sigBytes;for(var g=[],j=0;j<b;j++){var k=a[j>>>2]>>>24-8*(j%4)&255;g.push((k>>>4).toString(16));g.push((k&15).toString(16))}return g.join("")},parse:function(b){for(var a=b.length,g=[],j=0;j<a;j+=2)g[j>>>3]|=parseInt(b.substr(j,
+2),16)<<24-4*(j%8);return new q.init(g,a/2)}},a=v.Latin1={stringify:function(b){var a=b.words;b=b.sigBytes;for(var g=[],j=0;j<b;j++)g.push(String.fromCharCode(a[j>>>2]>>>24-8*(j%4)&255));return g.join("")},parse:function(b){for(var a=b.length,g=[],j=0;j<a;j++)g[j>>>2]|=(b.charCodeAt(j)&255)<<24-8*(j%4);return new q.init(g,a)}},u=v.Utf8={stringify:function(b){try{return decodeURIComponent(escape(a.stringify(b)))}catch(g){throw Error("Malformed UTF-8 data");}},parse:function(b){return a.parse(unescape(encodeURIComponent(b)))}},
+g=l.BufferedBlockAlgorithm=r.extend({reset:function(){this._data=new q.init;this._nDataBytes=0},_append:function(b){"string"==typeof b&&(b=u.parse(b));this._data.concat(b);this._nDataBytes+=b.sigBytes},_process:function(b){var a=this._data,g=a.words,j=a.sigBytes,k=this.blockSize,m=j/(4*k),m=b?s.ceil(m):s.max((m|0)-this._minBufferSize,0);b=m*k;j=s.min(4*b,j);if(b){for(var l=0;l<b;l+=k)this._doProcessBlock(g,l);l=g.splice(0,b);a.sigBytes-=j}return new q.init(l,j)},clone:function(){var b=r.clone.call(this);
+b._data=this._data.clone();return b},_minBufferSize:0});l.Hasher=g.extend({cfg:r.extend(),init:function(b){this.cfg=this.cfg.extend(b);this.reset()},reset:function(){g.reset.call(this);this._doReset()},update:function(b){this._append(b);this._process();return this},finalize:function(b){b&&this._append(b);return this._doFinalize()},blockSize:16,_createHelper:function(b){return function(a,g){return(new b.init(g)).finalize(a)}},_createHmacHelper:function(b){return function(a,g){return(new k.HMAC.init(b,
+g)).finalize(a)}}});var k=m.algo={};return m}(Math);
+(function(s){function p(a,k,b,h,l,j,m){a=a+(k&b|~k&h)+l+m;return(a<<j|a>>>32-j)+k}function m(a,k,b,h,l,j,m){a=a+(k&h|b&~h)+l+m;return(a<<j|a>>>32-j)+k}function l(a,k,b,h,l,j,m){a=a+(k^b^h)+l+m;return(a<<j|a>>>32-j)+k}function n(a,k,b,h,l,j,m){a=a+(b^(k|~h))+l+m;return(a<<j|a>>>32-j)+k}for(var r=CryptoJS,q=r.lib,v=q.WordArray,t=q.Hasher,q=r.algo,a=[],u=0;64>u;u++)a[u]=4294967296*s.abs(s.sin(u+1))|0;q=q.MD5=t.extend({_doReset:function(){this._hash=new v.init([1732584193,4023233417,2562383102,271733878])},
+_doProcessBlock:function(g,k){for(var b=0;16>b;b++){var h=k+b,w=g[h];g[h]=(w<<8|w>>>24)&16711935|(w<<24|w>>>8)&4278255360}var b=this._hash.words,h=g[k+0],w=g[k+1],j=g[k+2],q=g[k+3],r=g[k+4],s=g[k+5],t=g[k+6],u=g[k+7],v=g[k+8],x=g[k+9],y=g[k+10],z=g[k+11],A=g[k+12],B=g[k+13],C=g[k+14],D=g[k+15],c=b[0],d=b[1],e=b[2],f=b[3],c=p(c,d,e,f,h,7,a[0]),f=p(f,c,d,e,w,12,a[1]),e=p(e,f,c,d,j,17,a[2]),d=p(d,e,f,c,q,22,a[3]),c=p(c,d,e,f,r,7,a[4]),f=p(f,c,d,e,s,12,a[5]),e=p(e,f,c,d,t,17,a[6]),d=p(d,e,f,c,u,22,a[7]),
+c=p(c,d,e,f,v,7,a[8]),f=p(f,c,d,e,x,12,a[9]),e=p(e,f,c,d,y,17,a[10]),d=p(d,e,f,c,z,22,a[11]),c=p(c,d,e,f,A,7,a[12]),f=p(f,c,d,e,B,12,a[13]),e=p(e,f,c,d,C,17,a[14]),d=p(d,e,f,c,D,22,a[15]),c=m(c,d,e,f,w,5,a[16]),f=m(f,c,d,e,t,9,a[17]),e=m(e,f,c,d,z,14,a[18]),d=m(d,e,f,c,h,20,a[19]),c=m(c,d,e,f,s,5,a[20]),f=m(f,c,d,e,y,9,a[21]),e=m(e,f,c,d,D,14,a[22]),d=m(d,e,f,c,r,20,a[23]),c=m(c,d,e,f,x,5,a[24]),f=m(f,c,d,e,C,9,a[25]),e=m(e,f,c,d,q,14,a[26]),d=m(d,e,f,c,v,20,a[27]),c=m(c,d,e,f,B,5,a[28]),f=m(f,c,
+d,e,j,9,a[29]),e=m(e,f,c,d,u,14,a[30]),d=m(d,e,f,c,A,20,a[31]),c=l(c,d,e,f,s,4,a[32]),f=l(f,c,d,e,v,11,a[33]),e=l(e,f,c,d,z,16,a[34]),d=l(d,e,f,c,C,23,a[35]),c=l(c,d,e,f,w,4,a[36]),f=l(f,c,d,e,r,11,a[37]),e=l(e,f,c,d,u,16,a[38]),d=l(d,e,f,c,y,23,a[39]),c=l(c,d,e,f,B,4,a[40]),f=l(f,c,d,e,h,11,a[41]),e=l(e,f,c,d,q,16,a[42]),d=l(d,e,f,c,t,23,a[43]),c=l(c,d,e,f,x,4,a[44]),f=l(f,c,d,e,A,11,a[45]),e=l(e,f,c,d,D,16,a[46]),d=l(d,e,f,c,j,23,a[47]),c=n(c,d,e,f,h,6,a[48]),f=n(f,c,d,e,u,10,a[49]),e=n(e,f,c,d,
+C,15,a[50]),d=n(d,e,f,c,s,21,a[51]),c=n(c,d,e,f,A,6,a[52]),f=n(f,c,d,e,q,10,a[53]),e=n(e,f,c,d,y,15,a[54]),d=n(d,e,f,c,w,21,a[55]),c=n(c,d,e,f,v,6,a[56]),f=n(f,c,d,e,D,10,a[57]),e=n(e,f,c,d,t,15,a[58]),d=n(d,e,f,c,B,21,a[59]),c=n(c,d,e,f,r,6,a[60]),f=n(f,c,d,e,z,10,a[61]),e=n(e,f,c,d,j,15,a[62]),d=n(d,e,f,c,x,21,a[63]);b[0]=b[0]+c|0;b[1]=b[1]+d|0;b[2]=b[2]+e|0;b[3]=b[3]+f|0},_doFinalize:function(){var a=this._data,k=a.words,b=8*this._nDataBytes,h=8*a.sigBytes;k[h>>>5]|=128<<24-h%32;var l=s.floor(b/
+4294967296);k[(h+64>>>9<<4)+15]=(l<<8|l>>>24)&16711935|(l<<24|l>>>8)&4278255360;k[(h+64>>>9<<4)+14]=(b<<8|b>>>24)&16711935|(b<<24|b>>>8)&4278255360;a.sigBytes=4*(k.length+1);this._process();a=this._hash;k=a.words;for(b=0;4>b;b++)h=k[b],k[b]=(h<<8|h>>>24)&16711935|(h<<24|h>>>8)&4278255360;return a},clone:function(){var a=t.clone.call(this);a._hash=this._hash.clone();return a}});r.MD5=t._createHelper(q);r.HmacMD5=t._createHmacHelper(q)})(Math);
+/*
+ * author : panjun@xiaomi.com
+ */
+;(function(window,document,undefined){
+var MiLogin=window.MiLogin||(window.MiLogin={});/*页面环境*/
+  var Environment=(function(){
+    var hostname=location.hostname;
+    if( hostname.indexOf("onebox")>-1 ){
+      return 'onebox';
+    }else if(hostname.indexOf("preview")>-1){
+      return 'preview';
+    }else{
+      return 'release';
+    }
+  })();
+/*Log*/
+  var log=(function(){
+    var logs=[];
+    function addLog(title,message,more){
+      logs.push({title:title,message:message,more:more,time:getFormatTime(new Date)})
+      if((location.search+"").indexOf("debug")!==-1){
+         ('console' in window && (typeof window.console.log==='function')) && console.log(arguments);
+      }
+    }
+    function getLog(){
+      return logs;
+    }
+    return {
+      add:addLog,
+      get:getLog
+    }
+  })();
+  function getFormatTime(date){
+    return date.getFullYear()+"-"+
+           (date.getMonth()+1)+"-"+
+           date.getDate()+" "+ 
+           date.getHours() +":"+
+           date.getMinutes() +":"+
+           date.getSeconds() +":"+
+           date.getMilliseconds();
+  }
+/*Browser*/
+  var Browser=(function(){
+    var ua=navigator.userAgent;
+    var result={};
+    if( /\s+chrome\/([\d\.]*)/i.test(ua)){
+      result.name="Chrome";
+      result.version=parseInt( RegExp["$1"] );
+    }else if(/msie\s+(\d+\.\d+)/i.test(ua)){
+      result.name="IE";
+      result.version=parseFloat( RegExp["$1"] );
+    }else if(/\s+firefox\/([\d\.]*)/i.test(ua)){
+      result.name="Firefox";
+      result.version=parseInt( RegExp["$1"] );
+    }else if(/applewebKit\/([\d\.]*)/i.test(ua)){
+      result.name="Webkit";
+      result.version=parseInt( RegExp["$1"] ); 
+      if(/miuibrowser\/([\d\.]*)/i.test(ua)){
+        result.name="MIUI Browser";
+        result.version=parseInt( RegExp["$1"] );
+      }
+      if(/version\/([\d\.]*)\s+Safari/i.test(ua)){
+        result.name="Safari";
+        result.version=parseInt( RegExp["$1"] );
+      }
+    }else if(/trident\/([\d\.]*)/i.test(ua)){
+      var ver=ua.match(/rv:([\d\.]*)/);
+      if(ver && ver.length>=2){
+        result.name="IE"
+        result.version=parseFloat( ver[1] );
+      }else{
+        result.name="Trident"
+        result.version=RegExp["$1"];
+      }
+    }else{
+      result.name=ua;
+      result.version=0;
+    }
+    return result
+  })();
+/*Base Tool*/
+  /*Array Tool*/
+  function removeArrayEl(arr,el){
+    for(var i=0,len=arr.length;i<len;i++){
+      if(el===arr[i]){
+        arr.splice(i,1);break;
+      }
+    }
+  }
+  function each(arr,fn){
+    if(Array.prototype.forEach){
+      Array.prototype.forEach.call(arr,fn);
+    }else{
+      for(var i =0,len=arr.length;i<len;i++){
+        fn.call(arr,arr[i],i);
+      }
+    }
+  }
+  /*String Tool*/
+  function trim(str){
+    return (str+"").replace(/^\s+/,"").replace(/\s+$/,"");
+  }
+  /*处理特殊字符 < > */
+  function htmlspecialchars(str){
+    return (str+"").replace(/\</g,"&lt").replace(/\>/g,"&gt");
+  }
+  function setCookie(c_name, value, expiredays, path, domain, maxage){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + expiredays);
+    document.cookie=c_name+ "=" + escape(value) + ";expires="+exdate.toGMTString() + ";path=" + path + ";domain=" + domain + ((maxage==null) ? "" : ";max-age="+maxage);
+  }
+  function delCookie(c_name,path,domain){
+    setCookie(name, '', -1, path, domain);
+  }
+  function getCookie(key) {
+    var cookie = document.cookie;
+    var cookieArray = cookie.split(';');
+    var val = "";
+    for (var i = 0; i < cookieArray.length; i++) {
+        if (trim(cookieArray[i]).substr(0, key.length) == key) {
+      val = trim(cookieArray[i]).substr(key.length + 1);
+      break;
+        }
+    }
+    return unescape(val);
+  };
+  function getParam(paramName) {
+    var paramValue = "", isFound = false;
+
+    if (location.search.length === 0) {
+      return paramValue;
+    }
+
+    if (location.search.indexOf("?") == 0 && location.search.indexOf("=") > 1) {
+      arrSource = location.search.substring(1, location.search.length).split("&");
+      i = 0;
+      while (i < arrSource.length && !isFound) {
+        if (arrSource[i].indexOf("=") > 0) {
+          if (arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase()) {
+              paramValue = arrSource[i].split("=")[1];
+              isFound = true;
+          }
+        }
+        i++;
+      }
+    }
+    return paramValue;
+  };
+  function setParam(paramName,paramValue,url){
+    var searchUrl=url||location.search;
+    var param=searchUrl.substring(1).split('&');
+    for(var i=0;i<param.length;i++){
+      if(param[i].indexOf(paramName)===0){
+        param.splice(i,1);
+        i--;
+      }
+    }
+    return param='?'+param.join('&')+'&'+paramName+'='+paramValue;
+  }
+  function isEqualForObject(param1,param2){
+    if(param1===param2){
+      return true;
+    }
+    if(param1.constructor!==param2.constructor){
+      return false;
+    }
+    if(!(param1 instanceof Object) || !(param2 instanceof Object)){
+      return false;
+    }
+    for(var i in param1){
+      if(param1.hasOwnProperty(i)){
+        if(!param2.hasOwnProperty(i)){
+          return false;
+        }
+        if(param1[i]===param2[i]){
+          continue;
+        }else{
+          return false;
+        }
+      }
+    }
+    for(var i in param2){
+      if(param2.hasOwnProperty(i) && !param1.hasOwnProperty(i)){
+        return false;
+      }
+    }
+    return true;
+  }
+/*Template Tool*/
+  function Template( html , data , reg ){
+    if( !data ){return html ;}
+    var reg = reg ||  /\{([\w-]+)\}/g ;
+      html=specialEscape(html);
+    return html.replace( reg, function( m , name ){
+      if( data[name] !== undefined ){
+        var ret ;
+        if(data[name] instanceof Function){
+          ret =  data[name].call(data);
+        }else{
+          ret =  specialEscape(data[name]);
+        }
+        return reg.test( ret ) ?  
+         Template( ret , data , reg ) : ret ;
+      }else{
+        if(window.__debug__){
+          return name;
+        }else{
+          return "" ;
+        }
+      }
+    });
+  }
+  /*special escape*/
+  function specialEscape(str){
+    var o={
+      "{quot}":"'"
+    }
+    for(var p in o){
+      if(o.hasOwnProperty(p)){
+        str = (str+"").replace(p,o[p]);
+      }
+    }
+    return str;
+  }
+/*DOM Tool*/
+  function toArray(els){
+    try{
+      return Array.prototype.slice.call(els,0);
+    }catch(e){
+      var res=[];
+      for(var i=0,len=els.length;i<len;i++){
+        res.push(els[i]);
+      }
+      return res;
+    }
+  }
+  function isNode(el){
+    return el && el.nodeName && (el.nodeType===1);
+  }
+  function g(selector,context){
+    selector=selector||"";
+    context=context||document;
+    if(selector.indexOf("#")===0){
+      return context.getElementById(selector.substring(1));
+    }else{
+      var res=[];
+      if(/^[a-zA-Z]{1,}$/.test(selector)){
+        res=toArray(context.getElementsByTagName(selector));
+      }else if(selector.indexOf(".")===0){
+        if(context.querySelectorAll){
+          res=toArray(context.querySelectorAll(selector));
+        }else{
+          var els=context.getElementsByTagName("*");
+          var cls=selector.substring(1);
+          for(var i=0,len=els.length;i<len;i++){
+            if(hasClass(els[i],cls)){
+              res.push(els[i]);
+            }
+          } 
+        } 
+      }
+      return res;
+    }
+    return null;
+  }
+  function isArray(a){
+    return Object.prototype.toString.call(a)==='[object Array]';
+  }
+  function inArray(arr,item){
+    for(var i=0,len=arr.length;i<len;i++){
+      if(arr[i]===item){
+        return true;
+      }
+    }
+    return false;
+  }
+  function domShow(el,force){
+    if(el && el.nodeType===1){
+      if(el.style.display==='none'){
+        var tmp=force?"block":(el._oldDisplay||"");
+        el.style.display=tmp;
+      }else{
+        force && (el.style.display='block')
+      }
+    }
+  }
+  function domHide(el){
+    if(el && el.nodeType===1 && el.style.display!=="none"){
+      el._oldDisplay=el.style.display||"";
+      el.style.display="none";
+    }
+  }
+  function addClass(el,cls){
+    if(isArray(el)){
+      for(var i=0,len=el.length;i<len;i++){
+        addClass( el[i], cls);
+      }
+    }else{
+      if(!hasClass(el,cls)){
+        if(el.className===""){
+          el.className=cls;
+        }else{
+          el.className+=" "+cls;
+        }
+      }
+    }
+  }
+  function toggleClass(el,cls) {
+    if(!hasClass(el,cls)){
+      addClass(el,cls);
+    }else{
+      removeClass(el,cls);
+    }
+  }
+  function hasClass(el,cls){
+    if(el.className){
+     var clss = el.className.split(/\s+/);
+     clss.unshift("000");clss.push("000");
+     return (clss.length > 2) && ( clss.join(",").indexOf(","+cls+",") > -1 );
+    }
+    return false;
+  }
+  function removeClass(el,cls){
+    if(isArray(el)){
+      for(var i=0,len=el.length;i<len;i++){
+        removeClass( el[i], cls);
+      }
+    }else{
+      if(hasClass(el,cls)){
+        var clss=el.className.split(/\s+/);
+        removeArrayEl(clss,cls);
+        el.className=clss.join(" ");
+      }
+    }
+  }
+  function getComputed(el,prop){
+    var style=("getComputedStyle" in window)
+      ?window.getComputedStyle(el)
+      :el.currentStyle;
+    var value=style[prop];
+    if(prop==='width'|| prop==='height'){
+      value=Math.max(parseInt(value)||0,el["client"+upperFirst(prop)],el["offset"+upperFirst(prop)]);
+    }
+    return value;
+  }
+  function upperFirst(str){
+    return (str+"").replace(/^[a-z]/,function(a){return a.toUpperCase();});
+  }
+  function bind(oTarget,sEventType, fnHandler){
+    if(oTarget.addEventListener) {//firefox
+      oTarget.addEventListener(sEventType, fnHandler, false);
+    } else if(oTarget.attachEvent) {//IE
+      oTarget.attachEvent("on"+sEventType, fnHandler);
+    } else {
+      oTarget["on" + sEventType] = fnHandler;
+    }
+  }
+  function unbind(oTarget,sEventType, fnHandler){
+    if(oTarget.removeEventListener) {//firefox
+      oTarget.removeEventListener(sEventType, fnHandler, false);
+    } else if(oTarget.detachEvent) {//IE
+      oTarget.detachEvent("on"+sEventType, fnHandler);
+    } else {
+      oTarget["on" + sEventType] = null;
+    }
+  }
+  function triggerEvent(el,type){
+    try{
+      el[type]();
+    }catch(e){
+      //不兼容就算了
+    }
+  }
+/*JSON Tool*/
+  function json_parse(o){
+    if ( typeof o === 'string') {
+      return ( window.JSON && window.JSON.parse ) ? window.JSON.parse(o) : eval("(" + o + ')');
+    } else {
+      return o;
+    }
+  }
+  function format2Json(text){
+    var result={};
+    text=(text+"").replace("&&&START&&&","");
+    try{
+     result=json_parse(text);
+    }catch(e){}
+    return result;
+  }
+  function json_stringify(json){
+    if (window.JSON && window.JSON.stringify) {
+      return window.JSON.stringify(json);
+    }
+    var html = [];
+    if ( typeof json == 'object') {
+      if ( json instanceof Array) {
+        var ar = [];
+        html.push("[");
+        for (var i = 0; i < json.length; i++) {
+          ar.push(json_stringify(json[i]));
+        }
+        html.push(ar.join());
+        html.push("]");
+      } else if (json != null) {
+        html.push("{");
+        var ar = [];
+        for (var p in json) {
+          ar.push("\"" + p + "\":" + ( json_stringify(json[p])));
+        }
+        html.push(ar.join());
+        html.push("}");
+      }
+      return html.join("");
+    } else {
+      if ( typeof json !== 'number') {
+        return "\"" + (json || "" ) + "\"";
+      } else {
+        return json;
+      }
+    }
+  }
+  function json2str(o){
+    var arr = [];
+    var stype="";
+    for (var i in o){
+      stype=typeof o[i];
+      if(stype!=='object' || stype=="number" ){
+        arr.push(i + "=" + o[i]);
+      }else{
+        arr.push(i + "=" + encodeURIComponent(json2str(o[i])));
+      }
+    }
+    return arr.join('&');
+  }
+/*PlaceHolderTool*/
+  function setPlaceholder(el,force){
+    var inputEl=document.createElement("input");
+    if(!('placeholder' in inputEl) && !inputEl._initedplace){
+      inputEl._initedplace=true;
+      var plavalue=el.getAttribute("placeholder");
+      var id=el.id || el.name;
+      var cls=el.className;
+      inputEl.value=plavalue;
+      inputEl.id=id+"_pla";
+      inputEl.className=cls;
+      addClass(el,"hideimportant");
+      el.setAttribute("pla_id",id+"_pla");
+      inputEl.setAttribute("for_id",id);
+      inputEl.style.color="#999";
+      el.parentNode.insertBefore(inputEl,el);
+      bind(inputEl,'focus',function(){
+        addClass(inputEl,"hideimportant");
+        removeClass(el,"hideimportant");
+        el.focus();
+      });
+      bind(el,"blur",function(){
+        if( trim(el.value)=="" ){
+          addClass(el,"hideimportant");
+          removeClass(inputEl,"hideimportant");
+        }
+      });
+      if(force){
+        el.value="";
+        addClass(el,"hideimportant");
+        removeClass(inputEl,"hideimportant");
+      }
+      try{
+        el.focus();
+        el.blur();
+      }catch(e){}
+    }
+  }
+
+/*redirect*/
+  var redirect=(function(){
+    var a_blank=document.createElement("a");
+    a_blank.target="_blank";
+    document.body.appendChild(a_blank);
+    var lastTime=0;
+    var lastUrl=null;
+    var go_to_url=function(url){
+      a_blank.href=url;
+      var now=new Date().getTime();
+      if(lastUrl===url && (now-lastTime)<1000){
+        return;
+      }
+      lastUrl=url;
+      lastTime=now;
+      try {
+        var evObj = document.createEvent('MouseEvents');
+        evObj.initMouseEvent('click', true, true, window);
+        a_blank.dispatchEvent(evObj);
+      } catch (ignore) {
+        a_blank.click();
+      }
+    }
+    return function(url,target){
+      if(target==='_self'){
+        location.href=url;
+      }else{
+        go_to_url(url)
+      }
+    }
+  })();
+/*LocalStorage Tool*/
+/*fix ie下部分用户保护模式白屏：icacls %userprofile%\Appdata\LocalLow /t /setintegritylevel (OI)(CI)H*/
+try{
+  var supportLocalstorage=!!window.localStorage
+}catch(e){
+  var supportLocalstorage=false;
+}
+  function MiStore(key){
+     this.key=key||"account.xiaomi.com";
+  }
+  MiStore.prototype={
+    key:'account.xiaomi.com',
+    _read:(supportLocalstorage? function() {
+          var st = "";
+            try{
+              st=window.localStorage.getItem( this.key );
+            }catch(e){}
+              st = new Function(  "" , "return " + st )();
+          return typeof st=="object"  && !!st ? st : {};
+
+      } : function(){
+        return {};
+      }),
+    _save:(supportLocalstorage ? function( data ){
+        try{
+          window.localStorage.setItem( this.key  ,  json_stringify( data ) );
+        }catch(e){
+          log.add("setItem 抛出异常",Browser.name+" "+ Browser.version)
+        }
+      } : function(){
+        return false;
+      }),
+    _readAndGc:function( key ){
+      var data=this._read();
+      for(var p in data){
+        var pdata=data[p];
+        if(pdata.expires && (new Date()).getTime() - pdata.time >= pdata.expires ){
+          delete data[p];
+        }
+      }
+      this._save(data);
+      return !!key ? data[key] : data ;
+    },
+    remove:function(key){
+      var data=this._readAndGc();
+      delete data[key];
+      this._save( data );
+    },
+    get:function( key ){
+      var data=this._readAndGc( key ) || {};
+      return !!data.value ? data.value : null;
+    },
+    set:function( key , item , expires ){
+      if(!key){
+        return false;
+      }
+      var data   = this._readAndGc();
+      var timestr= (new Date()).getTime();
+      data[key] = { value : item , expires: expires , time: timestr } ;
+      this._save( data );
+    }
+  }
+  window.LStore=new MiStore("account.xiaomi.com");
+  var ajax_defaultConf={
+    method:'GET'    
+  }
+  var ajax_id=0;
+  var ajax_getId=function(){return ajax_id++;}
+  var activex_object_string;
+  function ajax_getXhr(){
+    return new (window.XMLHttpRequest || window.ActiveXObject)("Microsoft.XMLHTTP");
+  }
+  function ajax_formatParams(o){
+    if( typeof o !== 'object' ){
+      return o;
+    }else{
+      var arr = [];
+      for(var p in o ){
+        arr.push( p + "=" + encodeURIComponent( o[p]) );
+      }
+      return arr.join("&");
+    }
+  }
+  function Net_Ajax(conf){
+    this.id=ajax_getId();
+    for(var p in conf){
+      if(conf.hasOwnProperty(p)){
+        this[p]=conf[p]
+      }
+    }
+    this.xhr=ajax_getXhr();
+    this.request();
+  }
+  Net_Ajax.prototype={
+    request:function(){
+      var conf=this.userConf;
+      var url=this.url || "?";
+      var data=this.data || {};
+      var timeout=this.timeout||5000;
+      var method=(this.method||ajax_defaultConf.method).toUpperCase();
+      var me=this;
+      this.xhr.onreadystatechange=function(){
+        me.state=me.xhr.readyState;
+        log.add('xhrReadyState',me.xhr.readyState);
+        if(me.xhr.readyState==4){
+          window.clearTimeout(me.timeouthandler);
+          me.status=me.xhr.status;
+          log.add('xhrStatus',me.status);
+          if(me.xhr.status==200){
+              me.success && me.success(me.xhr.responseText,me.xhr);
+          }else{
+            log.add('xhrError');
+            me.error && me.error(me.xhr);
+          }
+        }
+      }
+      var parastr=ajax_formatParams(data);
+      if(method=='GET'){
+        if(url.indexOf("?")===-1){
+          url+="?"+parastr+"&_dc="+(new Date().getTime());
+        }else{
+          url+="&"+parastr+"&_dc="+(new Date().getTime());
+        }
+        parastr=null;
+      }else{
+        url+="?_dc="+(new Date().getTime());
+      }
+      log.add('initopen');
+      this.xhr.open(method,url,true);
+      this.xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+      this.timeouthandler=window.setTimeout(function(){
+        log.add('intoTimeout');
+        me.timeout();
+      },5000);
+      log.add('initsend');
+      this.xhr.send(parastr);
+    },
+    timeout:function(){
+     
+    }
+  }
+  var ajax_constructor=function(conf){
+    return new Net_Ajax(conf); 
+  }
+  window.Ajax=ajax_constructor;var ResizeWindow={
+  fns:[],
+  beforeFns:[],
+  inited:false,
+  on:function(fn){
+    (typeof fn==='function') && this.fns.push(fn);
+    (!this.inited)  && this.init();
+    window.onresize && window.onresize();
+  },
+  off:function(fn){
+    if(typeof fn==='function'){
+      for(var i=0,len=this.fns.length;i<len;i++){
+        if(fn===this.fns[i]){
+          this.fns.splice(i,1);return true;
+        }
+      }
+    }
+    return false;
+  },
+  onbeforeResize:function(fn){
+    (typeof fn==='function') && this.beforeFns.push(fn);
+  },
+  beforeExec:function (){
+     for(var i=0,fn;fn=this.beforeFns[i++];){
+      fn && fn.call(window);
+    }
+  },
+  exec:function(){
+    this.beforeExec();
+    var winWH=getWindowWH();
+    var docWH=getDocumentWH();
+    var docScrollWH=getDocumentScrollWH()
+    for(var i=0,fn;fn=this.fns[i++];){
+      fn && fn.call(window,winWH,docWH,docScrollWH);
+    }
+  },
+  init:function(){
+    var t=null;
+    var me=this;
+    window.onresize=function(){
+      window.clearTimeout(t);
+      t=window.setTimeout(function(){
+        me.exec();
+      },60);
+    }
+  },
+  triggle:function(){
+    this.exec();
+  }
+}
+function getWindowWH(){
+  var width=window.innerWidth || 0;
+  var height=window.innerHeight || 0;
+  if(!width){
+    if(document.compatMode=='CSS1Compat'){
+      width=document.documentElement.clientWidth;
+      height=document.documentElement.clientHeight;
+    }else{
+      width=document.body.clientWidth;
+      height=document.body.clientHeight;
+    }
+  }
+  return {
+    width:width,
+    height:height
+  }
+}
+function getDocumentWH(){
+  var docEl=document.documentElement;
+  var body=document.body;
+  var height=Math.max(docEl.clientHeight||0,
+                      body.scrollHeight,
+                      docEl.scrollHeight||0,
+                      body.offsetHeight,
+                      docEl.offsetHeight||0);
+  var width=Math.max(docEl.clientWidth||0,
+                      body.scrollWidth,
+                      docEl.scrollWidth||0,
+                      body.offsetWidth,
+                      docEl.offsetWidth||0);
+  return {
+    width:width,
+    height:height
+  }
+}
+function getDocumentScrollWH(){
+  var docEl=document.documentElement;
+  var body=document.body;
+  return {
+    scleft:Math.max(docEl.scrollLeft||0,body.scrollLeft),
+    sctop:Math.max(docEl.scrollTop||0,body.scrollTop)
+  }
+} /*  
+ *  1.1弹窗接口 正常模式
+ *  var modal=new Modal(opt)
+ *  about:options Object
+    {
+      title:string // function,
+      html:string // function,
+      afterRender:function
+    }
+    Method:
+    1.2 带有序数的弹窗(高级模式);
+    AModal:
+      next();
+ */
+//实例化出来的Modal 容器
+var Modal_Components={};
+//弹窗蒙层元素
+var ModalMaskEl=null;
+//Modal-Container
+var ModalContainer=null;
+//body
+var bodyNode=document.body;
+//modal初始化需要的html结构
+var modal_tmpl='<div class="modal_tip">'+
+               '  <div class="modal_tip_hd">'+
+               '  </div>'+
+               '  <div class="modal_tip_bd">'+
+               '  </div>'+
+               '</div>';
+//语言配置项
+var ModalMSG={
+  title:"{Modal-DefTitle}",
+  submit:"{Modal-DefSubmit}",
+  cancel:"{Modal-DefCancel}"
+};
+//默认Modal配置
+var defaultOpt={
+  title:ModalMSG.title,
+  cls:'',//modal框的  自定义className
+  titleCls:'',//title 自定义className 
+  bodyCls:'', //body  自定义className
+  html:'',    //body  内容区
+  afterRender:function(){}//渲染完成后执行的函数，
+}
+//
+function Modal(opt){
+  this.opt=filldefault_opt(opt||{},defaultOpt);
+  this.init();
+}
+var getModalId=(function(){
+  var id=0;
+  var prefix="modal-id-";
+  return function(){
+    return prefix+(id++);
+  }
+})();
+function filldefault_opt(dest,source){
+  var empty={};
+  for(var i in source){
+    if(!(i in empty) && !(i in dest)){
+      dest[i]=source[i];
+    }
+  }
+  return dest;
+}
+function resizeModalContainer(el){
+  ResizeWindow.on(function(winWH,docWH){
+    el.style.height=Math.max(winWH.height,docWH.height)+"px";
+    el.style.width =docWH.width+"px";
+  });
+  ResizeWindow.onbeforeResize(function(){
+    el.style.height="auto";
+    el.style.width="100%";
+  });
+}
+function getRealWH(el){
+  var style=("getComputedStyle" in window)
+    ?window.getComputedStyle(el)
+    :el.currentStyle;
+  return {
+    width:Math.max(parseInt(style["width"])||0,el.clientWidth,el.offsetWidth),
+    height:Math.max(parseInt(style["height"])||0,el.clientHeight,el.offsetHeight)
+  };
+}
+Modal.prototype={
+  init:function(){
+    var opt=this.opt;
+    if(!ModalContainer){
+      if(!opt.renderTo){
+        ModalContainer=document.createElement("div");
+        addClass(ModalContainer,"modal_container");
+        ModalContainer.innerHTML='<div class="modal_msk"></div>';
+        bodyNode.appendChild(ModalContainer);
+        !opt.modalfixed && resizeModalContainer(ModalContainer);
+      }else{
+        ModalContainer=opt.renderTo;
+      }
+    }
+    this.id= opt.id || getModalId();
+    var modal=this.modal=Modal_Components[this.id];
+    var me=this;
+    if(!modal){
+      modal=(this.modal=document.createElement("div"));
+      addClass(modal,"modal_tip");
+      this.hide();
+      modal.id=this.id;
+      modal.innerHTML= '<div class="modal_tip_flex">'+
+                          '<div class="modal_tip_hd modal-header">'+
+                            '<div class="external_logo_area"><a class="milogo" href="javascript:void(0)"></a></div>'+
+                            '<div class="modal-header-text modal_tip_title"></div>'+
+                            '<a href="javascript:void(0)" title="" class="modal-header-close btn_mod_close"><span>关闭</span></a>'+
+                         '</div>'+
+                         '<div class="modal_tip_bd modal-body">'+
+                         '</div>'+
+                       '</div>';
+      opt.renderTo?opt.renderTo.appendChild(modal):ModalContainer.appendChild(modal);
+      this.header=g(".modal-header",modal)[0];
+      this.title=g(".modal-header-text",modal)[0];
+      this.body=g(".modal-body",modal)[0];
+      this.closeBtn=g(".modal-header-close",modal)[0];
+      bind(this.closeBtn,"click",function(){
+        me.close();
+      });
+      this.render(opt);
+      Modal_Components[this.id]=modal;
+      this.resizeModal=function(winWH,docWH,docScrollWH){
+        var wh=getRealWH(modal);
+        var h=winWH.height;
+        var w=winWH.width;
+        var sctop=docScrollWH.sctop;
+        var scleft=docScrollWH.scleft;
+        if(opt.deviceType && opt.deviceType=== 'mobile'){
+          return
+        }
+        if(wh && wh.height){
+          if(wh.height<h){
+            modal.style["marginTop"]= ((h-wh.height)/2)+"px";
+            modal.style['top']=0;
+          }else{
+            modal.style["marginTop"]= (0+sctop)+"px";
+            modal.style['top']=0;
+          }
+          //modal.style['marginLeft']=-(wh.width/2)+"px";
+          //modal.style['left']='50%';
+        }
+        if(wh && wh.width){
+          if(wh.width<w){
+            modal.style["marginLeft"]= ((w-wh.width)/2)+"px";
+            modal.style['left']=0;
+          }else{
+            modal.style["marginLeft"]= (0+scleft)+"px";
+            modal.style['left']=0;
+          }
+        }
+      }
+      opt.modalfixed && (this.resizeModal=function(){});
+      !opt.renderTo && ResizeWindow.on(this.resizeModal);
+    }
+    this.show();
+  },
+  show:function(){
+    if(this.modal){
+      domShow(ModalContainer,"hide");
+      domShow(this.modal,"hide");
+      if(!this.opt.renderTo){
+        var me=this;
+        setTimeout(function(){
+          //me.resizeModal(getWindowWH(),getDocumentWH(),getDocumentScrollWH())
+          !me.opt.modalfixed && ResizeWindow.triggle();
+        },200);
+      }
+    }
+  },
+  beforeClose:function(){
+    if(this.opt.beforeClose){
+      return this.opt.beforeClose.call(this);
+    }
+  },
+  close:function(destory){
+    if(this.modal){
+      if(this.beforeClose()===false){
+        return 0;
+      }
+      if(destory){
+        ResizeWindow.off(this.resizeModal);
+        ModalContainer.removeChild(this.modal);
+        this.modal=null;
+        Modal_Components[this.id]=null;
+        domHide(ModalContainer,"hide");
+      }else{
+        this.hide();
+      }
+    }
+  },
+  hide:function(){
+    domHide(ModalContainer,"hide");
+    domHide(this.modal,"hide");
+  },
+  render:function(opt){
+    this.title.innerHTML=opt.title;
+    this.body.innerHTML=opt.html;
+    opt.titleCls && addClass(this.title,opt.titleCls);
+    opt.bodyCls && addClass(this.body,opt.bodyCls);
+    opt.cls && addClass(this.modal,opt.cls);
+    opt.afterRender.call(this);
+  },
+  update:function(opt,oldOpt){
+    if(oldOpt){
+      opt.titleCls && removeClass(this.title,opt.titleCls);
+      opt.bodyCls && removeClass(this.body,opt.bodyCls);
+      opt.cls && removeClass(this.modal,opt.cls);
+    }
+    this.render(opt);
+  }
+}
+window.Modal=Modal;/*国际版语言支持部分*/
+var securityControllerModal;;
+(function() {
+  var _html = '<div id="sect-controller-panel" class="security_controller_panel">' +
+    '<h4>您需要安装安全控件，才可使用安全登录。</h4>' +
+    '<p>控件可对您的密码进行加密保护，提升账户安全性。</p>' +
+    '<p>请点击“立即安装控件”按钮，并根据提示进行安装。</p>' +
+    '<div class="tip_msg">完成安装后，请重新启动浏览器</div>' +
+    '</div>' +
+    '<div class="tip_btns"><a title="立即安装控件" href="https://account.xiaomi.com/static/res/0369340/account-static/static/mipay/XiaomiCtrl.exe" class="btn_tip btn_commom btn-action-controller">立即安装控件</a></div>';
+  var securityControllerTitle = '提示';
+  //modal  
+  securityControllerModal = new Modal({
+    title: securityControllerTitle,
+    cls: "mod_acc_tip security-controller-modal",
+    html: _html,
+    customDevice640: true,
+    modalfixed: true,
+    afterRender: function() {
+      //domModalSelectUl.html();
+    }
+  });
+  securityControllerModal.close();
+
+})();/*全局配置项*/
+//JSP_VAR 是jsp页面中的变量，可以做个中转，方便使用。基本原则是：对于外来数据，都当做配置项。
+var CONF = {
+  locale: (function() {
+    if (JSP_VAR.locale.indexOf("zh") === 0) {
+      return JSP_VAR.locale === "zh_CN" ? "zh_CN" : "zh_TW"
+    } else if (JSP_VAR.locale.indexOf("en_") === 0) {
+      return "en";
+    }
+    //    return JSP_VAR.dataCenter==='sgp'?JSP_VAR.locale:"en";
+    return JSP_VAR.locale;
+
+  })(),
+  md5pwd: true,
+  infoUrl: "/pass/js/info?type=notice",
+  logoWidth: 50,
+  qrsize: (function() {
+    var width = getParam("_qrsize");
+    return parseInt(width) || 270;
+  })(),
+  loginType: (function() {
+    var type = getParam("_loginType");
+    //注：pwd 和 ticket默认包含对方，标志当前默认的登录类型，不包括qr
+    var res = ["all", "pwd", "qr", 'ticket'];
+    var nums = parseInt(type) || 0;
+    if (inArray(res, type)) {
+      return type;
+    }
+    return res[nums] || "all";
+  })(),
+  region: JSP_VAR.region,
+  copyRight: (function() {
+    return (JSP_VAR.dataCenter === 'sgp' ? "小米公司版权所有" : "小米公司版权所有-京ICP备10046444-<a class='beian-record-link' target='_blank'><span></span>京公网安备11010802020134号</a>-京ICP证110507号");
+  })(),
+  /* wap端去掉IPC */
+  copyRightHide: JSP_VAR.deviceType !== 'PC',
+  /* wap 端加入取号 之后可以和STAT.clientAcq合并 */
+  getPhoneOn: JSP_VAR.deviceType !== 'PC',
+  /*海外版没有短信登录*/
+  enableSMS: (JSP_VAR.dataCenter !== 'sgp'),
+  privacyLink: JSP_VAR.privacyLink,
+  samplingRate: (JSP_VAR.isPreview || location.href.indexOf("_debugMode")) ? 100 : _t_.samplingRate,
+  samplingBase: _t_.samplingBase,
+  supportPlaceholder: 'placeholder' in document.createElement('input'),
+  captchaNeed: LStore.get("loginNeedCode"),
+  twoStepURL: "/pass/2StepLogin/login",
+  enableVisiablePwd: JSP_VAR.deviceType !== 'PC',
+  enableCode: (function() {
+    var result = !(JSP_VAR.dataCenter !== 'sgp' && JSP_VAR.locale === 'zh_CN');
+    //不需要国家代码的设备UA过滤
+    var DISABLE_UA_LIST = ['Windows CE'];
+    var ua = navigator.userAgent;
+    each(DISABLE_UA_LIST, function(item, index) {
+      if (ua.indexOf(item) !== -1) {
+        result = false;
+      }
+    });
+    return result;
+  })(),
+  snsDisabled: (function() {
+    var result = JSP_VAR.dataCenter === 'sgp' ? [] : ['facebook'];
+    //if(!/micromessenger/i.test(navigator.userAgent)){
+    //result.push("weixin");
+    //}
+    return result;
+  })(),
+  snsDefault: (function() {
+    //如果存在snsdefault 其他的登录方式就放下了，不用管了
+    var snsDefaultArray = ['qq', 'weibo', 'alipay', 'weixin', 'facebook'];
+    var result = JSP_VAR.dataCenter === 'sgp' ? 'facebook' : "";
+    if (/micromessenger/i.test(navigator.userAgent)) {
+      result = "weixin";
+    }
+    if (getParam("_snsdefault") && inArray(snsDefaultArray, getParam("_snsdefault"))) {
+      result = getParam("_snsdefault");
+    }
+    return result;
+  })(),
+  snsNone: (function() {
+    var result = '';
+    if (getParam("_snsnone")) {
+      result = getParam("_snsnone");
+    }
+    return result;
+  })(),
+  default1px_gif: "data:image/gif;base64,R0lGODlhAQABAJEAAAAAAP///////wAAACH5BAEAAAIALAAAAAABAAEAAAICVAEAOw==",
+  beianRecordLink: 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134',
+  beianRecordImg: 'https://account.xiaomi.com/static/res/9204d06/account-static/respassport/acc-2014/img/ghs.png',
+  captchaTpl: '<div class="lgncode c_b"><label class="labelbox code_label">' +
+    '<input id="captcha-code" class="code" name="icode" type="text" placeholder="图片验证码" autocomplete="off">' +
+    '</label>' +
+    '<img class="chkcode_img" id="captcha-img" src="about:blank" alt="点击可刷新图片验证码"></div>',
+  captChaURL: "/pass/getCode?icodeType=login",
+  loginBanner: (function() {
+    var res = {};
+    if (getParam("_bannerBiz") === "mistore") {
+      res.name = "mistore";
+      res.src = "https://s1.mi.com/loginbanner.html";
+    } else if (getParam("_bannerBiz") === "mihomeMember") {
+      res.name = "mihomeMember";
+      res.src = "https://wx.men.mi.com/member/loginbanner.html";
+      res.hideMainbox = true;
+      res.smsText = "短信登录";
+      res.pwdText = "密码登录";
+    } else if (getParam("_bannerBiz") === "youpin") {
+      res.name = "youpin";
+      res.src = "https://s1.mi.com/loginbanner.html";
+      res.customizeTitle = "米家有品";
+    }
+    return res;
+  })(),
+  customizeArr: [{
+    name: 'mistore',
+    deviceType: 'PC'
+  }, {
+    name: 'mihomeMember',
+    deviceType: 'mobile',
+    env: 'weixin'
+  }, {
+    name: 'youpin',
+    deviceType: 'PC'
+  }]
+};
+
+/*STAT 当前的一些全局状态*/
+var STAT = {
+  lockSubmit: 0,
+  codeShown: false,
+  codeInit: false,
+  enableCode: CONF.enableCode,
+  loginType: 'pwd', //当前登录类型：ticket | pwd 
+  clientAcq: false, //sns取号是否取到
+  maskedPhone: '', //取到的带**的手机号
+  currentView: 'loginMain', //当前页面1.loginMain登录页2.acRegister取号一键注册3.acConfirm回收号确认页
+  showCustomPage: (function() {
+    if (CONF.loginBanner && CONF.loginBanner.name) {
+      var envParam = {
+        deviceType: JSP_VAR.deviceType,
+        name: CONF.loginBanner.name
+      };
+      if (CONF.loginBanner.name === 'mihomeMember') {
+        envParam.env = CONF.snsDefault;
+      }
+      for (var i = 0; i < CONF.customizeArr.length; i++) {
+        if (isEqualForObject(envParam, CONF.customizeArr[i])) {
+          return true;
+        }
+      }
+    }
+    return false;
+  })()
+};
+STAT.isMihomeMemberType = (STAT.showCustomPage && CONF.loginBanner.name === 'mihomeMember') // 是否是小米之家会员
+/**
+ *
+ * 关于DISPLAY的配置
+ * 1,2,4,8,16,32,64,128,256
+ */
+var DISPLAY = {
+  LOGO: 1,
+  QRTRIGGER: 2, //二维码登录
+  FOOTER: 4,
+  SNSDEFAULT: 8, //snsdefault登录
+  SNSLOGIN: 16, //其他第三方登录
+  SMSBTN: 256, //切换短信登录和密码登录的btn
+  OUTERLINK: 64 //注册和找回密码链接
+};
+
+/*其他相关配置*/
+var bodyNode = document.body;
+var ENAME = {
+  click: 'ontap' in document.body ? 'tap' : 'click',
+  focus: 'focus',
+  blur: 'blur',
+  keyup: 'keyup',
+  keypress: 'keypress',
+  keydown: 'keydown'
+};
+
+/*处理过程中需要用到的文案*/
+var MSG = {
+  SMS_CODE: "短信验证码",
+  PHONE_NUM: "手机号码",
+  VERIFY_PASSWORD: "需要验证您的密码", //验证密码
+  VERIFY_PASSWORD_SUBMIT: "验证", //验证密码
+  VERIFY_PHONE: "使用此手机号注册小米帐号", //验证手机号
+  user_text_empty: "请输入帐号",
+  user_tel_empty: "请输入手机号",
+  user_text_rule: "用户名不正确",
+  user_tel_rule: "手机号格式不正确",
+  password_password_empty: "请输入密码",
+  visiablepwd_text_empty: "请输入密码",
+  password_number_empty: "请输入短信验证码",
+  password_number_rule: "短信验证码不正确",
+  icode_text_empty: "请输入图片验证码",
+  icode_text_rule: "验证码不正确",
+  nochance: "您今天已经发送太多短信，请换个时间或改用其他验证方式", //您今天已经发送太多短信，请换个时间或者改用其他号码
+  send_again: "重新发送", //重新发送
+  send_hold: "重新发送{time}", //重新发送{60}
+  leftTimesText: "您今天还能发送{left}条短信", //您今天还能发送{left}条短信
+  INIT_CODE_TEXT: "获取验证码",
+  Register_Error: "注册失败", //注册失败
+  TOKEN_EXPIRE: "验证信息已过期，请重试", //验证信息过期，请重试
+  USER_RES_ERROR: "用户名不正确", //提交后用户名错误
+  PWD_RES_ERROR: "密码不正确", //密码错误（只验证密码时的提示）
+  PWD_INPUT_EMPTY: "请输入密码", //请输入验证码
+  CODE_INPUT_ERROR: "验证码不正确", //提交前的
+  CODE_RES_ERROR: "验证码不正确", //提交后的
+  CONFIRM_ACC_TIP: "注册新帐号后，将无法使用{phone}登录帐号{username}", //注册帐号后将无法使用此手机登录此帐号
+  No_PWD_USER_TIP: "无密码用户请选择短信登录或点击忘记密码来找回密码",
+  /*无密码用户密码登录*/
+  LOGIN_RES_ERROR: "用户名或密码不正确",
+  TooMuchRegister: "此手机在一段时间内绑定了过多的小米帐号，请换个手机号码试试", //半年内注册超3次
+  REFRESH_IMG_TIP: "点击图片刷新验证码", //点击图片刷新验证码
+  LOGIN_FORZEN: "此帐号已被冻结，暂时无法登录", //帐号冻结
+  POPULAR: "常用",
+  INTERNAL_ERROR: "系统错误", //系统错误
+  NETWORK_ERROR: "网络超时，请稍后再试" //网络错误
+};
+/*SNS Default*/
+var SNS_DEFAULT = {
+  qq: "QQ登录",
+  weibo: "微博登录",
+  weixin: "微信登录",
+  alipay: "支付宝登录",
+  facebook: "Facebook登录"
+};
+/*页面基本元素*/
+var ELS = {
+  body: document.body,
+  layout: g("#layout"),
+  header: g("#login-title"),
+  loginMain: g("#login-main"),
+  loginQr: g("#login-qrcode"),
+  loginButton: g("#login-button"),
+  qrIframe: g("#qriframe"),
+  qriframe2: g("#tab-qriframe"),
+  qrTrigger: g("#qrcode-trigger"),
+  qrClose: g("#qrcode-close"),
+  regionCode: g("#region-code"),
+  codeSelector: g("#countrycode_selector"),
+  codeContainer: g("#countrycode_container"),
+  codeContainerCon: g("#countrycode_container_con"),
+  codeValue: g("#countrycode_value"),
+  manualCode: g("#manual_code"),
+  userName: g("#username"),
+  snsLoginItems: g(".sns-login-link"), //第三方登录链接 Array
+  pwd: g("#pwd"),
+  outerLink: g(".outer-link"), //外部链接       Array
+  captcha: g("#captcha"),
+  langSelect: g(".lang-select-li"), //语言选择的list Array
+  mainForm: g("#login-main-form"),
+  error: g("#error-outcon"),
+  errorForbidden: g("#error-forbidden"),
+  accountInfo: g("#account-info"),
+  accountAvator: g("#account-avator"),
+  accountAvatorCon: g("#account-avator-con"),
+  accountDisplayname: g("#account-displayname"),
+  snsDefaultCon: g(".sns-default-container")[0],
+  snsLoginCon: g(".sns-login-container")[0],
+  recordLink: g(".beian-record-link")[0],
+  pwdVisiable: CONF.enableVisiablePwd && g("#visiablePwd"),
+  toggleVisiable: g(".pwd-visiable")[0],
+  pwdEye: g(".pwd-eye"),
+  msgPrivacy: g("#msg-privacy"),
+  securityControllerPanel: g(".security_Controller")[0],
+  securityController: g("#trustSecurityController"),
+  navTabs: g("#nav-tabs"),
+  tabsCon: g(".tabs-con"),
+  copyRight: g(".nf-intro")[0],
+  bannerIframe: g("#bgiframe"),
+  loginPanel: g(".login-panel")[0],
+  smsCodePanel: g('#sms-code-panel'),
+  /*短信登录els*/
+  phone: g("#phoneNum"),
+  smsCode: g("#ticket"),
+  getSmsCode: g("#getSMSCode"),
+  changeLoginType: g("#ChangeLoginType"),
+  /*一键登录els*/
+  acBox: g(".ac-box")[0],
+  acRegister: g("#ac-register"),
+  acConfirm: g("#ac-confirm"),
+  /*取号loading*/
+  loadingMask: g("#loadingMask"),
+  acqTipsMain: g('.acq_tips')[0] //取号tips    
+};
+
+/*注册els*/
+ELS.acRegisterOkBtn = g('.ok_btn', ELS.acRegister)[0];
+ELS.acRegisterNoBtn = g('.no_btn', ELS.acRegister)[0];
+ELS.agreeCheckBox = g('.icon_select', ELS.acRegister)[0];
+ELS.acqTipsReg = g('.acq_tips', ELS.acRegister)[0];
+ELS.agreeLink = g('.agreement_link', ELS.acRegister)[0];
+ELS.privacyLink = g('.privacy_link', ELS.acRegister)[0];
+
+/*回收号els*/
+ELS.acConfirmOkBtn = g('.ok_btn', ELS.acConfirm)[0];
+ELS.acConfirmNoBtn = g('.no_btn', ELS.acConfirm)[0];
+ELS.acqTipsConf = g('.acq_tips', ELS.acConfirm)[0];
+ELS.acConfCheckBox = g('.icon_select', ELS.acConfirm)[0];
+ELS.acConfirmBackBtn = g('.back_btn', ELS.acConfirm)[0];
+ELS.acConfAgreeLink = g('.agreement_link', ELS.acConfirm)[0];
+ELS.acConfPrivacyLink = g('.privacy_link', ELS.acConfirm)[0];
+
+/*提交的基本参数*/
+var submitParams = {
+  "_json": "true",
+  callback: JSP_VAR.callback,
+  sid: JSP_VAR.sid,
+  qs: JSP_VAR.qs,
+  "_sign": JSP_VAR["_sign"],
+  serviceParam: JSP_VAR.serviceParam
+};
+
+/*常用参数*/
+var userInfo = {
+  phone: ''
+};
+
+/*存储取号phoneInfo*/
+var phoneInfo = {};
+
+/*关于结果的处理方法*/
+var ResponseFunc = {
+  '0': resSuccess,
+  '81003': resTwoStepLogin,
+  '70016': resError,
+  '20003': resNoUser,
+  '87001': resNeedCaptcha,
+  '350008': resPauseUser,
+  '403': errorResponseFunc403,
+  'fail': errorResponseFunc500,
+  'network': resNetworkError,
+  'default': resError,
+  '21327': resTokenExpire,
+  '70002': resNoPWDUser,
+  '70014': resTicketError
+}
+
+/*keyCode & charCode*/
+var KEY_CODE = {
+  ENTER: 13,
+  SHIFT: 16,
+  CTRL: 17,
+  ALT: 18,
+  ESC: 27,
+  DEL: 46,
+  LEFT: 37,
+  UP: 38,
+  RIGHT: 39,
+  SPACE: 32,
+  WIN: 91,
+  COMMAND: 91,
+  DOWN: 40
+};
+var CHAR_CODE = {
+  "#": 35,
+  "$": 36,
+  "%": 37,
+  "&": 38,
+  "*": 42
+}
+each("ABCDEFGHIGKLMNOPQRSTUVWXYZ".split(""), function(item, index) {
+  KEY_CODE[item] = item.charCodeAt();
+});
+
+each("abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIGKLMNOPQRSTUVWXYZ".split(""), function(item) {
+  CHAR_CODE[item] = item.charCodeAt();
+});
+
+/*COMMAND data */
+var COMMAND = {
+  data: {
+    "*#*#284#*#*": function() {
+      var debugStr = "";
+      each(log.get(), function(item) {
+        try {
+          debugStr += htmlspecialchars(json_stringify(item)) + "<br/>";
+        } catch (e) {
+          debugStr += "stringfy 出错<br>";
+        }
+      });
+      document.write(debugStr);
+      document.close();
+    },
+    "*h": function() {
+      redirect("https://static.account.xiaomi.com/html/faq/faqList.html");
+      this["*h"] = null;
+    },
+    "-h": function() {
+      redirect("https://static.account.xiaomi.com/html/faq/faqList.html");
+      this["-h"] = null;
+    },
+    "*#*#pwd#*#*": function() {
+      CONF.md5pwd = !CONF.md5pwd;
+    }
+  },
+  history: [],
+  tmpVal: ""
+};/* qrlogin 相关 */
+
+function showQrLogin(only) {
+  var h = getComputed(ELS.layout, 'height');
+  var w = getComputed(ELS.layout, 'width');
+  ELS.qrIframe.height = CONF.qrsize;
+  ELS.qrIframe.width = CONF.qrsize;
+  ELS.loginQr.style.height = h + "px";
+  ELS.loginQr.style.width = w + "px";
+  ELS.qrIframe.src = getQrLoginUrl(CONF.qrsize);
+  domHide(ELS.loginMain);
+  domShow(ELS.loginQr, true);
+  if (only === true) { addClass(ELS.body, "only_qrlogin") }
+  return false;
+}
+
+function showCustomQrLogin() {
+  ELS.qriframe2.width = CONF.qrsize;
+  ELS.qriframe2.height = CONF.qrsize;
+  ELS.qriframe2.src = getQrLoginUrl(CONF.qrsize);
+  return false;
+}
+
+function showFormLogin(only) {
+  ELS.qrIframe.src = "about:blank";
+  domHide(ELS.loginQr);
+  domShow(ELS.loginMain, true);
+  if (only === true) { addClass(ELS.body, "only_pwdlogin") }
+  return false;
+}
+
+function getQrLoginUrl(qrSize) {
+  var url = "/pass/lp";
+  var urlString = "";
+  var opt = JSP_VAR;
+  if (getParam("callback") && getParam("sid")) {
+    opt = location.search;
+  }
+  if (typeof opt === 'object') {
+    for (var i in opt) {
+      if (opt.hasOwnProperty(i) && opt[i]) {
+        urlString += "&" + i + "=" + encodeURIComponent(opt[i]);
+      }
+    }
+    urlString = "?" + urlString.substring(1);
+  } else {
+    urlString = opt;
+  }
+  return url + urlString + "&_qrsize=" + qrSize;
+}
+
+/*keycode 相关*/
+
+var bindKeyDown = (function() {
+  var data = {};
+  bind(bodyNode, ENAME.keydown, function(e) {
+    var e = e || window.event;
+    var keyCode = e.keyCode || e.charCode;
+    var target = e.target || e.srcElement;
+    var returnValue;
+    if (keyCode in data) {
+      each(data[keyCode] || [], function(item, index) {
+        if (false === item.call(target || window)) {
+          returnValue = false;
+        }
+      });
+    }
+    if (returnValue === false) {
+      e.returnValue = false;
+      e.preventDefault && e.preventDefault();
+    }
+  });
+  return {
+    on: function(keycode, fn) {
+      var fns = data[keycode] || (data[keycode] = []);
+      fns.push(fn);
+    },
+    off: function(keycode, fn) {
+      var fns = data[keycode] || (data[keycode] = []);
+      each(fns, function(item, index) {
+        if (fn === item) {
+          fns.splice(index, 1);
+        }
+      });
+    }
+  }
+})();
+
+
+/*获取第三方登录的链接*/
+
+var getSnsloginLink = (function() {
+  var prefix = "https://account.xiaomi.com/pass/sns/login/auth?";
+  var appId = {
+    qq: "100284651",
+    weibo: "2996826273",
+    weixin: "wxxmzh",
+    alipay: "2088011127562160",
+    facebook: "222161937813280"
+  }
+  var urlFollowup = decodeURIComponent(getParam("third"));
+  if (!urlFollowup) {
+    urlFollowup = encodeURIComponent(JSP_VAR.callback) + "&sid=" + JSP_VAR.sid;
+  }
+  var result = {};
+  for (var app in appId) {
+    result[app] = prefix + ["appid=" + appId[app], (app === 'weixin' ? "scope=snsapi_login" : ""), "callback=" + urlFollowup].join("&");
+  }
+  return function(type) {
+    return type ? result[type] : result;
+  }
+})();
+
+function getSnsDefaultLink(type) {
+  var link = getSnsloginLink(type);
+  var text = SNS_DEFAULT[type];
+  var html = "";
+  if (link && text) {
+    html = Template('<a href="{url}" class="btnadpt btn_{type} sns-login-link" title="{text}" data-type="{type}">\
+                       <i class="btn_sns_icontype icon_default_{type}"></i><span>{text}</span>\
+                     </a>', {
+      url: link,
+      type: type,
+      text: text
+    });
+  }
+  return html;
+}
+/*获取语言选择的链接*/
+
+var getuLocaleLink = (function() {
+  var params = location.search.substring(1).split("&");
+  for (var i = 0; i < params.length; i++) {
+    if (params[i].indexOf("_locale=") === 0) {
+      params.splice(i, 1);
+      i--;
+    }
+  }
+  return function(lang) {
+    return "?" + params.join("&") + "&_locale=" + lang;
+  }
+})();
+
+/*显示错误信息，始终在一个元素中显示信息*/
+var FormError = (function() {
+  return {
+    show: function(key, el) {
+      var text = MSG[key] || key;
+      var errTip = g(".err_tip", ELS[STAT.currentView])[0];
+      var con = g(".error-con", errTip)[0];
+      (el && !STAT.isMihomeMemberType) && addClass(el.parentNode, 'error_bg');
+      con.innerHTML = text;
+      domShow(errTip, true);
+    },
+    clean: function(el) {
+      var errTip = g(".err_tip", ELS[STAT.currentView])[0];
+      var con = g(".error-con", errTip)[0];
+      domHide(errTip);
+      el && removeClass(el.parentNode, 'error_bg');
+      con.innerHTML = "";
+    }
+  }
+})();
+
+function validateInput(mode, except) {
+  var input = g('input', mode);
+  for (var i = 0; i < input.length; i++) {
+    var tmp = input[i];
+    var tname = tmp.name;
+    if (tname === '' || tmp.style.display === 'none' || tname === except) {
+      input.splice(i, 1);
+      i--;
+    }
+  }
+  return input;
+}
+
+function testRuleError(name, val, type) {
+  if (name === 'user') {
+    if (val === STAT.maskedPhone) {
+      return true;
+    } else if (type === 'tel') {
+      return validatePhone(val);
+    } else {
+      return (validateUserName(val) === false) ? false : true;
+    }
+  } else if (name === 'password') {
+    if (type === 'number') {
+      return validateSMS(val);
+    }
+  } else if (name === 'icode') {
+    return /^\w{4,8}$/.test(val);
+  }
+  return true;
+}
+
+function verifyMode(mode, except) {
+  var input = validateInput(mode, except);
+  var error = 0;
+  for (var j = 0; j < input.length; j++) {
+    var el = input[j];
+    var tname = el.name;
+    var tval = el.value;
+    var type = el._type || el.type; // IE8中存在_type时则使用_type
+    if (tval === '') {
+      FormError.show(tname + '_' + type + '_empty', el);
+      error++;
+      return false;
+    } else if (!testRuleError(tname, tval, type)) {
+      FormError.show(tname + '_' + type + '_rule', el);
+      error++;
+      return false;
+    }
+  }
+  return !error;
+}
+
+function clearError(mode) {
+  var input = validateInput(mode);
+  for (var i = 0; i < input.length; i++) {
+    FormError.clean(input[i]);
+  }
+}
+/* setPlaceholder */
+
+function setPlaceholder(el, c) {
+  if (CONF.supportPlaceholder) {
+    return
+  }
+  /*创建placeholder*/
+
+  var span = document.createElement("span");
+  var parentNode = el.parentNode;
+  var placeholder = el.getAttribute("placeholder");
+  span.className = 'placehld';
+  span.id = el.id + '_pla';
+  span.innerHTML = placeholder;
+
+  /*设置父元素样式*/
+
+  parentNode.insertBefore(span, el);
+  parentNode.style.position = "relative";
+
+  /*设置placeholder 元素样式*/
+
+  span.style.position = "absolute";
+  //span.style.width=getComputed(el,'width')+"px";
+  span.style.cursor = "text";
+  span.style.lineHeight = getComputed(el, 'lineHeight') || 1.2;
+  //span.style.padding=getComputed(el,'padding')||0;
+  span.style.left = (el.offsetLeft || 0) + "px";
+  span.style['top'] = (el.offsetTop || 0) + "px";
+  c && (span.style.color = c)
+
+  /*设置绑定事件*/
+
+  var check = function(val, oldVal) {
+    if (val === "") {
+      domShow(span);
+    } else {
+      domHide(span);
+    }
+  }
+
+  inputChange.on(el, check);
+
+  bind(span, ENAME.click, function() {
+    try {
+      el.focus();
+      //售后的ie8 focus失败，先这么处理了
+      domHide(span);
+    } catch (e) {}
+  });
+
+}
+
+function removePlaceholder(el) {
+  if (CONF.supportPlaceholder) {
+    return
+  }
+  var parent = el.parentNode;
+  var plaEl = document.getElementById(el.id + '_pla');
+  try {
+    parent.removeChild(plaEl);
+  } catch (e) {}
+}
+/*object copy 简单的基本类型对象的copy*/
+
+function object_copy(o) {
+  log.add("objectCopy", o);
+  var result = {},
+    i, empty = {};
+  for (i in o) {
+    if ((i in o) && !(i in empty)) {
+      result[i] = o[i];
+    }
+  }
+  return result;
+  //return json_parse(json_stringify(o));
+}
+
+/*inputChange*/
+
+function initInputChange(el) {
+  bind(el, ENAME.focus, function() {
+    checkInputChange(el);
+  });
+  bind(el, ENAME.blur, function() {
+    clearTimeout(el.__checkInputTC);
+  });
+}
+
+function checkInputChange(el) {
+  var val = el.value;
+  var oldVal = '__oldVal' in el ? el.__oldVal : el.__oldVal = val;
+  var fns = el._inputChangeFns;
+  var returnVal;
+  if (val !== oldVal) {
+    for (var i = 0; i < fns.length; i++) {
+      if (typeof fns[i] === 'function') {
+        if (false === fns[i].call(el, val, oldVal, el.__reset)) {
+          returnVal = false;
+        }
+      }
+    }
+  }
+  if (returnVal !== false) {
+    //change的回调中可能会修改val本身，或者引起oldVal的改变，这里只是留一个hack，应该不会用到
+    el.__oldVal = val
+  }
+  if (el.__reset) {
+    el.__reset = false;
+  }
+  el.__checkInputTC = setTimeout(function() {
+    checkInputChange(el);
+  }, 50);
+}
+var inputChange = (function() {
+  return {
+    on: function(el, fn) {
+      var fns = el._inputChangeFns;
+      if (!fns) {
+        fns = el._inputChangeFns = [];
+        initInputChange(el)
+      }
+      fns.push(fn);
+    },
+    off: function(el, fn) {
+      var fns = el._inputChnageFns;
+      for (var i = 0; i < fns.length; i++) {
+        if (fn === fns[i]) {
+          fns.splice(i, 1);
+          i--;
+        }
+      }
+    }
+  }
+})();
+
+/*验证用户名*/
+
+function validateUserName(user) {
+  user = (user + "").replace(/\s+/, ""); //将所有空格去掉
+  var res = {
+    miid: /^\d{3,}/.test(user),
+    phoneLike: /^\d{6,}$/.test(user),
+    phone: /^\++\d{6,}$/.test(user) || /^0{2}\d{6,}/.test(user),
+    emailLike: (user + "").indexOf("@") !== -1,
+    email: /^[\w.\-]+@(?:[A-Za-z0-9]+(?:-[A-Za-z0-9]+)*\.)+[A-Za-z]{2,6}$/.test(user),
+    nonum: /[^0-9]/.test(user)
+  }
+  if (!res.phoneLike && !res.phone && !res.email && !res.miid) {
+    return false;
+  } else {
+    return res;
+  }
+}
+/*验证手机号*/
+function validatePhone(phone) {
+  /*只能是国内的手机号*/
+  phone = (phone + '').replace(/\s+/, "");
+  var isPhone = /^1([2-9])\d{9}$/.test(phone);
+  // var isPhone=/^\++\d{6,}$/.test(phone) || /^0{2}\d{6,}/.test(phone);
+  return isPhone;
+}
+/*验证短信验证码*/
+function validateSMS(ticket) {
+  return /^\d{4,6}$/.test(ticket);
+}
+
+/*本地缓存用户名*/
+function setLocalUserName(u, userId) {
+  var expire = -10 * 365;
+  var maxage = 10 * 365 * 24 * 60 * 60;
+  setCookie("userName", u, expire, "/", ".xiaomi.com", maxage);
+  var storageUserName = parseInt(u, 10) === userId ?
+    userId :
+    userId + "|" + u;
+  LStore.set("user", storageUserName);
+}
+
+function getLocalUserName(userId) {
+  //var expire=new Date( new Date().getTime() +10*365*24*60*60000 );
+  var result = {};
+  result.userName = getCookie("userName");
+  var su = (LStore.get("user") + "").split("|");
+  if (su[0] && su[1] === result.userName) {
+    result.userId = su[0];
+  }
+  return result
+}
+
+/*各种提交的返回*/
+function resSuccess(json, u, cu) {
+  //登录成功
+  if (STAT.clientAcq) {
+    clientAcq.resetCookie();
+    STAT.clientAcq = false;
+  }
+  log.add("loginPost", "success", json);
+  LStore.remove("loginNeedCode");
+  log.add('securityStatus', json.securityStatus);
+  var flag = json.securityStatus || 0;
+  if (flag === 0) {
+    setLocalUserName(cu, json.userId)
+    href = json["location"];
+  } else {
+    href = json.notificationUrl;
+  }
+  log.add('href', href);
+  location.href = href;
+}
+
+function resTwoStepLogin(json, u, cu) {
+  log.add("loginPost", "step2", json);
+  LStore.remove("loginNeedCode");
+  setLocalUserName(cu, json.userId);
+  //两步登录参数
+  var queryObj = object_copy(submitParams);
+  queryObj.user = encodeURIComponent(u)
+
+  if (json.qs) {
+    queryObj.qs = encodeURIComponent(json.qs);
+  } else {
+    delete queryObj.qs;
+  }
+  if (json.userId) {
+    queryObj.userId = encodeURIComponent(json.userId);
+  }
+  if (json.phone) {
+    queryObj.phoneHint = encodeURIComponent(json.phone);
+  }
+  if (json.backupPhone) {
+    queryObj.backupPhone = encodeURIComponent(json.backupPhone);
+  }
+  queryObj._sign = encodeURIComponent(json._sign);
+  queryObj.callback = encodeURIComponent(json.callback);
+  queryObj.sid = encodeURIComponent(json.sid);
+  queryObj.app = true;
+  /* query 参数转移 */
+  var pageParams = ["_locale", "_customDisplay", "lsrp_appName", "mini"];
+  for (var i = 0, p, tmpval; p = pageParams[i++];) {
+    tmpval = getParam(p);
+    if (tmpval) {
+      queryObj[p] = encodeURIComponent(tmpval)
+    }
+  }
+  log.add("twoStepLogin", "queryObj", queryObj);
+  //跳转到第二步登录
+  var authenticationPageURL = CONF.twoStepURL + "?" + json2str(queryObj);
+  location.href = authenticationPageURL;
+}
+
+function setCaptchaImg(img, url) {
+  url = url || CONF.captChaURL;
+  img.src = url + "&" + (new Date().getTime());
+  ELS.captchaCode && (ELS.captchaCode.__reset = true) && (ELS.captchaCode.value = "");
+  addClass(ELS.layout, "captcha_layout");
+}
+
+function resNeedCaptcha(json, u) {
+  //初始化图片验证码
+  var e = true; //是否提示错误
+  if (!CONF.captchaNeed) {
+    CONF.captchaNeed = 1;
+    LStore.set("loginNeedCode", "1", 6e4 * 15);
+  }
+  if (!CONF.captchaInit) {
+    e = false;
+    captchaInit(json.captchaUrl);
+  }
+  setCaptchaImg(ELS.captchaImg);
+  /*
+  var errorText=MSG.CODE_RES_ERROR
+  var errorEl=ELS.captCode
+  if(json.code!==87001){
+    errorText=MSG.LOGIN_RES_ERROR;
+    errorEl=FORMEL.username
+  }
+  */
+  e && FormError.show(MSG.CODE_RES_ERROR, ELS.captchaCode);
+}
+
+function captchaInit(url) {
+  CONF.captchaInit = 1;
+  ELS.captcha.innerHTML = CONF.captchaTpl;
+
+  ELS.captchaCode = g("#captcha-code");
+  ELS.captchaImg = g("#captcha-img");
+
+  setPlaceholder(ELS.captchaCode);
+  bind(ELS.captchaImg, ENAME.click, function() {
+    clearTimeout(ELS.captchaImg.__refreshImg);
+    ELS.captchaImg.__refreshImg = setTimeout(function() {
+      setCaptchaImg(ELS.captchaImg);
+    }, 100);
+  });
+
+  inputChange.on(ELS.captchaCode, function(val, oldVal, reset) {
+    !reset && clearError(ELS.mainForm);
+  });
+}
+
+function resError(json) {
+  if (CONF.captchaInit) {
+    setCaptchaImg(ELS.captchaImg);
+  }
+  ELS.captchaCode && FormError.clean(ELS.captchaCode);
+  FormError.show(!STAT.verifyPwd ? MSG.LOGIN_RES_ERROR : MSG.PWD_RES_ERROR, ELS.userName);
+}
+
+function resNoUser() {
+  FormError.show(MSG.USER_RES_ERROR, ELS.userName);
+}
+/*短信验证码错误*/
+function resTicketError() {
+  FormError.show(MSG.password_number_rule, ELS.pwd);
+}
+/*无密码用户密码登录*/
+function resNoPWDUser() {
+  FormError.show(MSG.No_PWD_USER_TIP);
+}
+/*Token过期*/
+function resTokenExpire() {
+  FormError.show(MSG.TOKEN_EXPIRE);
+}
+/*半年内次数过多*/
+function resTooMuchRegister() {
+  FormError.show(MSG.TooMuchRegister);
+}
+
+function errorResponseFunc403(xhr) {
+  //显示登录操作频繁被封禁的消息
+  domShow(ELS.errorForbidden, true);
+}
+
+function errorResponseFunc500(xhr) {
+  //显示登录错误的消息
+  FormError.show(MSG.INTERNAL_ERROR);
+}
+
+function resPauseUser(xhr) {
+  //显示帐号被冻结的消息
+  FormError.show(MSG.LOGIN_FORZEN, ELS.userName);
+}
+
+function resFail(xhr) {
+  /*提交验证失败的处理逻辑2 status!==200*/
+}
+
+function resNetworkError(xhr){
+  //网络错误（断网，接口超时等）
+  FormError.show(MSG.NETWORK_ERROR);
+}
+
+/*定制页面部分*/
+var customDisplayByParam = (function() {
+  var CUSTOM_DISPLAY_BIT = 8;
+  var showCustomDisplay = function(i, tmp, show) {
+    var el = g("#custom_display_" + tmp);
+    if (!!tmp) {
+      if (!!show) {
+        domShow(el);
+      } else {
+        domHide(el);
+      }
+    }
+  }
+  return function(param, show) {
+    if (typeof param === 'number') {
+      for (var i = 0; i <= CUSTOM_DISPLAY_BIT; i++) {
+        showCustomDisplay(i, (param & (1 << i)), show);
+      }
+    }
+  }
+})();
+
+function setLoginTitle(title) {
+  var tmp = "";
+  var i = 0;
+  /*decode 转义左尖括号和替换高亮*/
+  while (i < 10) {
+    tmp = decodeURIComponent(title);
+    if (title === tmp) {
+      break;
+    }
+    title = tmp;
+    i++;
+  }
+  title = htmlspecialchars(title);
+  title = title.replace(/\$\{(.*)\}\$/g, function(a, b, c) {
+    return '<span class="strong-color" style="color:#ff7e00">' + b + '</span>'; /*处理高亮显示*/
+  });
+  ELS.header.innerHTML = title;
+}
+
+function initCodeContainer() {
+  //添加搜索框
+  var html = "<div class='search-code'><i class='icon_search'></i><input type='text' class='search-code-input'></div>";
+  //添加列表项,首页不要取消按钮
+  html += RegionsCode.getAll({ 'usual': MSG.POPULAR }, true, true);
+  ELS.codeContainerCon.innerHTML = html;
+  ELS.searchCodeInput = g(".search-code-input", ELS.codeContainer)[0];
+  ELS.recordCode = g(".record-country", ELS.codeContainer);
+  ELS.usual = g(".countrycode-container-usual", ELS.codeContainer)[0];
+  ELS.usualRecord = g(".record", ELS.usual);
+  var tmp = "";
+  each(ELS.usualRecord, function(item, index) {
+    var tmpN = Math.random();
+    var roundN = getRandomNum();
+    while (roundN === tmp) {
+      roundN = getRandomNum();
+    }
+    tmp = roundN;
+    addClass(item, 'code_style' + roundN);
+  });
+  inputChange.on(ELS.searchCodeInput, function(val, oldval) {
+    var val = trim(val);
+    if (val.length > 0) {
+      addClass(ELS.codeContainer, "search-mode");
+      //var data=RegionsCode.searchLike(val);
+      var data = RegionsCode.searchLikeData(val);
+    } else {
+      removeClass(ELS.codeContainer, "search-mode");
+      return false;
+    }
+    each(ELS.recordCode, function(item) {
+      //var cty=trim(item.innerHTML);
+      var cty = trim(item.getAttribute("data-brief"));
+      if (hasClass(item.parentNode.parentNode.parentNode, "countrycode-container-usual")) {
+        return false;
+      }
+      if (codeIndata(cty, data)) {
+        addClass(item.parentNode, "selected");
+      } else {
+        removeClass(item.parentNode, "selected");
+      }
+    });
+  });
+  //绑定Enter事件
+  bind(ELS.searchCodeInput, ENAME.keydown, function(e) {
+    var e = e || window.event;
+    var keyCode = e.charCode || e.keyCode;
+    if (keyCode == 13) {
+      var _result = g(".selected", ELS.codeContainer)[0];
+      _result && triggerEvent(_result, 'click');
+      e.returnValue = false;
+      e.preventDefault && e.preventDefault()
+    };
+    ("cancelBubble" in e) && (e.cancelBubble = true);
+    ("stopPropagation" in e) && e.stopPropagation();
+  });
+}
+var clsNum = 5;
+
+function getRandomNum() {
+  var tmpN = Math.random();
+  return Math.ceil(tmpN * clsNum);
+}
+
+function codeIndata(cty, data) {
+  data = data || [];
+  for (var i = 0, n; n = data[i++];) {
+    //if(cty===n.C){
+    if (cty === n.B) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function toggleCodeContainer() {
+  if (STAT.codeShown) {
+    domHide(ELS.codeContainer);
+    STAT.codeShown = false;
+  } else {
+    domShow(ELS.codeContainer, true);
+    ELS.searchCodeInput && triggerEvent(ELS.searchCodeInput, 'focus');
+    STAT.codeShown = true;
+  }
+}
+
+function hideCodeContainer() {
+  //去掉搜索的一些状态
+  ELS.searchCodeInput && (ELS.searchCodeInput.value = "");
+  removeClass(ELS.codeContainer, "search-mode")
+  domHide(ELS.codeContainer);
+  STAT.codeShown = false;
+}
+
+function selectedCountryCode(record) {
+  var el = g(".record-country", record)[0];
+  var code = el.getAttribute("data-code");
+  var brief = el.getAttribute("data-brief");
+  var text = el.innerHTML;
+  ELS.codeValue.innerHTML = code;
+  // ELS.codeValue2.innerHTML=code;
+  log.add("selectCode", code, brief);
+}
+
+function showTabCon(tab) {
+  each(ELS.tabsCon, function(item, index) {
+    if (item.getAttribute("data-con") === tab) {
+      domShow(item, true);
+    } else {
+      domHide(item);
+    }
+  });
+  if (tab === 'qr') {
+    showCustomQrLogin();
+  } else {
+    ELS.qriframe2.src = "about:blank";
+  }
+}
+
+function showTab(tab) {
+  each(g('a', ELS.navTabs), function(item, index) {
+    if (item.getAttribute("data-tab") === tab) {
+      addClass(item, 'now');
+    } else {
+      removeClass(item, "now");
+    }
+  });
+}
+
+function showCustomData(data, param) {
+  for (var i = 0; i < data.length; i++) {
+    if (isEqualForObject(param, data[i])) {
+      return true;
+    }
+  }
+  return false;
+}
+/*注册*/
+function register() {
+  if (STAT.lockSubmit) {
+    return false;
+  }
+  var result = object_copy(submitParams);
+  if (STAT.clientAcq) {
+    result.phoneHash = clientAcq.hash || '';
+  } else {
+    result.phone = userInfo.phone;
+  }
+  result.noPwd = true; /*不需设置密码*/
+  Ajax({
+    url: "/pass/tokenRegister",
+    method: 'POST',
+    data: result,
+    success: function(data) {
+      STAT.lockSubmit = 0;
+      log.add("resisterResult", data);
+      var json = format2Json(data.replace('&&&START&&&', ''));
+      var code = json.code;
+      log.add("resisterCode", code);
+      if (code === 0) {
+        if (STAT.clientAcq) {
+          clientAcq.resetCookie();
+          STAT.clientAcq = false;
+        }
+        location.href = '/pass/serviceLogin' + decodeURIComponent(result.qs);
+      } else if (code === 20023) {
+        resTooMuchRegister();
+        /*回收号确认时*/
+        domHide(ELS.acConfirmOkBtn);
+        domHide(ELS.acConfirmNoBtn);
+      } else if (code === 21327 || code === 21314) { //token过期
+        resTokenExpire();
+      } else if (code === 10017) {
+        FormError.show(MSG.password_number_rule);
+      } else {
+        FormError.show(MSG.Register_Error);
+      }
+    },
+    error: function(xhr) {
+      log.add('registerError', xhr['status'], xhr.responseText);
+      var statusCode = xhr['status'];
+      STAT.lockSubmit = 0
+    },
+    timeout: function() {
+      log.add("registerTimeout", new Date().getTime())
+      STAT.lockSubmit = 0
+    }
+  })
+  STAT.lockSubmit = 1;
+}
+
+/* 判断_loginSign后login */
+function newLogin(submitUrl, result) {
+  var loginSign = getParam('_loginSign') !== 'ticket' ? 'pwd' : 'ticket';
+  if (loginSign !== STAT.loginType) {
+    var params = object_copy(submitParams);
+    params._sign = '';
+    params._loginSign = STAT.loginType;
+    params._json = true;
+    Ajax({
+      url: "/pass/serviceLogin",
+      method: 'GET',
+      data: params,
+      success: function(data) {
+        var json = format2Json(data);
+        if (json.code !== 0) {
+          result._sign = json._sign;
+          result.qs = json.qs;
+          result.callback = json.callback;
+          login(submitUrl, result);
+        } else {
+          location.href = json.location;
+        }
+      }
+    })
+  } else {
+    login(submitUrl, result);
+  }
+}
+
+function login(submitUrl, result) {
+  if (STAT.lockSubmit) {
+    return false;
+  }
+  Ajax({
+    url: submitUrl,
+    method: 'POST',
+    data: result,
+    success: function(data) {
+      STAT.lockSubmit = 0;
+      log.add("loginResult", data);
+      var json = format2Json(data);
+      var code = json.code;
+      var cookieUserName = '';
+      /*取号token登录不返回user*/
+      if (!!result.user) {
+        var userName = result.user;
+        cookieUserName = userName.replace(userName.substring(3, userName.length - 3), '***');
+      }
+      log.add("loginCode", code);
+      if (code in ResponseFunc) {
+        ResponseFunc[code](json, userName, cookieUserName);
+      } else {
+        ResponseFunc['default'](json, userName);
+      }
+    },
+    error: function(xhr) {
+      log.add('loginError', xhr['status'], xhr.responseText);
+      var statusCode = xhr['status'];
+      var userName = result.user;
+      if (statusCode in ResponseFunc) {
+        if (statusCode === 0) {
+          log.add('loginsErrorStatus', 'in');
+          ResponseFunc['network']({}, userName);
+        } else {
+          log.add('loginsErrorStatus', 'out');
+          ResponseFunc[statusCode]({}, userName);
+        }
+      } else {
+        log.add('loginsErrorStatus', 'fail');
+        ResponseFunc['fail']({}, userName);
+      }
+      STAT.lockSubmit = 0
+    },
+    timeout: function() {
+      //ResponseFunc['default']({},userName);
+      log.add("loginTimeout", new Date().getTime())
+      STAT.lockSubmit = 0
+    }
+  })
+  STAT.lockSubmit = 1;
+}/*利用dev平台的统计进行事件统计的脚本*/
+  //最后一条时间数据
+  _t_.htmlLoadEnd=(new Date()).getTime();
+  function sendStat(){
+    var base=CONF.samplingBase;
+    var rate=CONF.samplingRate;
+    if(fetchSample(base,rate)){
+      
+      var misession=getMiSession();
+      var mibasic=getMiBasic();
+      var ext=getExt();
+      var deviceId=getCookie("deviceId")||navigator.userAgent
+      _d_.content=[misession,mibasic,ext];
+
+      var data="app_id="+_t_.appId+"&"+
+               "app_key="+_t_.appKey+"&"+
+               "device_id="+deviceId+"&"+
+               "channel="+JSP_VAR.dataCenter+"&"+
+               "version="+JSP_VAR.deviceType+"&"+
+               "stat_value="+json_stringify([_d_]);
+      var iframe=document.createElement("img");
+      iframe.style.display="none";
+      iframe.src=_t_.statURL+'?'+data;
+      document.body.appendChild(iframe);
+      setTimeout(function(){
+        document.body.removeChild(iframe);
+      },10000);
+    }
+  }
+
+  function fetchSample(base,rate){
+    return Math.random() * base < rate;
+  }
+
+  function getMiSession(){
+    var d={"category": "mistat_session","values":[]};
+    if(!_t_.htmlCache){
+      d.values.push({
+        "start":_t_.htmlGetStart,
+        "end":_t_.htmlGetEnd,
+        "env":"UnusedCache"
+      });
+    }else{
+      d.values.push({
+        "start":_t_.jspcomplete,
+        "end":_t_.htmlLoadEnd,
+        "env":"UsedCache"
+      });
+    }
+    return d;
+  }
+
+  function getMiBasic(){
+    var d={"category": "mistat_basic","values":[]};
+    d.values.push({
+      "key":"model",
+      "type":"property",
+      "value": Browser.name+" "+Browser.version 
+    });
+    d.values.push({
+      "key":"locale",
+      "type":"property",
+      "value":CONF.locale
+    });
+    CONF.os && d.values.push({
+      "key":"os",
+      "type":"property",
+      "value":CONF.os
+    });
+    CONF.resolution && d.values.push({
+      "key":"resolution",
+      "type":"property",
+      "value":CONF.resolution
+    })
+    return d;
+  }
+  function getExt(){
+
+    var d={"category": "Ext","values":[]};
+
+   /*是否支持本地LocalStorage缓存*/
+
+    if(_t_.supportLocalstorage){
+      d.values.push({
+        "key":"A-supportcache",
+        "type":"event",
+        "value":1
+      });
+    }else{
+      d.values.push({
+        "key"  : "A-unSupportcache",
+        "type" : "event",
+        "value": 1
+      });
+    }
+
+   /*当前是否被缓存以及Static加载时间*/
+
+    if(_t_.htmlCache){
+      d.values.push({
+        "key":"A-cached",
+        "type":"event",
+        "value":1
+      });
+    }else{
+      d.values.push({
+        "key":"A-unCached",
+        "type":"event",
+        "value":1
+      });
+      d.values.push({
+        "key":"A-staticLoadTime",
+        "type":"count",
+        "value":Math.max(_t_.htmlGetEnd-_t_.htmlGetStart,0)
+      });
+    }
+
+   /*全程花费时间，不区分缓存不缓存，不区分是否支持Performance*/
+
+    d.values.push({
+      "key":"A-FullTime",
+      "type":"count",
+      "value":Math.max(_t_.htmlLoadEnd - _d_.startTS)
+    });
+
+   /*对于支持Performance.timing和不支持Performance.timing区别Key对待 对于key来说，B类+C类的次数应该等于A类*/
+
+    var preffix= _d_.startTS===_d_.endTS?"C":"B";
+    d.values=d.values.concat(getExtTime(preffix));
+
+    return d;
+  }
+  function getExtTime(preffix){
+    var res=[];
+
+   /*jsp加载和渲染时间*/
+
+    res.push({
+      "key"  :preffix+"-jspLoadTime",
+      "type" :"count",
+      "value": Math.max(_d_.endTS - _d_.startTS,0)
+    });
+
+   /*全程加载时间*/
+
+    res.push({
+      "key"  :preffix+"-FullTime",
+      "type" :"count",
+      "value": Math.max(_t_.htmlLoadEnd - _d_.startTS,0)
+    });
+
+   /*全程加载时间2*/
+
+    if(_t_.htmlCache){
+      res.push({
+        "key"  :preffix+"-CachedFullTime",
+        "type" :"count",
+        "value": Math.max(_t_.htmlLoadEnd - _d_.startTS,0)
+      });
+    }else{
+      res.push({
+        "key"  :preffix+"-unCachedFullTime",
+        "type" :"count",
+        "value": Math.max(_t_.htmlLoadEnd - _d_.startTS,0)
+      });
+    }
+    return res;
+  }
+/*获取验证码*/
+/*手输手机号或者网络取号*/
+var HOLDTIMES = 60;
+var SEND_STATUS_TC = null;
+var sendData = {}; //多次不同手机号发送处理倒计时；
+var send = {}; //当前的发送数据
+var sendFlag = 'getSmsCode'; //确定发送短信的el
+
+bind(ELS.getSmsCode, "click", function() {
+  clearError(ELS.mainForm);
+  sendFlag = 'getSmsCode';
+  var phone = trim(ELS.userName.value);
+  var data = {
+    sid: 'passport'
+  };
+  if (!verifyMode(ELS.mainForm, 'password')) {
+    return false;
+  }
+  if (STAT.clientAcq && phone === STAT.maskedPhone) {
+    /*使用取号登录*/
+    data.userHash = clientAcq.hash;
+  } else {
+    data.user = phone;
+    STAT.clientAcq = false;
+  }
+  if (CONF.captchaNeed) {
+    data.captCode = trim(ELS.captchaCode.value);
+  }
+  sendPhoneTicket(data);
+});
+
+function sendPhoneTicket(data) {
+  var phone = (STAT.clientAcq ? data.userHash : data.user);
+  send = sendData[phone];
+  if (!send) {
+    send = (sendData[phone] = { left: 5, times: 0 });
+  }
+  if (!send.initQuota) {
+    checkSMSQuota(phone, function(left) {
+      send.left = left;
+      send.initQuota = 1;
+      sendTicket(data);
+    });
+  } else {
+    sendTicket(data);
+  }
+}
+
+function sendTicket(data) {
+  var phone = (STAT.clientAcq ? data.userHash : data.user);
+  var send = sendData[phone];
+  if (send.left === 0) {
+    showLeftTimes(send.left);
+    return;
+  }
+  if (send.sending) {
+    sendSuccess(send, true);
+    return;
+  }
+  send.sending = true;
+  Ajax({
+    url: '/pass/sendServiceLoginTicket',
+    method: "post",
+    data: data,
+    dataType: "text",
+    success: function(text) {
+      log.add("sendServiceLoginTicket", data);
+      send.sending = false;
+      var json = {};
+      try {
+        json = format2Json(text.replace('&&&START&&&', ''));
+      } catch (e) {}
+      if (json.code === 0) {
+        send.left = Math.max(send.left - 1, 0);
+        send.hold = (send.times += 1) * HOLDTIMES;
+        sendSuccess(send);
+      } else if (json.code === 87001) {
+        resNeedCaptcha(json); /*需要验证码*/
+        sendFail(send);
+        /*次数超限*/
+      } else if (json.code === 70022) {
+        showLeftTimes((send.left = 0));
+        sendFail(send);
+        /*手机号格式不正确*/
+      } else if (json.code === 70008) {
+        FormError.show(MSG.PHONE_INPUT_ERROR, ELS.userName);
+      } else if (json.code === 10001) {
+        FormError.show(MSG.INTERNAL_ERROR);
+      } else {
+        FormError.show(MSG.INTERNAL_ERROR);
+      }
+    },
+    error: function() {
+      send.sending = false;
+      sendFail(send);
+    }
+  });
+}
+
+function sendSuccess(send, nocheck) {
+  showLeftTimes(send.left);
+  if (nocheck) {
+    return
+  };
+  text = MSG.send_hold;
+  var check = function() {
+    send.hold--;
+    var t = text.replace("{time}", "(" + send.hold + ")");
+    if (send.hold >= 1) {
+      changeSendStatus(t, true);
+      SEND_STATUS_TC = setTimeout(function() {
+        check();
+      }, 980);
+    } else {
+      changeSendStatus(MSG.send_again, false);
+    }
+  }
+  clearTimeout(SEND_STATUS_TC);
+  check();
+}
+
+function sendFail(send) {
+  changeSendStatus(MSG.send_again, false);
+}
+
+function changeSendStatus(t, disable) {
+  ELS[sendFlag].innerHTML = t;
+  if (disable) {
+    addClass(ELS[sendFlag], "disabled");
+  } else {
+    removeClass(ELS[sendFlag], "disabled");
+  }
+}
+
+function checkSMSQuota(phone, callback) {
+  var data = {
+    contentType: 160033,
+    userId: -1
+  }
+  if (STAT.clientAcq) {
+    data.addressHash = phone;
+  } else {
+    data.address = phone;
+  }
+  Ajax({
+    url: '/pass/sms/quota',
+    method: 'POST',
+    data: data,
+    dataType: "text",
+    success: function(text) {
+      var json = {};
+      try {
+        json = format2Json(text.replace('&&&START&&&', ''));
+      } catch (e) {}
+      if (json.result === 0) {
+        callback((parseInt(json.info) || 0));
+      } else {
+        callback(0);
+      }
+    },
+    error: function() {
+      callback(0);
+    }
+  })
+}
+
+function showLeftTimes(left) {
+  var text = MSG.leftTimesText;
+  var EL = (sendFlag === 'getSmsCode' ? FormError : acError);
+  if (left <= 2) {
+    if (left === 0) {
+      var text = MSG.nochance
+    } else {
+      text = Template(text, { left: left });
+    }
+    EL.show(text);
+  } else {
+    EL.clean();
+  }
+}/*回收号判定 s*/
+function confirmRegister() {
+  var tips = MSG.CONFIRM_ACC_TIP;
+  tips = tips.replace("{phone}", phoneInfo.data.phone);
+  tips = tips.replace('{username}', phoneInfo.data.maskedUserId);
+  if (confirm(tips)) {
+    register();
+  }
+}
+bind(ELS.acConfirmOkBtn, ENAME.click, function() {
+  if (!hasClass(this, 'disabled')) {
+    if (STAT.clientAcq) {
+      backToMainView();
+      changeToLoginType('ticket');
+      ELS.userName.value = STAT.maskedPhone;
+      return;
+    }
+    var result = object_copy(submitParams);
+    result.user = userInfo.phone;
+    newLogin('/pass/serviceLoginTicketAuth', result);
+  }
+});
+bind(ELS.acConfirmNoBtn, ENAME.click, function() {
+  if (!hasClass(this, 'disabled')) {
+    confirmRegister();
+  }
+});
+bind(ELS.acConfCheckBox, ENAME.click, function() {
+  toggleClass(this, 'icon_true');
+  if (!hasClass(this, 'icon_true')) {
+    addClass(ELS.acConfirmOkBtn, 'disabled');
+    addClass(ELS.acConfirmNoBtn, 'disabled');
+  } else {
+    removeClass(ELS.acConfirmOkBtn, 'disabled');
+    removeClass(ELS.acConfirmNoBtn, 'disabled');
+  }
+});
+bind(ELS.acConfirmBackBtn, ENAME.click, function() {
+  backToMainView();
+  if (STAT.clientAcq) {
+    domHide(ELS.acqTipsConf);
+    domHide(ELS.acqTipsMain);
+    clientAcq.resetCookie();
+    STAT.clientAcq = false;
+  }
+  ELS.userName.value = '';
+  ELS.pwd.value = '';
+});
+
+/*回收号判定 e*/
+
+/*登录webview+客户端取号*/
+var clientAcq = (function() {
+  /*绑定事件*/
+  var _registerEvent = function() {
+    bind(ELS.acRegisterOkBtn, ENAME.click, function() {
+      if (!hasClass(this, 'disabled')) {
+        register();
+      }
+    });
+    bind(ELS.acRegisterNoBtn, ENAME.click, function() {
+      resetCookie();
+      STAT.clientAcq = false;
+      backToMainView();
+      domHide(ELS.acqTipsMain);
+      domHide(ELS.acqTipsReg);
+      ELS.userName.value = '';
+      ELS.pwd.value = '';
+    });
+    bind(ELS.agreeCheckBox, ENAME.click, function() {
+      toggleClass(this, 'icon_true');
+      if (!hasClass(this, 'icon_true')) {
+        addClass(ELS.acRegisterOkBtn, 'disabled');
+      } else {
+        removeClass(ELS.acRegisterOkBtn, 'disabled');
+      }
+    });
+  };
+  var _showAcqTips = function() {
+    var operator = Base64.decode(getCookie('operator'));
+    var operatorLink = Base64.decode(getCookie('operatorLink'));
+    ELS.acqTipsConf.innerHTML = ELS.acqTipsReg.innerHTML = ELS.acqTipsMain.innerHTML = '<a href="' + operatorLink + '">' + operator + '</a>'; //直接返回一段话，会有国际化问题
+    domShow(ELS.acqTipsMain);
+    domShow(ELS.acqTipsConf);
+    domShow(ELS.acqTipsReg);
+  }
+  var start = function() {
+    var hash = getCookie('hash');
+    if (hash === '' || getCookie('activatorToken') === '') {
+      return;
+    }
+    /*先判断帐号信息*/
+    Ajax({
+      url: "/pass/phoneInfo",
+      method: 'POST',
+      data: { userHash: hash },
+      success: function(data) {
+        log.add("phoneInfo", data);
+        var json = format2Json(data);
+        phoneInfo = json;
+        if (json.code === 0) {
+          STAT.clientAcq = true;
+          _showAcqTips();
+          STAT.maskedPhone = json.data.phone;
+          /*status:0 注册，1选择 2登录*/
+          switch (json.data.status) {
+            case 1:
+              changeMainViewTo('acConfirm', json);
+              break;
+            case 2:
+              backToMainView();
+              ELS.userName.value = json.data.phone;
+              break;
+            case 0:
+              _registerEvent();
+              g('.maskedPhone', ELS.acRegister)[0].innerText = STAT.maskedPhone;
+              changeMainViewTo('acRegister', json);
+              break;
+            default:
+              break;
+          }
+        }
+      }
+    })
+  };
+  var resetCookie = function() {
+    setCookie("hash", '', -1, "/", ".account.xiaomi.com", maxage);
+    setCookie("activatorToken", '', -1, "/", ".account.xiaomi.com", maxage);
+    setCookie("operator", '', -1, "/", ".account.xiaomi.com", maxage);
+    setCookie("operatorLink", '', -1, "/", ".account.xiaomi.com", maxage);
+  };
+  return {
+    start: start,
+    resetCookie: resetCookie,
+    hash: getCookie('hash')
+  }
+})();
+
+/*切换页面*/
+function initChooseBox(type, data) {
+  phoneInfo = data;
+  if (phoneInfo.data.nickname) {
+    g('.usernameShow', ELS[type])[0] && (g('.usernameShow', ELS[type])[0].innerText = phoneInfo.data.nickname);
+  } else {
+    domHide(g('.us-userName', ELS[type])[0]);
+  }
+
+  if (g('.us-portraitUrl', ELS[type])[0] && phoneInfo.data.portrait) {
+    g('.us-portraitUrl', ELS[type])[0].innerHTML = '<img src="' + phoneInfo.data.portrait + '">'
+  }
+  g('.phoneShow', ELS[type])[0] && (g('.phoneShow', ELS[type])[0].innerText = phoneInfo.data.phone);
+  g('.useridShow', ELS[type])[0] && (g('.useridShow', ELS[type])[0].innerText = phoneInfo.data.maskedUserId);
+}
+
+function changeMainViewTo(type, data) {
+  domShow(ELS.acBox);
+  initChooseBox(type, data);
+  if (!!CONF.loginBanner.hideMainbox) {
+    domHide(ELS.bannerIframe);
+  }
+  domHide(ELS.loginMain);
+  domShow(ELS[type]);
+  if (type === 'acConfirm') {
+    domShow(ELS.acConfirmOkBtn);
+    domShow(ELS.acConfirmNoBtn);
+  }
+  domHide(g(".n-footer")[0]); //选择页面中不显示footer
+  STAT.currentView = type;
+}
+/*回到手动输入界面*/
+function backToMainView() {
+  domHide(ELS.acBox);
+  FormError.clean();
+
+  clearTimeout(SEND_STATUS_TC);
+  changeSendStatus(MSG.INIT_CODE_TEXT, false);
+  STAT.isMihomeMemberType && domShow(ELS.bannerIframe, true);
+  domShow(ELS.loginMain);
+  STAT.currentView = 'loginMain';
+}
+
+
+var GetPhone = {
+  start: function(conf) {
+    // var _this = this;
+    // this.conf = conf;
+    var accessUrl = 'https://act.account.xiaomi.com/h5/getAccessToken';
+    // var accessUrl = 'http://act.preview.account.xiaomi.com/h5/getAccessToken';内网地址
+    var loadJsonp = function(url) {
+      var script = document.createElement('script');
+      script.src = url;
+      document.body.insertBefore(script, document.body.firstChild);
+    };
+    var miAccGetTokenHandler = function(res) {
+      if (res.code === 0) {
+        var img = new Image();
+        img.src = res.url;
+        // var followUrl = res.followUrl;
+        // setTimeout(function() {
+        //   loadJsonp(followUrl);
+        // }, res.waitTime * 1000);
+      }
+    }
+    // var miAccGetPhoneHandler = function(res) {
+    //   if (res.code === 0) {
+    //     _this.conf.callback(res);
+    //   }
+    // }
+    // window.miAccGetPhoneHandler = miAccGetPhoneHandler;
+    window.miAccGetTokenHandler = miAccGetTokenHandler;
+    loadJsonp(accessUrl);
+  }
+};/*将页面中的基本数据载入log*/
+log.add("JSP_VAR", window.JSP_VAR);
+log.add("_d_", window._d_);
+log.add("_t_", window._t_);
+log.add("CONF", CONF);
+log.add("STAT", STAT);
+log.add("MSG", MSG);
+log.add("env", Environment);
+log.add("browser", Browser);
+log.add("search", location.search);
+log.add("=====================================分割线==========================",
+  "=====================================================================")
+
+if (CONF.getPhoneOn) {
+  GetPhone.start();
+}
+/*COMMAND*/
+
+bind(bodyNode, ENAME.keypress, function(e) {
+  var e = e || window.event;
+  var code = e.charCode || e.keyCode;
+  if (code) {
+    COMMAND.tmpVal += String.fromCharCode(code);
+  }
+  clearTimeout(COMMAND.tc);
+  COMMAND.tc = setTimeout(checkCommand, 50);
+});
+
+function checkCommand() {
+  if (COMMAND.tmpVal) {
+    for (var k in COMMAND.data) {
+      if (COMMAND.tmpVal.indexOf(k) !== -1) {
+        log.add("COMMAND", k);
+        typeof COMMAND.data[k] === 'function' && COMMAND.data[k]();
+        COMMAND.tmpVal = "";
+        COMMAND.history.push(k);
+      }
+    }
+  }
+}
+/*banner*/
+if (STAT.showCustomPage) {
+  addClass(ELS.body, 'win_banner_' + CONF.loginBanner.name);
+  changeLoginTypeTxt();
+  if (!!ELS.bannerIframe) {
+    ELS.bannerIframe.src = CONF.loginBanner.src;
+  }
+  if (STAT.isMihomeMemberType) {
+    customDisplayByParam(DISPLAY.FOOTER + DISPLAY.SNSLOGIN + DISPLAY.LOGO + DISPLAY.SNSDEFAULT);
+    if (getParam('_defaultLogin') === 'ticket') {
+      customDisplayByParam(DISPLAY.OUTERLINK);
+    }
+  }
+  if (CONF.loginBanner.customizeTitle) {
+    ELS.navTabs.innerHTML = CONF.loginBanner.customizeTitle;
+  }
+}
+
+
+/**********************************************
+ *
+ * 初始化登录方式的tab
+ * 选择二维码还是用户名密码
+ *
+ */
+if (!CONF.enableSMS) {
+  STAT.loginType = 'pwd';
+  domHide(ELS.changeLoginType);
+}
+/*
+ *  _noAcq=true则不取号优化
+ */
+if (!getParam('_noAcq') && CONF.enableSMS && !!getParam('lsrp_appName')) {
+  clientAcq.start();
+}
+if (CONF.loginType === 'pwd' || CONF.loginType === 'ticket') {
+  STAT.loginType = CONF.loginType;
+  showFormLogin(true);
+  changeToLoginType(STAT.loginType);
+} else if (CONF.loginType === 'qr') {
+  showQrLogin(true);
+} else {
+  bind(ELS.qrTrigger, ENAME.click, showQrLogin);
+  bind(ELS.qrClose, ENAME.click, showFormLogin);
+  bind(ELS.qrTrigger, ENAME.focus, function() {
+    bindKeyDown.on(KEY_CODE.SPACE, showQrLogin);
+  });
+  bind(ELS.qrTrigger, ENAME.blur, function() {
+    bindKeyDown.off(KEY_CODE.SPACE, showQrLogin);
+  });
+}
+
+/**********************************************
+ * 初始化链接
+ * 注册，忘记密码
+ * 第三方登录
+ * 语言选择
+ */
+addClass(ELS.body, CONF.locale);
+/*deviceId*/
+var deviceId = "";
+try {
+  deviceId = window.miui.getDeviceCloudHashId();
+} catch (e) {}
+if (deviceId && deviceId.length > 10) {
+  var expire = 60 * 365;
+  var maxage = 60 * 365 * 24 * 60 * 60;
+  setCookie("deviceId", deviceId, expire, "/", ".account.xiaomi.com", maxage);
+}
+
+each(ELS.outerLink, function(item, index) {
+  var href = item.href;
+  item.href = href + location.search;
+  log.add("outerlink" + index, href);
+});
+if (ELS.msgPrivacy) {
+  ELS.msgPrivacy.href = CONF.privacyLink;
+}
+/*底部版权海外版区分*/
+ELS.copyRight.innerHTML = CONF.copyRight;
+ELS.recordLink = g(".beian-record-link")[0];
+/*wap不显示ICP*/
+CONF.copyRightHide && domHide(ELS.copyRight);
+
+//第三方登录的顺序和逻辑
+if (CONF.snsDefault) {
+  //有默认就显示默认
+  var _html = getSnsDefaultLink(CONF.snsDefault);
+  _html && ELS.snsDefaultCon && (ELS.snsDefaultCon.innerHTML = _html);
+} else {
+  //没有默认，显示其他三种登录方式
+  each(ELS.snsLoginItems, function(item, index) {
+    var type = item.getAttribute('data-type');
+    var link = getSnsloginLink(type);
+    if (isArray(CONF.snsDisabled) && inArray(CONF.snsDisabled, type)) {
+      //是否被配置项禁用;
+      domHide(item);
+      log.add("snsloginlink", type, "hide")
+    } else {
+      log.add("snsloginlink", type, link)
+      if (link) {
+        item.href = link;
+        item.target = "_blank";
+      }
+    }
+  });
+  ELS.snsLoginCon && domShow(ELS.snsLoginCon, true);
+}
+/*语言选择应该使用delegate*/
+each(ELS.langSelect, function(item, index) {
+  var lang = item.getAttribute("data-lang");
+  if (lang === CONF.locale) {
+    addClass(item, "current");
+  } else {
+    item.href = getuLocaleLink(lang);
+    log.add("langInit", lang);
+  }
+});
+
+log.add("linkInit", "done", "register,forgetPwd,snsLogin,languageSelect,loginBanner");
+
+/*隐私政策和协议*/
+ELS.agreeLink.setAttribute('href', JSP_VAR.agreeLink);
+ELS.privacyLink.setAttribute('href', JSP_VAR.privacyLink);
+ELS.acConfAgreeLink.setAttribute('href', JSP_VAR.agreeLink);
+ELS.acConfPrivacyLink.setAttribute('href', JSP_VAR.privacyLink);
+
+/*********************************************
+ *
+ * 主要功能体
+ * 1.username onchange
+ * 
+ */
+//是否默认显示图片验证码
+if (CONF.captchaNeed) {
+  log.add("captchaNeed", "pageinitNeed");
+  captchaInit();
+  setCaptchaImg(ELS.captchaImg);
+}
+
+inputChange.on(ELS.userName, function(val, oldVal) {
+  //取号tips    
+  if (STAT.clientAcq) {
+    ELS.userName.value = '';
+    domHide(ELS.acqTipsMain);
+    clientAcq.resetCookie();
+    STAT.clientAcq = false;
+  }
+  var res = validateUserName(val, true);
+  clearError(ELS.mainForm);
+  if (STAT.enableCode /*&& !STAT.manualControlCode */ ) {
+    if (!trim(ELS.userName.value)) {
+      STAT.manualCodeFlag = true;
+    }
+    if (res.phoneLike && !res.phone) {
+      if (STAT.manualCodeFlag) {
+        STAT.manualControlCode = false;
+      }
+      if (!STAT.manualControlCode) {
+        //显示国家码选择
+        addClass(ELS.regionCode, "add_regioncode");
+        STAT.showCodeValue = true;
+      } else {
+        //隐藏国家码选择
+        removeClass(ELS.regionCode, "add_regioncode");
+        STAT.showCodeValue = false;
+        STAT.manualCodeFlag = false;
+        STAT.manualControlCode = true;
+        hideCodeContainer();
+      }
+    }
+    if (!trim(ELS.userName.value) || res.nonum) {
+      removeClass(ELS.regionCode, "add_regioncode");
+      hideCodeContainer();
+      STAT.showCodeValue = false;
+    }
+  }
+});
+inputChange.on(ELS.pwd, function(val, oldVal) {
+  clearError(ELS.mainForm);
+  if (ELS.pwdVisiable) { ELS.pwdVisiable.value = val }
+});
+
+//可见密码 sync 
+ELS.pwdVisiable &&
+  inputChange.on(ELS.pwdVisiable, function(val, oldVal) {
+    clearError(ELS.mainForm);
+    ELS.pwd.value = val;
+  });
+bind(ELS.toggleVisiable, 'click', function(e) {
+  e = e || window.event;
+  if (ELS.toggleVisiable.__visiable) {
+    ELS.toggleVisiable.__visiable = false;
+    removeClass(ELS.pwdEye, 'chk');
+    domShow(ELS.pwd);
+    domHide(ELS.pwdVisiable);
+    triggerEvent(ELS.pwd, 'focus');
+  } else {
+    ELS.toggleVisiable.__visiable = true;
+    addClass(ELS.pwdEye, 'chk');
+    domHide(ELS.pwd);
+    domShow(ELS.pwdVisiable);
+    triggerEvent(ELS.pwdVisiable, 'focus');
+  }
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+// 切换短信登录和密码登录
+bind(ELS.changeLoginType, "click", function() {
+  STAT.loginType !== 'ticket' ? STAT.loginType = 'ticket' : STAT.loginType = 'pwd';
+  changeToLoginType(STAT.loginType);
+});
+
+function changeToLoginType(toType) {
+  var errTip = g(".err_tip", ELS[STAT.currentView])[0];
+  if (errTip.style.display === 'block') {
+    clearError(ELS.mainForm);
+  }
+  if (ELS.toggleVisiable.__visiable) {
+    if (toType === 'ticket') {
+      domShow(ELS.pwd, true);
+      domHide(ELS.pwdVisiable);
+    } else {
+      domHide(ELS.pwd);
+      domShow(ELS.pwdVisiable);
+    }
+  }
+  removePlaceholder(ELS.pwd);
+  removePlaceholder(ELS.userName);
+  STAT.loginType = toType;
+  if (STAT.loginType === 'ticket') {
+    STAT.enableCode = false;
+  } else {
+    STAT.enableCode = CONF.enableCode;
+  }
+  changeLoginTypeTxt();
+  if (toType === 'pwd') {
+    removeClass(ELS.loginPanel, 'sms_login');
+    removeClass(ELS.regionCode, "add_regioncode");
+    domHide(ELS.smsCodePanel);
+    ELS.pwd.value = '';
+    /* IE8不支持input type的修改 */
+    ELS.userName.setAttribute('_type', 'text');
+    ELS.pwd.setAttribute('_type', 'password');
+    try {
+      ELS.userName.type = 'text';
+      ELS.pwd.type = 'password';
+    } catch (e) {
+
+    }
+    ELS.userName.setAttribute('placeholder', '邮箱/手机号码/小米ID');
+    ELS.pwd.setAttribute('placeholder', '密码');
+    var err = g('.err_tip', ELS.loginMain)[0];
+    err.parentNode.insertBefore(ELS.captcha, err);
+    customDisplayByParam(DISPLAY.OUTERLINK, true);
+  } else if (toType === 'ticket') {
+    if (ELS.userName.value && !validatePhone(ELS.userName.value) && (STAT.maskedPhone !== ELS.userName.value)) {
+      ELS.userName.value = '';
+    }
+    addClass(ELS.loginPanel, 'sms_login');
+    addClass(ELS.regionCode, "add_regioncode");
+    domShow(ELS.smsCodePanel, true);
+    ELS.pwd.value = '';
+    ELS.codeValue.innerHTML = '+86';
+    /* IE8不支持input type的修改 */
+    ELS.userName.setAttribute('_type', 'tel');
+    ELS.pwd.setAttribute('_type', 'number');
+
+    try {
+      ELS.userName.type = 'tel';
+      ELS.pwd.type = 'number';
+    } catch (e) {
+      /* FIXME IE8短信验证码input是password的 */
+    }
+    ELS.userName.setAttribute('placeholder', MSG.PHONE_NUM);
+    ELS.pwd.setAttribute('placeholder', MSG.SMS_CODE);
+    ELS.pwd.parentNode.parentNode.insertBefore(ELS.captcha, ELS.pwd.parentNode);
+    customDisplayByParam(DISPLAY.OUTERLINK);
+  }!ELS.userName.value && setPlaceholder(ELS.userName);
+  !ELS.pwd.value && setPlaceholder(ELS.pwd);
+}
+
+function changeLoginTypeTxt() {
+  var pwdText = CONF.loginBanner.pwdText || '';
+  var smsText = CONF.loginBanner.smsText || '';
+  if (STAT.loginType === 'ticket') {
+    ELS.loginButton.value = !!smsText ? smsText : '立即登录/注册';
+    ELS.changeLoginType.innerText = !!pwdText ? pwdText : '用户名密码登录';
+  } else {
+    ELS.loginButton.value = !!pwdText ? pwdText : '登录';
+    ELS.changeLoginType.innerText = !!smsText ? smsText : '手机短信登录/注册';
+  }
+}
+/*security controller*/
+if (JSP_VAR.showActiveXControl === true) {
+  if (Browser.name === 'IE' || Browser.name === 'Firefox') {
+    domShow(ELS.securityControllerPanel, true);
+  }
+} else {
+  domHide(ELS.securityControllerPanel);
+}
+var sectControllerStatus = false;
+if (ELS.securityController) {
+  if (sectControllerStatus) {
+    ELS.securityController.checked = true;
+  } else {
+    ELS.securityController.checked = false;
+  }
+}
+bind(ELS.securityController, ENAME.click, function() {
+  var hasXiaomiEdit = true;
+  try {
+    new ActiveXObject("XiaomiEdit.XiaomiEditCtrl.1");
+  } catch (e) {
+    hasXiaomiEdit = false;
+  }
+  var isSecurityController = (Browser.name === 'IE' && hasXiaomiEdit) || (navigator.plugins["Xiaomi Safe Control for NP"]);
+  sectControllerStatus = ELS.securityController.checked;
+  if (sectControllerStatus) {
+    if (isSecurityController) {
+      domHide(ELS.pwd);
+      var div = document.createElement("div");
+      addClass(div, "pwd-object");
+      var html = "";
+      var plugin = "";
+      if (Browser.name === 'IE') {
+        html = '<object id="XiaomiEdit" name="XiaomiEdit" classid="CLSID:E0A362BA-2608-48EA-9D8F-F45258D3091C" width="358" height="50"></object>';
+        div.innerHTML = html;
+        ELS.pwd.parentNode.appendChild(div);
+        plugin = document.getElementById("XiaomiEdit");
+      } else {
+        html = '<object type="application/npXiaomiEditCtl-Plugin" id="npXiaomiEdit" name="XiaomiEdit" width="358" height="48"></object>';
+        div.innerHTML = html;
+        ELS.pwd.parentNode.appendChild(div);
+        plugin = document.getElementById("npXiaomiEdit");
+      }
+      removeClass(ELS.pwd.parentNode, 'labelbox');
+    } else {
+      securityControllerModal.show();
+    }
+  } else {
+    domShow(ELS.pwd);
+    addClass(ELS.pwd.parentNode, 'labelbox');
+    g(".pwd-object")[0] && ELS.pwd.parentNode.removeChild(g(".pwd-object")[0]);
+    if (isSecurityController) {
+      ELS.pwd.value = "";
+    }
+  }
+});
+
+/*密码输入框的键盘事件都全部禁止冒泡*/
+log.add("stoppropagation keyevent", ENAME.keydown + "," + ENAME.keyup + "," + ENAME.keypress);
+bind(ELS.pwd, ENAME.keydown, function(e) {
+  var e = e || window.event;
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+
+bind(ELS.pwd, ENAME.keyup, function(e) {
+  var e = e || window.event;
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+
+bind(ELS.pwd, ENAME.keypress, function(e) {
+  var e = e || window.event;
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+if (ELS.pwdVisiable) {
+  bind(ELS.pwdVisiable, ENAME.keydown, function(e) {
+    var e = e || window.event;
+    ("cancelBubble" in e) && (e.cancelBubble = true);
+    ("stopPropagation" in e) && e.stopPropagation();
+  });
+
+  bind(ELS.pwdVisiable, ENAME.keyup, function(e) {
+    var e = e || window.event;
+    ("cancelBubble" in e) && (e.cancelBubble = true);
+    ("stopPropagation" in e) && e.stopPropagation();
+  });
+
+  bind(ELS.pwdVisiable, ENAME.keypress, function(e) {
+    var e = e || window.event;
+    ("cancelBubble" in e) && (e.cancelBubble = true);
+    ("stopPropagation" in e) && e.stopPropagation();
+  });
+}
+setPlaceholder(ELS.userName);
+setPlaceholder(ELS.pwd);
+log.add("addInputChange", "userName")
+
+bind(ELS.mainForm, 'submit', function(e) {
+  var e = e || window.event;
+  e.preventDefault ? e.preventDefault() : (e.returnValue = false);
+  var result = object_copy(submitParams);
+  if (!verifyMode(ELS.mainForm)) {
+    return false;
+  }
+  /*图片验证码*/
+  if (CONF.captchaNeed) {
+    result.captCode = trim(ELS.captchaCode.value);
+  }
+  /*用户名验证*/
+  if (STAT.loginType === 'pwd') {
+    var user = !STAT.showCodeValue ? trim(ELS.userName.value) : trim(ELS.codeValue.innerHTML) + trim(ELS.userName.value);
+    var pwdObject = g("#XiaomiEdit") || g("#npXiaomiEdit");
+    var pwd = (pwdObject && pwdObject.GetValue()) || ELS.pwd.value;
+    if (STAT.clientAcq && STAT.maskedPhone === user) {
+      result.userHash = clientAcq.hash;
+    } else {
+      result.user = user;
+    }
+    result.hash = (CryptoJS.MD5(pwd).toString() + "").toUpperCase();
+    !CONF.md5pwd && (result.pwd = pwd);
+    newLogin('/pass/serviceLoginAuth2', result);
+  } else if (STAT.loginType === 'ticket') {
+    /*短信验证*/
+    var phone = trim(ELS.userName.value);
+    var smsCode = ELS.pwd.value;
+    //取到号不必再判断phoneInfo
+    //用户没有用取到的号
+    if (STAT.clientAcq && STAT.maskedPhone === phone) {
+      result.userHash = clientAcq.hash;
+      result.ticket = smsCode;
+      newLogin('/pass/serviceLoginTicketAuth', result);
+      return false;
+    }
+    userInfo.phone = phone;
+    var params = {
+      user: phone,
+      ticket: smsCode
+    }
+    /*先判断帐号信息*/
+    Ajax({
+      url: "/pass/phoneInfo",
+      method: 'POST',
+      data: params,
+      success: function(data) {
+        log.add("phoneInfo", data);
+        var json = format2Json(data);
+        phoneInfo = json;
+        if (json.code === 0) {
+          /*status:0 注册，1选择 2登录*/
+          switch (json.data.status) {
+            case 1:
+              changeMainViewTo('acConfirm', json);
+              break;
+            case 2:
+              result.user = phone;
+              newLogin('/pass/serviceLoginTicketAuth', result);
+              break;
+            case 0:
+              register();
+              break;
+            default:
+
+              break;
+          }
+          /*验证码错误*/
+        } else if (json.code === 10031) {
+          resTicketError();
+          /*系统错误*/
+        } else {
+          FormError.show(MSG.INTERNAL_ERROR);
+        }
+      }
+    });
+  }
+  return false;
+});
+
+/**
+ * 附加功能
+ * 1.根据参数隐藏元素
+ * 2.定制登录的标题
+ * 其他
+ **/
+var custom_display_num = parseInt(getParam("_customDisplay")) || 0;
+customDisplayByParam(custom_display_num);
+//默认SNS和其他的SNS登录互斥的。
+if (CONF.snsNone === 'true') {
+  customDisplayByParam((DISPLAY.SNSLOGIN + DISPLAY.SNSDEFAULT));
+} else if (CONF.snsDefault) {
+  customDisplayByParam(DISPLAY.SNSLOGIN);
+  if (ELS.snsDefaultCon.style.display!=='none') {
+    addClass(document.body,'hasSnsDefault');
+    removeClass(ELS.changeLoginType,'btnadpt');
+  }
+  log.add("customDisplay", "snslogin", DISPLAY.SNSLOGIN);
+} else {
+  log.add("customDisplay", "snsdefault", DISPLAY.DEFAULT);
+  customDisplayByParam(DISPLAY.SNSDEFAULT);
+}
+log.add("customDisplay", custom_display_num);
+
+var loginTitle = getParam("lsrp_appName");
+if (loginTitle) {
+  setLoginTitle(loginTitle);
+}
+
+/*注意：前端的参数都必须加上下划线_表示不参与签名*/
+/**
+ *
+ * 网站通知消息
+ *
+ */
+
+Ajax({
+  url: CONF.infoUrl,
+  data: { '_locale': CONF.locale },
+  success: function(data, xhr) {
+    log.add("siteInfo", data);
+    var json = format2Json(data);
+    var result = json[CONF.locale] || json[JSP_VAR.locale] || [];
+    if (result) {
+      var div = document.createElement("div");
+      var html = "";
+      each(result, function(item, index) {
+        html += "<p class=\"site_info_txt\">" +
+          (item.url ? "<a href=\"" + item.url + "\" class=\"site_info_link\" target=\"_blank\">" : "") +
+          item.txt +
+          (item.url ? "</a>" : "") +
+          "</p>";
+      });
+      addClass(div, "site_info");
+      div.innerHTML = html;
+      ELS.header.parentNode.appendChild(div);
+    }
+  }
+});
+
+/*countrycode*/
+if (STAT.enableCode) {
+  /*设置默认*/
+  var region = RegionsCode.search(CONF.region || CONF.locale.split("_")[1] || "cn");
+  if (region) {
+    log.add("DefaultRegion", region)
+    RegionsCode.addUsual(region);
+    ELS.codeValue.innerHTML = (region.N + "").replace(/^00/, "+");
+  }
+}
+/*绑定事件*/
+bind(ELS.codeSelector, ENAME.click, function(e) {
+  if (STAT.enableCode) {
+    if (!STAT.codeInit) {
+      STAT.codeInit = true;
+      initCodeContainer();
+    }
+    FormError.clean(ELS.userName);
+    var e = e || window.event;
+    var target = e.target || e.srcElement;
+    if (hasClass(target, "countrycode_selector") || hasClass(target, "countrycode-value") || hasClass(target, "country_code") || hasClass(target, "icon_arrow_down")) {
+      toggleCodeContainer();
+    }
+    ("cancelBubble" in e) && (e.cancelBubble = true);
+    ("stopPropagation" in e) && e.stopPropagation();
+  }
+});
+bind(ELS.body, ENAME.click, function(e) {
+  hideCodeContainer();
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+bind(ELS.codeContainer, ENAME.click, function(e) {
+  var e = e || window.event;
+  var target = e.target || e.srcElement;
+  if (hasClass(target, 'record')) {
+    selectedCountryCode(target);
+    hideCodeContainer();
+  } else if (hasClass(target, 'record-country') || hasClass(target, 'record-code')) {
+    selectedCountryCode(target.parentNode)
+    hideCodeContainer();
+  } else if (hasClass(target, "search-code") || hasClass(target, "search-code-input")) {
+    //搜索国家码
+  } else {
+    hideCodeContainer();
+  }
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+/*切换navtab*/
+bind(ELS.navTabs, ENAME.click, function(e) {
+  var e = e || window.event;
+  var target = e.target || e.srcElement;
+  if (hasClass(target, 'navtab-link')) {
+    var tab = target.getAttribute("data-tab");
+    showTab(tab);
+    showTabCon(tab);
+  }
+});
+
+
+/*验证密码功能*/
+var _userId = parseInt(getParam("_userId"), 10) || 0;
+var _cookieUserId = parseInt(getCookie("userId"), 10);
+var _cookieUserName = htmlspecialchars(getCookie("userName"));
+var _userName = htmlspecialchars(decodeURIComponent(getParam("_userName")));
+/*验证密码时不显示切换到短信登录btn*/
+if (_userId) {
+  STAT.verifyPwd = true;
+  if (!_userName) {
+    _userName = _userId;
+    if (_cookieUserId === _userId && !!_cookieUserName) {
+      _userName = _cookieUserName
+    }
+  }
+  log.add("verifyPwd", _userId, _userName);
+  ELS.userName.value = _userId;
+  ELS.pwd.value = "";
+  domHide(ELS.changeLoginType);
+  domHide(ELS.userName.parentNode);
+  domShow(ELS.accountInfo, true);
+  addClass(ELS.pwd.parentNode, 'accinfo_single_label');
+  domHide(ELS.qrTrigger);
+  ELS.accountDisplayname.innerHTML = _userName;
+  ELS.header.innerHTML = MSG.VERIFY_PASSWORD;
+  ELS.loginButton.value = MSG.VERIFY_PASSWORD_SUBMIT;
+  //临时添加样式
+  ELS.accountDisplayname.style.fontSize = "20px";
+  ELS.accountDisplayname.style.paddingBottom = "20px";
+  domHide(g("#custom_display_" + DISPLAY.SNSLOGIN));
+}
+/*****绑定事件*******/
+bind(ELS.manualCode, ENAME.click, function(e) {
+  var e = e || window.event;
+  if (STAT.showCodeValue) {
+    STAT.showCodeValue = false;
+    STAT.manualCodeFlag = false;
+    STAT.manualControlCode = true;
+    removeClass(ELS.regionCode, "add_regioncode");
+    addClass(ELS.manualCode.parentNode, "turn_off");
+    addClass(ELS.regionCode, "divflex");
+    //}else{
+    //STAT.showCodeValue=true;
+    //addClass( ELS.regionCode , "add_regioncode");
+    //removeClass(ELS.manualCode.parentNode,"turn_off");
+  }
+  hideCodeContainer();
+  ("cancelBubble" in e) && (e.cancelBubble = true);
+  ("stopPropagation" in e) && e.stopPropagation();
+});
+/*优化模糊的Logo 已经在页面中使用了SVG 效果更好。
+  var _canvas=document.createElement("canvas");
+  if("getContext" in _canvas){
+    var logo=g(".milogo")[0];
+    logo.appendChild(_canvas)
+    _canvas.width =CONF.logoWidth*10;
+    _canvas.height=CONF.logoWidth*10;
+    _canvas.style.height=CONF.logoWidth+"px";
+    _canvas.style.width=CONF.logoWidth+"px";
+    drawMiLogo(_canvas,CONF.logoWidth*10,drawMiLogo.M);
+  }*/
+/*sendStat*/
+sendStat();
+/*备案链接上的图片*/
+if (ELS.recordLink && CONF.beianRecordLink) {
+  ELS.recordLink.href = CONF.beianRecordLink;
+
+  var _img = new Image();
+  var _span = g('span', ELS.recordLink)[0];
+
+  _img.onload = _img.oncomplete = function() {
+    _img._loaded = true;
+    _span.appendChild(_img);
+  }
+  setTimeout(function() {
+    !_img._loaded && (_img.src = CONF.default1px_gif);
+  }, 1000);
+  _img.src = CONF.beianRecordImg;
+}/***
+ * 此处为Login页面的结尾，需要调用一下 LoginLoaded 
+ * 
+ */
+ MiLogin && MiLogin.loaded && MiLogin.loaded();
+})(window,document);</script>
+  <a target="_blank"></a>
+  <div class="modal_container" style="display: none;">
+   <div class="modal_msk"></div>
+   <div class="modal_tip mod_acc_tip security-controller-modal" id="modal-id-0" style="display: none;">
+    <div class="modal_tip_flex">
+     <div class="modal_tip_hd modal-header">
+      <div class="external_logo_area">
+       <a class="milogo" href="javascript:void(0)"></a>
+      </div>
+      <div class="modal-header-text modal_tip_title">
+       提示
+      </div>
+      <a href="javascript:void(0)" title="" class="modal-header-close btn_mod_close"><span>关闭</span></a>
+     </div>
+     <div class="modal_tip_bd modal-body">
+      <div id="sect-controller-panel" class="security_controller_panel">
+       <h4>您需要安装安全控件，才可使用安全登录。</h4>
+       <p>控件可对您的密码进行加密保护，提升账户安全性。</p>
+       <p>请点击“立即安装控件”按钮，并根据提示进行安装。</p>
+       <div class="tip_msg">
+        完成安装后，请重新启动浏览器
+       </div>
+      </div>
+      <div class="tip_btns">
+       <a title="立即安装控件" href="https://account.xiaomi.com/static/res/0369340/account-static/static/mipay/XiaomiCtrl.exe" class="btn_tip btn_commom btn-action-controller">立即安装控件</a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div> 
+ </body>
+</html>

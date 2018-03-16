@@ -1,0 +1,75 @@
+{extend name="adminPublic:public"/} {block name="title"}轮播图{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-table"></i> 轮播图</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper" role="grid">
+            
+            <table class="mws-datatable-fn mws-table dataTable" id="DataTables_Table_1" aria-describedby="DataTables_Table_1_info">
+                <thead>
+                    <tr role="row">
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 251.2px;"
+                            aria-label="Browser: activate to sort column ascending">图片名称</th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 234.2px;"
+                            aria-label="Platform(s): activate to sort column ascending">
+                        图片</th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160.2px;"
+                            aria-label="Engine version: activate to sort column ascending">是否显示在前台
+                        </th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 118px;"
+                            aria-label="CSS grade: activate to sort column ascending">操作</th>
+                    </tr>
+                </thead>
+
+                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                    {foreach name='data' item="vo"}
+                    <tr class="even">
+                        <td class=" ">{$vo['name']}</td>
+                        <td class=" "><img src="{$vo['url']}" alt="" width="150"></td>
+                        <td class=" ">
+                            {if condition="$vo['status'] ==1 "}
+                            <span class="btn btn-info change_status " title="{$vo['id']}">显示</span>
+                            {else }
+                            <span class="btn btn-danger change_status " title="{$vo['id']}">不显示</span>
+                            {/if}
+                        </td>
+                        <td class=" ">
+                            <a href="/carousel/del/id/{$vo['id']}" class="btn btn-danger">删除</a>
+                            
+                        </td>
+                    </tr>
+                    {/foreach}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    $(".change_status").click(function () {
+        // alert(1);
+        var id=$(this).attr('title');
+        // console.log(id);
+        var obj=$(this);
+        $.ajax({
+            type:'post',
+            url: '/carousel/status',
+            data:{'id':id},
+            success: function (data) {
+                // console.log(data);
+                if(data){
+                    if (obj.text() == '显示') {
+                        obj.text('不显示').attr('class', 'btn btn-danger change_status');
+                    } else {
+                        obj.text('显示').attr('class', 'btn btn-info change_status');
+                    }
+                }
+            }
+        });
+    })
+</script>
+{/block}
+

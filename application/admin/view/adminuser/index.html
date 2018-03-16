@@ -1,0 +1,73 @@
+{extend name="adminPublic:public"/} {block name="title"}修改管理员{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-table"></i> 管理员列表</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper" role="grid">
+            
+            <table class="mws-datatable-fn mws-table dataTable" id="DataTables_Table_1" aria-describedby="DataTables_Table_1_info">
+                <thead>
+                    <tr role="row">
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 251.2px;"
+                            aria-label="Browser: activate to sort column ascending">管理员名称</th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 234.2px;"
+                            aria-label="Platform(s): activate to sort column ascending">管理员权限</th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 160.2px;"
+                            aria-label="Engine version: activate to sort column ascending">管理员状态
+                        </th>
+                        <th class="sorting" role="columnheader" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 118px;"
+                            aria-label="CSS grade: activate to sort column ascending">操作</th>
+                    </tr>
+                </thead>
+
+                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                    {foreach name='data' item="vo"}
+                    <tr class="even">
+                        <td class=" ">{$vo['name']}</td>
+                        <td class=" ">{$vo['right']}</td>
+                        <td class=" ">
+                            {if condition="$vo['status'] ==1 "}
+                            <span class="btn btn-info change_status " title="{$vo['id']}">可用</span>
+                            {else }
+                            <span class="btn btn-danger change_status " title="{$vo['id']}">禁用</span>
+                            {/if}
+                        </td>
+                        <td class=" ">
+                            <a href="/adminuser/del/id/{$vo['id']}" class="btn btn-danger">删除</a>
+                            <a href="/adminuser/edit/id/{$vo['id']}" class="btn btn-info">修改</a>
+                        </td>
+                    </tr>
+                    {/foreach}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{/block}
+{block name="script"}
+<script>
+    $(".change_status").click(function () {
+        var id=$(this).attr('title');
+        // console.log(id);
+        var obj=$(this);
+        $.ajax({
+            type:'post',
+            url: '/adminuser/status',
+            data:{'id':id},
+            success: function (data) {
+                // console.log(data);
+                if(data){
+                    if (obj.text() == '可用') {
+                        obj.text('禁用').attr('class', 'btn btn-danger change_status');
+                    } else {
+                        obj.text('可用').attr('class', 'btn btn-info change_status');
+                    }
+                }
+            }
+        });
+    })
+</script>
+{/block}
+

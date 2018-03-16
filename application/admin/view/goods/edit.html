@@ -1,0 +1,90 @@
+{extend name="adminPublic:public"/} {block name="title"}商品管理{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-ok"></i> 修改商品</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <form id="mws-validate" class="mws-form" action="/goods/update" method="post" novalidate="novalidate" enctype="multipart/form-data">
+            <input type="hidden" value="{$data['id']}" name="id">
+            <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+            <div class="mws-form-inline">
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品名称</label>
+                    <div class="mws-form-item">
+                        <input type="text" name="name" class="required url large" value="{$data['name']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品分类</label>
+                    <div class="mws-form-item">
+                        <select class="required large" name="cate_id">
+                            {foreach name='lists' item='vo'}
+                            <option value="{$vo['id']}" 
+                            {if condition="$data['cate_id'] == $vo['id'] "}
+                            selected
+                            {/if}
+                            >{$vo['name']}</option>
+                            {/foreach}
+                        </select>
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品描述</label>
+                    <div class="mws-form-item">
+                        <textarea name="des" id="" cols="121" rows="10">{$data['des']}</textarea>
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品库存</label>
+                    <div class="mws-form-item">
+                        <input type="number" name="num" class="required url large" value="{$data['num']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品颜色</label>
+                    <div class="mws-form-item">
+                        <input type="radio" name="color" value="white" {if condition="$data['color'] == 'white'" } checked {/if}>白色
+                        <input type="radio" name="color" value="black" {if condition="$data['color'] == 'black'" } checked {/if}>黑色
+                        <input type="radio" name="color" value="god" {if condition="$data['color'] == 'god'" } checked {/if}>金色
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品尺寸</label>
+                    <div class="mws-form-item">
+                        <input type="radio" name="size" value="big" {if condition="$data['size'] == 'big'" } checked {/if}>大
+                        <input type="radio" name="size" value="medium" {if condition="$data['size'] == 'medium'" } checked {/if}>中
+                        <input type="radio" name="size" value="small" {if condition="$data['size'] == 'small'" } checked {/if}>小
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品价格</label>
+                    <div class="mws-form-item">
+                        <input type="number" name="price" class="required url large" value="{$data['price']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">商品图片</label>
+                    <div class="mws-form-item">
+                        <img src="{$data['pic']}" alt="" width="200">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">重新上传图片</label>
+                    <div class="mws-form-item">
+                        <div class="fileinput-holder" style="position: relative;">
+                            <input name="pic" class="required" style="position: absolute; top: 0px; right: 0px; margin: 0px; cursor: pointer; font-size: 999px; opacity: 0; z-index: 999;"
+                                type="file">
+                        </div>
+                        <label for="picture" class="error" generated="true" style="display:none"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="mws-button-row">
+                <input type="submit" class="btn btn-info" value="确定">
+                <input type="reset" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
+</div>
+{/block}

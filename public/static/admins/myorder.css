@@ -1,0 +1,8 @@
+/* 自定义 轮播图 图片的默认显示大小 */
+.mws-gallery #carousel_pic{
+    width: 500px;
+}
+
+.close{
+    display:none;
+}

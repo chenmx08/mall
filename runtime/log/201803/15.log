@@ -1,0 +1,1704 @@
+---------------------------------------------------------------
+[ 2018-03-15T21:36:47+08:00 ] 127.0.0.1 GET /
+[ info ] mall.com/ [运行时间：0.510068s][吞吐率：1.96req/s] [内存消耗：3,526.18kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getIndex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519804808,1519818606,1519820099,1519867679',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getIndex[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\index.html [ array (
+  0 => 'carousel',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->header[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015156s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.003759s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001942s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.084513s][吞吐率：11.83req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.117855s][吞吐率：8.48req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.129002s][吞吐率：7.75req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.167461s][吞吐率：5.97req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.153405s][吞吐率：6.52req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.158270s][吞吐率：6.32req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.174637s][吞吐率：5.73req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.194605s][吞吐率：5.14req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.178801s][吞吐率：5.59req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.188836s][吞吐率：5.30req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.081038s][吞吐率：12.34req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.230050s][吞吐率：4.35req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.118918s][吞吐率：8.41req/s] [内存消耗：1,563.53kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.168124s][吞吐率：5.95req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:48+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.175997s][吞吐率：5.68req/s] [内存消耗：1,563.55kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:49+08:00 ] 127.0.0.1 GET /static/index/index/i/slogan2016.png
+[ info ] mall.com/static/index/index/i/slogan2016.png [运行时间：0.058732s][吞吐率：17.03req/s] [内存消耗：1,563.57kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:49+08:00 ] 127.0.0.1 GET /static/index/index/i/logo-footer.png?v2
+[ info ] mall.com/static/index/index/i/logo-footer.png?v2 [运行时间：0.102078s][吞吐率：9.80req/s] [内存消耗：1,563.80kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:49+08:00 ] 127.0.0.1 GET /static/index/index/i/mi-logo.png
+[ info ] mall.com/static/index/index/i/mi-logo.png [运行时间：0.115721s][吞吐率：8.64req/s] [内存消耗：1,563.57kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /index/goodsInfo/id/12
+[ info ] mall.com/index/goodsInfo/id/12 [运行时间：0.218151s][吞吐率：4.58req/s] [内存消耗：3,060.73kb] [文件加载：53]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getgoodsInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/',
+  'cookie' => 'mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519804808,1519818606,1519820099,1519867679; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=cbf1bcb8baffa0d5; mstz=||1756828427.2|||; xm_vistor=1518014578627_819_1521121008571-1521121010635; msttime=http%3A%2F%2Fmall.com%2F; msttime1=http%3A%2F%2Fmall.com%2F; thinkphp_show_page_trace=0|0',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'goodsInfo',
+  'id' => '12',
+)
+[ info ] [ RUN ] app\index\controller\Index->getGoodsInfo[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsList.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001347s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.069561s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `cate_id` = 12 [ RunTime:0.024970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001749s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000471s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.048225s][吞吐率：20.74req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.066547s][吞吐率：15.03req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.069097s][吞吐率：14.47req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.064544s][吞吐率：15.49req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.054986s][吞吐率：18.19req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.137499s][吞吐率：7.27req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.066447s][吞吐率：15.05req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.079145s][吞吐率：12.64req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.051694s][吞吐率：19.34req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.049457s][吞吐率：20.22req/s] [内存消耗：1,563.73kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.164917s][吞吐率：6.06req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.072616s][吞吐率：13.77req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.210978s][吞吐率：4.74req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.062636s][吞吐率：15.97req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.214396s][吞吐率：4.66req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.080308s][吞吐率：12.45req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.103550s][吞吐率：9.66req/s] [内存消耗：1,563.75kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.058514s][吞吐率：17.09req/s] [内存消耗：1,563.73kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:52+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.084727s][吞吐率：11.80req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.050896s][吞吐率：19.65req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.044296s][吞吐率：22.58req/s] [内存消耗：1,563.80kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.043708s][吞吐率：22.88req/s] [内存消耗：1,563.88kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.052405s][吞吐率：19.08req/s] [内存消耗：1,564.08kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/slogan2016.png
+[ info ] mall.com/static/index/goodsItem/i/slogan2016.png [运行时间：0.050732s][吞吐率：19.71req/s] [内存消耗：1,563.85kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.094248s][吞吐率：10.61req/s] [内存消耗：1,563.84kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.127395s][吞吐率：7.85req/s] [内存消耗：1,563.96kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:53+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.043151s][吞吐率：23.17req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /index/item/id/13
+[ info ] mall.com/index/item/id/13 [运行时间：0.181449s][吞吐率：5.51req/s] [内存消耗：3,038.93kb] [文件加载：53]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getitem',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/index/goodsInfo/id/12',
+  'cookie' => 'mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=ccfa7b7d4993700e; mstz=||1756828427.4||http%253A%252F%252Fmall.com%252F|http%25253A%25252F%25252Fmall.com%25252F; xm_vistor=1518014578627_819_1521121008571-1521121014676; msttime=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F12; msttime1=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F12; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121013; lastsource=mall.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'item',
+  'id' => '13',
+)
+[ info ] [ RUN ] app\index\controller\Index->getItem[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsItem.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002448s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.002560s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `id` = 13 LIMIT 1 [ RunTime:0.082655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001635s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.055035s][吞吐率：18.17req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.062720s][吞吐率：15.94req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.134714s][吞吐率：7.42req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.243515s][吞吐率：4.11req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.111138s][吞吐率：9.00req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.257506s][吞吐率：3.88req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.201554s][吞吐率：4.96req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.223073s][吞吐率：4.48req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.054977s][吞吐率：18.19req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.105086s][吞吐率：9.52req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.129215s][吞吐率：7.74req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.116703s][吞吐率：8.57req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.142550s][吞吐率：7.02req/s] [内存消耗：1,563.98kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.048318s][吞吐率：20.70req/s] [内存消耗：1,564.06kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:55+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.126892s][吞吐率：7.88req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.206261s][吞吐率：4.85req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.131946s][吞吐率：7.58req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.127055s][吞吐率：7.87req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.062246s][吞吐率：16.07req/s] [内存消耗：1,563.98kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.086074s][吞吐率：11.62req/s] [内存消耗：1,564.06kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.056872s][吞吐率：17.58req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.064001s][吞吐率：15.62req/s] [内存消耗：1,564.02kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.053414s][吞吐率：18.72req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/slogan2016.png
+[ info ] mall.com/static/index/goodsItem/i/slogan2016.png [运行时间：0.053963s][吞吐率：18.53req/s] [内存消耗：1,564.04kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:56+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.063934s][吞吐率：15.64req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:58+08:00 ] 127.0.0.1 GET /index/goodsInfo/id/12
+[ info ] mall.com/index/goodsInfo/id/12 [运行时间：0.077027s][吞吐率：12.98req/s] [内存消耗：2,773.67kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getgoodsInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/',
+  'cookie' => 'thinkphp_show_page_trace=0|0; mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=bd587244ab75c3ed; mstz=||1756828427.5||http%253A%252F%252Fmall.com%252Findex%252Fgoodsinfo%252Fid%252F12|http%25253A%25252F%25252Fmall.com%25252F; xm_vistor=1518014578627_819_1521121008571-1521121016238; msttime=http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F13; msttime1=http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F13; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121016; lastsource=mall.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'goodsInfo',
+  'id' => '12',
+)
+[ info ] [ RUN ] app\index\controller\Index->getGoodsInfo[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsList.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001227s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.001661s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `cate_id` = 12 [ RunTime:0.001377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001738s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000391s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:36:59+08:00 ] 127.0.0.1 GET /
+[ info ] mall.com/ [运行时间：0.128936s][吞吐率：7.76req/s] [内存消耗：3,526.97kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getIndex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'cookie' => 'mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=ccfa7b7d4993700e; mstz=||1756828427.6||http%253A%252F%252Fmall.com%252F|http%25253A%25252F%25252Fmall.com%25252Findex%25252Fgoodsinfo%25252Fid%25252F12; xm_vistor=1518014578627_819_1521121008571-1521121018450; msttime=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F12; msttime1=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F12; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121018; lastsource=mall.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->getIndex[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\index.html [ array (
+  0 => 'carousel',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->header[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001209s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001704s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001794s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.001406s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:36:59+08:00 ] 127.0.0.1 GET /static/index/index/i/mi-logo.png
+[ info ] mall.com/static/index/index/i/mi-logo.png [运行时间：0.046690s][吞吐率：21.42req/s] [内存消耗：1,564.01kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:36:59+08:00 ] 127.0.0.1 GET /static/index/index/i/logo-footer.png?v2
+[ info ] mall.com/static/index/index/i/logo-footer.png?v2 [运行时间：0.052344s][吞吐率：19.10req/s] [内存消耗：1,564.24kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /index/goodsInfo/id/14
+[ info ] mall.com/index/goodsInfo/id/14 [运行时间：0.084748s][吞吐率：11.80req/s] [内存消耗：2,765.27kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getgoodsInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/',
+  'cookie' => 'thinkphp_show_page_trace=0|0; mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=cbf1bcb8baffa0d5; mstz=||1756828427.8|||; xm_vistor=1518014578627_819_1521121008571-1521121020766; msttime=http%3A%2F%2Fmall.com%2F; msttime1=http%3A%2F%2Fmall.com%2F; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121018; lastsource=mall.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'goodsInfo',
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\Index->getGoodsInfo[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsList.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001163s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `cate_id` = 14 [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.002374s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.001298s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.001384s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.052407s][吞吐率：19.08req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.050788s][吞吐率：19.69req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.059909s][吞吐率：16.69req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.101580s][吞吐率：9.84req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.128689s][吞吐率：7.77req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.096272s][吞吐率：10.39req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.128387s][吞吐率：7.79req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.153537s][吞吐率：6.51req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.113289s][吞吐率：8.83req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.124862s][吞吐率：8.01req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.067639s][吞吐率：14.78req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.146540s][吞吐率：6.82req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.090992s][吞吐率：10.99req/s] [内存消耗：1,563.80kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:01+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.051853s][吞吐率：19.29req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.071295s][吞吐率：14.03req/s] [内存消耗：1,563.80kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.231905s][吞吐率：4.31req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.124080s][吞吐率：8.06req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.113832s][吞吐率：8.78req/s] [内存消耗：1,563.88kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.086229s][吞吐率：11.60req/s] [内存消耗：1,563.88kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.128110s][吞吐率：7.81req/s] [内存消耗：1,563.81kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.033136s][吞吐率：30.18req/s] [内存消耗：1,563.80kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.033683s][吞吐率：29.69req/s] [内存消耗：1,563.88kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.059679s][吞吐率：16.76req/s] [内存消耗：1,563.84kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.064379s][吞吐率：15.53req/s] [内存消耗：1,563.96kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.085304s][吞吐率：11.72req/s] [内存消耗：1,564.08kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:02+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.052700s][吞吐率：18.98req/s] [内存消耗：1,563.96kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /index/item/id/11
+[ info ] mall.com/index/item/id/11 [运行时间：0.080216s][吞吐率：12.47req/s] [内存消耗：2,777.36kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getitem',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/index/goodsInfo/id/14',
+  'cookie' => 'thinkphp_show_page_trace=0|0; mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=c5ee2210f2fd46d0; mstz=||1756828427.9||http%253A%252F%252Fmall.com%252F|; xm_vistor=1518014578627_819_1521121008571-1521121022450; msttime=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F14; msttime1=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F14; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121022; lastsource=mall.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'item',
+  'id' => '11',
+)
+[ info ] [ RUN ] app\index\controller\Index->getItem[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsItem.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001049s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.002593s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.001315s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000582s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.069747s][吞吐率：14.34req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.094634s][吞吐率：10.57req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.071867s][吞吐率：13.91req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.072438s][吞吐率：13.80req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.120139s][吞吐率：8.32req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.082276s][吞吐率：12.15req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.094895s][吞吐率：10.54req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.066418s][吞吐率：15.06req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.051424s][吞吐率：19.45req/s] [内存消耗：1,563.98kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.165937s][吞吐率：6.03req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.150253s][吞吐率：6.66req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:03+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.090171s][吞吐率：11.09req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.141133s][吞吐率：7.09req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.057177s][吞吐率：17.49req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.046651s][吞吐率：21.44req/s] [内存消耗：1,564.06kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.261142s][吞吐率：3.83req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.098639s][吞吐率：10.14req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.087819s][吞吐率：11.39req/s] [内存消耗：1,563.98kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.099916s][吞吐率：10.01req/s] [内存消耗：1,564.06kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.157715s][吞吐率：6.34req/s] [内存消耗：1,564.00kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.043170s][吞吐率：23.16req/s] [内存消耗：1,563.98kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.030920s][吞吐率：32.34req/s] [内存消耗：1,564.06kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.052898s][吞吐率：18.90req/s] [内存消耗：1,564.02kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.059783s][吞吐率：16.73req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.067369s][吞吐率：14.84req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/slogan2016.png
+[ info ] mall.com/static/index/goodsItem/i/slogan2016.png [运行时间：0.117683s][吞吐率：8.50req/s] [内存消耗：1,564.04kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:04+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.047042s][吞吐率：21.26req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:21+08:00 ] 127.0.0.1 GET /index/index
+[ info ] mall.com/index/index [运行时间：0.127868s][吞吐率：7.82req/s] [内存消耗：3,532.64kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getindex',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/index/item/id/11',
+  'cookie' => 'mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=c0271e43363fa790; mstz=||1756828427.11||http%253A%252F%252Fmall.com%252Findex%252Fgoodsinfo%252Fid%252F14|http%25253A%25252F%25252Fmall.com%25252Findex%25252Fgoodsinfo%25252Fid%25252F14; xm_vistor=1518014578627_819_1521121008571-1521121041753; msttime=http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F11; msttime1=http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F11; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121024; lastsource=mall.com; log_code=c0271e43363fa790-4fc7b0a85fd2fa10|http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F11',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'index',
+)
+[ info ] [ RUN ] app\index\controller\Index->getIndex[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\index.html [ array (
+  0 => 'carousel',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->header[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001201s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `carousel` [ RunTime:0.001649s ]
+[ sql ] [ SQL ] SELECT * FROM `carousel` WHERE  `status` = 1 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.001855s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.001098s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.001519s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.048767s][吞吐率：20.51req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.066951s][吞吐率：14.94req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.088492s][吞吐率：11.30req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.118990s][吞吐率：8.40req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.095578s][吞吐率：10.46req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.164536s][吞吐率：6.08req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.163059s][吞吐率：6.13req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.048051s][吞吐率：20.81req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.065255s][吞吐率：15.32req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.203191s][吞吐率：4.92req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.123786s][吞吐率：8.08req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.108260s][吞吐率：9.24req/s] [内存消耗：1,564.10kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.167034s][吞吐率：5.99req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/i/logo-footer.png?v2
+[ info ] mall.com/static/index/index/i/logo-footer.png?v2 [运行时间：0.075557s][吞吐率：13.24req/s] [内存消耗：1,564.37kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/i/mi-logo.png
+[ info ] mall.com/static/index/index/i/mi-logo.png [运行时间：0.133271s][吞吐率：7.50req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.280627s][吞吐率：3.56req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.198256s][吞吐率：5.04req/s] [内存消耗：1,564.12kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:22+08:00 ] 127.0.0.1 GET /static/index/index/i/slogan2016.png
+[ info ] mall.com/static/index/index/i/slogan2016.png [运行时间：0.096201s][吞吐率：10.39req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:23+08:00 ] 127.0.0.1 GET /index/goodsInfo/id/14
+[ info ] mall.com/index/goodsInfo/id/14 [运行时间：0.122088s][吞吐率：8.19req/s] [内存消耗：2,769.77kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getgoodsInfo',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/index/index',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=9f40e6b0a56067d1; mstz=||1756828427.12||http%253A%252F%252Fmall.com%252Findex%252Fitem%252Fid%252F11|http%25253A%25252F%25252Fmall.com%25252Findex%25252Fgoodsinfo%25252Fid%25252F14; xm_vistor=1518014578627_819_1521121008571-1521121042574; msttime=http%3A%2F%2Fmall.com%2Findex%2Findex; msttime1=http%3A%2F%2Fmall.com%2Findex%2Findex; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121024; lastsource=mall.com; log_code=c0271e43363fa790-4fc7b0a85fd2fa10|http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F11',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'goodsInfo',
+  'id' => '14',
+)
+[ info ] [ RUN ] app\index\controller\Index->getGoodsInfo[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsList.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001522s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.002631s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `cate_id` = 14 [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.003643s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.002434s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.002269s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000676s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000758s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.052152s][吞吐率：19.17req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.053440s][吞吐率：18.71req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.053850s][吞吐率：18.57req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.055828s][吞吐率：17.91req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.054615s][吞吐率：18.31req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.052932s][吞吐率：18.89req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.140085s][吞吐率：7.14req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.060713s][吞吐率：16.47req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.129355s][吞吐率：7.73req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.046831s][吞吐率：21.35req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.048813s][吞吐率：20.49req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.057788s][吞吐率：17.30req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.160068s][吞吐率：6.25req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.059344s][吞吐率：16.85req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.047765s][吞吐率：20.94req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.065137s][吞吐率：15.35req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.121734s][吞吐率：8.21req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.077163s][吞吐率：12.96req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.127957s][吞吐率：7.82req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.060299s][吞吐率：16.58req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.034404s][吞吐率：29.07req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.032934s][吞吐率：30.36req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.030778s][吞吐率：32.49req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.051390s][吞吐率：19.46req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/slogan2016.png
+[ info ] mall.com/static/index/goodsItem/i/slogan2016.png [运行时间：0.047747s][吞吐率：20.94req/s] [内存消耗：1,564.16kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:24+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.049177s][吞吐率：20.33req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:25+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.154719s][吞吐率：6.46req/s] [内存消耗：1,564.39kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:25+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.057059s][吞吐率：17.53req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /index/item/id/11
+[ info ] mall.com/index/item/id/11 [运行时间：0.090387s][吞吐率：11.06req/s] [内存消耗：2,781.73kb] [文件加载：51]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'getitem',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'mall.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-language' => 'zh,en-US;q=0.7,en;q=0.3',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://mall.com/index/goodsInfo/id/14',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; mstuid=1518014578627_819; Hm_lvt_2a0c04774115b182994cfcacf4c122e9=1519818606,1519820099,1519867679,1521121013; PHPSESSID=25oi76ktn769b2g7h3kdfqi510; pageid=c5ee2210f2fd46d0; mstz=||1756828427.15||http%253A%252F%252Fmall.com%252Findex%252Findex|http%25253A%25252F%25252Fmall.com%25252Findex%25252Findex; xm_vistor=1518014578627_819_1521121008571-1521121046446; msttime=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F14; msttime1=http%3A%2F%2Fmall.com%2Findex%2FgoodsInfo%2Fid%2F14; thinkphp_show_page_trace=0|0; Hm_lpvt_2a0c04774115b182994cfcacf4c122e9=1521121045; lastsource=mall.com; log_code=c0271e43363fa790-4fc7b0a85fd2fa10|http%3A%2F%2Fmall.com%2Findex%2Fitem%2Fid%2F11',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+)
+[ info ] [ PARAM ] array (
+  'action' => 'item',
+  'id' => '11',
+)
+[ info ] [ RUN ] app\index\controller\Index->getItem[ F:\wamp\www\mall\master\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\index\goodsItem.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ RUN ] app\index\widget\Cate->indexHeader[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\index_header.html [ array (
+  0 => 'cate',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\index\widget\Cate->footer[ F:\wamp\www\mall\master\application\index\widget\Cate.php ]
+[ info ] [ VIEW ] F:\wamp\www\mall\master\public/../application/index\view\indexpublic\footer.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001098s ] mysql:host=127.0.0.1;dbname=shopping;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_info` [ RunTime:0.002414s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_info` WHERE  `id` = 11 LIMIT 1 [ RunTime:0.002556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cates` [ RunTime:0.002163s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 0 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 1 [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 12 [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 13 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 14 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 2 [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 15 [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 16 [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 3 [ RunTime:0.002503s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 17 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 4 [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 18 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 5 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 19 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 20 [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 10 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 11 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 21 [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `cates` WHERE  `pid` = 22 [ RunTime:0.000600s ]
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_006.js
+[ info ] mall.com/static/index/index/js/mstr_006.js [运行时间：0.054551s][吞吐率：18.33req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_004.js
+[ info ] mall.com/static/index/index/js/mstr_004.js [运行时间：0.079073s][吞吐率：12.65req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_007.js
+[ info ] mall.com/static/index/index/js/mstr_007.js [运行时间：0.089106s][吞吐率：11.22req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_002.js
+[ info ] mall.com/static/index/index/js/mstr_002.js [运行时间：0.073429s][吞吐率：13.62req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_005.js
+[ info ] mall.com/static/index/index/js/mstr_005.js [运行时间：0.107859s][吞吐率：9.27req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_012.js
+[ info ] mall.com/static/index/index/js/mstr_012.js [运行时间：0.073844s][吞吐率：13.54req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_013.js
+[ info ] mall.com/static/index/index/js/mstr_013.js [运行时间：0.163519s][吞吐率：6.12req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_008.js
+[ info ] mall.com/static/index/index/js/mstr_008.js [运行时间：0.078833s][吞吐率：12.69req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_009.js
+[ info ] mall.com/static/index/index/js/mstr_009.js [运行时间：0.171138s][吞吐率：5.84req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_003.js
+[ info ] mall.com/static/index/index/js/mstr_003.js [运行时间：0.049233s][吞吐率：20.31req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_015.js
+[ info ] mall.com/static/index/index/js/mstr_015.js [运行时间：0.069538s][吞吐率：14.38req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr.js
+[ info ] mall.com/static/index/index/js/mstr.js [运行时间：0.066220s][吞吐率：15.10req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_010.js
+[ info ] mall.com/static/index/index/js/mstr_010.js [运行时间：0.162098s][吞吐率：6.17req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr.js
+[ info ] mall.com/static/index/goodsItem/js/mstr.js [运行时间：0.047960s][吞吐率：20.85req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_014.js
+[ info ] mall.com/static/index/index/js/mstr_014.js [运行时间：0.145435s][吞吐率：6.88req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/index/js/mstr_011.js
+[ info ] mall.com/static/index/index/js/mstr_011.js [运行时间：0.109803s][吞吐率：9.11req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.071714s][吞吐率：13.94req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:30+08:00 ] 127.0.0.1 GET /static/index/order/css/v.html
+[ info ] mall.com/static/index/order/css/v.html [运行时间：0.112927s][吞吐率：8.86req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/goodsItem/js/mstr_002.js
+[ info ] mall.com/static/index/goodsItem/js/mstr_002.js [运行时间：0.171699s][吞吐率：5.82req/s] [内存消耗：1,564.13kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.101527s][吞吐率：9.85req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/order/css/hm.js
+[ info ] mall.com/static/index/order/css/hm.js [运行时间：0.043934s][吞吐率：22.76req/s] [内存消耗：1,564.11kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/myinfo/js/v.html
+[ info ] mall.com/static/index/myinfo/js/v.html [运行时间：0.031925s][吞吐率：31.32req/s] [内存消耗：1,564.19kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/mi-logo.png
+[ info ] mall.com/static/index/goodsItem/i/mi-logo.png [运行时间：0.060296s][吞吐率：16.58req/s] [内存消耗：1,564.15kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-10e68afa7f.woff
+[ info ] mall.com/static/index/myinfo/font/iconfont-10e68afa7f.woff [运行时间：0.055964s][吞吐率：17.87req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/slogan2016.png
+[ info ] mall.com/static/index/goodsItem/i/slogan2016.png [运行时间：0.061897s][吞吐率：16.16req/s] [内存消耗：1,564.16kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/goodsItem/i/logo-footer.png?v2
+[ info ] mall.com/static/index/goodsItem/i/logo-footer.png?v2 [运行时间：0.079812s][吞吐率：12.53req/s] [内存消耗：1,564.39kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-03-15T21:37:31+08:00 ] 127.0.0.1 GET /static/index/myinfo/font/iconfont-753b0afc9a.ttf
+[ info ] mall.com/static/index/myinfo/font/iconfont-753b0afc9a.ttf [运行时间：0.043334s][吞吐率：23.08req/s] [内存消耗：1,564.27kb] [文件加载：39]
+[ info ] [ LANG ] F:\wamp\www\mall\master\thinkphp\lang\zh-cn.php
+[ info ] [ LOG ] INIT File

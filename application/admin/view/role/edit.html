@@ -1,0 +1,45 @@
+{extend name="adminPublic:public"/} {block name="title"}修改角色{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-ok"></i> 修改角色权限</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <form id="mws-validate" class="mws-form" action="/role/update" method="post" novalidate="novalidate">
+            <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+            <div class="mws-form-inline">
+                <div class="mws-form-row">
+                    <input type="hidden" name="id" value="{$role['id']}">
+                    <label class="mws-form-label">角色名称</label>
+                    <div class="mws-form-item">
+                        <input type="text" name="name" class="required url large" value="{$role['name']}">
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">修改权限</label>
+                    <div class="mws-form-item clearfix">
+                        <ul class="mws-form-list inline">
+                            {foreach name='node' item='vo'}
+                            <li>
+                                <input type="checkbox" value="{$vo['id']}" id="{$vo['id']}" name="node[]" 
+                                {foreach name="nids" item='val'}
+                                {if condition=" $val['nid'] == $vo['id']"}checked
+                                {/if}
+                                {/foreach}
+                                >
+                                <label for="{$vo['id']}">{$vo['name']}</label>
+                            </li>
+                            {/foreach}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mws-button-row">
+                <input type="submit" class="btn btn-info">
+                <input type="reset" class="btn btn-danger">
+            </div>
+
+        </form>
+    </div>
+</div>
+{/block}

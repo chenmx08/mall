@@ -1,0 +1,29 @@
+{extend name="adminPublic:public"/} {block name="title"}轮播图{/block} {block name="content"}
+
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-pictures"></i> 轮播图列表</span>
+    </div>
+    <div class="mws-panel-body">
+        <ul class="thumbnails mws-gallery">
+            {foreach name="data" item="vo" }
+           
+            <li id='carousel_pic' >
+                <img src="{$vo['url']}" alt="" width="500px" id="show_img">
+                <span class="mws-gallery-overlay">
+                    <a href="javascript:;" class="mws-gallery-btn">
+                        <i class="icon-adjust" title="隐藏"></i>
+                    </a>
+                    <a href="/carousel/del/id/{$vo['id']}" class="mws-gallery-btn">
+                        <i class="icon-trash" title="删除"></i>
+                    </a>
+                </span>
+            </li>
+            {/foreach}
+        </ul>
+    </div>
+</div>
+{/block}
+
+

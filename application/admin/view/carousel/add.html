@@ -1,0 +1,51 @@
+{extend name="adminPublic:public"/} {block name="title"}轮播图{/block} {block name="content"}
+<div class="mws-panel grid_8">
+    <div class="mws-panel-header">
+        <span>
+            <i class="icon-ok"></i> 上传轮播图</span>
+    </div>
+    <div class="mws-panel-body no-padding">
+        <form id="mws-validate" class="mws-form" action="/carousel/insert" method='post' novalidate="novalidate" enctype="multipart/form-data">
+            <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+            <div class="mws-form-inline">
+                <div class="mws-form-row">
+                    <label class="mws-form-label">图片名称</label>
+                    <div class="mws-form-item">
+                        <input name="name" class="required large" type="text" >
+                    </div>
+                </div>
+                <div class="mws-form-row">
+                    <label class="mws-form-label">是否显示</label>
+                    <div class="mws-form-item clearfix">
+                        <ul class="mws-form-list inline">
+                            <li>
+                                <input value="1" name="status" type="radio">
+                                <label>显示</label>
+                            </li>
+                            <li>
+                                <input value="0" name="status" type="radio">
+                                <label>隐藏</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="mws-form-row">
+                    <label class="mws-form-label">选择图片</label>
+                    <div class="mws-form-item">
+                        <div class="fileinput-holder" style="position: relative;">
+                                <input name="pic" class="required" style="position: absolute; top: 0px; right: 0px; margin: 0px; cursor: pointer; font-size: 999px; opacity: 0; z-index: 999;"
+                                    type="file">
+                        </div>
+                        <label for="picture" class="error" generated="true" style="display:none"></label>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="mws-button-row">
+                <input class="btn btn-danger" type="submit">
+            </div>
+        </form>
+    </div>
+</div>
+{/block}
